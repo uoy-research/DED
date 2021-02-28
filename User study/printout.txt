@@ -1,0 +1,29 @@
+Print-out on 28.02.2021
+Timely & not at all & -21.48464 & 0.00000 & True \\\hline
+Timely & very little & -12.26684 & 0.00000 & True \\\hline
+Coherent & not at all & -29.87181 & 0.00000 & True \\\hline
+Coherent & very little & -17.15571 & 0.00000 & True \\\hline
+Believable & robotic & -18.13663 & 0.00000 & True \\\hline
+Believable & mostly robotic & -9.53956 & 0.00000 & True \\\hline
+Believable Alfred & robotic & -14.80357 & 0.00000 & True \\\hline
+Believable Alfred & mostly robotic & -6.78671 & 0.00000 & True \\\hline
+Believable Bryan & robotic & -16.53351 & 0.00000 & True \\\hline
+Believable Bryan & mostly robotic & -7.75474 & 0.00000 & True \\\hline
+Believable Cedric & robotic & -18.61588 & 0.00000 & True \\\hline
+Believable Cedric & mostly robotic & -9.24743 & 0.00000 & True \\\hline
+Believable Elspeth & robotic & -17.77378 & 0.00000 & True \\\hline
+Believable Elspeth & mostly robotic & -8.34516 & 0.00000 & True \\\hline
+Believable Emma & robotic & -19.14982 & 0.00000 & True \\\hline
+Believable Emma & mostly robotic & -9.72801 & 0.00000 & True \\\hline
+Believable Harold & robotic & -18.13663 & 0.00000 & True \\\hline
+Believable Harold & mostly robotic & -9.53956 & 0.00000 & True \\\hline
+Alfred & Reserved & -2.51738 & 0.01312  \\\hline
+Alfred & Serious & -1.95845 & 0.05246  \\\hline
+Alfred & Rule-conscious & 2.58678 & 0.01092  \\\hline
+Bryan & Dominant & 1.01679 & 0.31120  \\\hline
+Cedric & Lively & 3.15795 & 0.00197  \\\hline
+Emma & Sensitive & 1.96462 & 0.05170  \\\hline
+Harold & Emotionally stable & 3.17356 & 0.00191  \\\hline
+Harold & Dominant & 2.06205 & 0.04126  \\\hline
+Harold & Serious & -3.07975 & 0.00254  \\\hline
+Harold & Rule-conscious & 2.87256 & 0.00482  \\\hline
