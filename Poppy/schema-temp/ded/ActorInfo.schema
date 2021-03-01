@@ -1,0 +1,30 @@
+package ded;
+import "dpge/PlotEnum.schema";
+
+enum Info {
+  FIRST_NAME = 0;
+  SURNAME = 1;
+  GENDER = 2;
+  OCCUPATION = 3;
+}
+
+type SpeechResponse {
+  EntityId sender_id = 1;
+  dpge.PlotNodeEnum node = 2;
+}
+
+type SpeechRequest {
+  EntityId sender_id = 1;
+  dpge.PlotEnum subnet = 2;
+  dpge.PlotNodeEnum node = 3;
+  dpge.PlotNodeLabelEnum label = 4;
+  dpge.PlotEnum speech_type = 5;
+}
+
+component ActorInfo {
+  id = 1150;
+  map<Info, uint32> info_map = 1;
+  EntityId director_id = 2;
+
+  command SpeechResponse speech_command(SpeechRequest);
+}

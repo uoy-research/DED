@@ -1,0 +1,19 @@
+package ded.drama;
+import "ded/drama/Roles.schema";
+import "ded/drama/Goals.schema";
+import "ded/drama/Acts.schema";
+
+type DramaSchema{
+    uint32 uid = 1;
+    list<Role> roles = 2;
+    list<Goal> goals = 3;
+    list<uint32> pre_conditions = 4;
+    uint32 num_deployable = 5;
+    bool faulty = 6;
+    list<uint32> acts = 7;
+}
+
+component DramaSchemas{
+    id = 1601;
+    list<DramaSchema> schemas = 1;
+}

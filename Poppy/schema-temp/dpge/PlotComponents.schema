@@ -1,0 +1,32 @@
+package dpge;
+import "dpge/PlotEnum.schema";
+import "ded/drama/Roles.schema";
+
+type Submodel{
+     uint32 number = 1;
+     PlotEnum type = 2;
+     map<PlotNodeEnum, uint32> variables = 3;
+}
+
+type Submodels{
+     map<uint32, Submodel> submodel_map = 1;
+}
+
+type SubGroups{
+     map<PlotEnum, Submodels> group_map = 1;
+}
+
+type Plot {
+  EntityId plot_id = 1;
+  EntityId director_id = 2;
+  EntityId player_id = 3;
+  EntityId drama_id = 4;
+  map<ded.drama.RoleEnum, SubGroups> submodel_group_map = 5;
+  map<EntityId, ded.drama.RoleEnum> npc_ids = 6;
+  ded.drama.RoleEnum role = 7;
+}
+
+component PlotInfo {
+  id = 1400;
+  Plot plot = 1;
+}

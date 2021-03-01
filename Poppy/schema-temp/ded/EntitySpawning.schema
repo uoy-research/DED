@@ -1,0 +1,26 @@
+package ded;
+
+enum EntityType {
+     DIRECTOR = 0;
+     PLOT = 1;
+     NPC = 2;
+     PLAYER = 3;
+}
+
+type EntitySpawningResponse {
+     EntityId entity_id = 1;
+     bool success = 2;
+}
+
+type EntitySpawningRequest {
+     EntityId entity_id = 1;
+     EntityType entity_type = 2;
+}
+
+component EntitySpawning {
+    id = 1151;
+    map<uint32, EntityType> request_entity_ids = 1;
+    map<EntityId, EntityType> entity_ids = 2;
+    
+    command EntitySpawningResponse entity_spawning_command(EntitySpawningRequest);
+}

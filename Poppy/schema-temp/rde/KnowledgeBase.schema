@@ -1,0 +1,13 @@
+package rde;
+import "dpge/PlotComponents.schema";
+import "ded/drama/Roles.schema";
+
+type KnowledgeItem {
+  ded.drama.RoleEnum role = 1;
+  map<EntityId, dpge.SubGroups> group_map = 2;
+}
+
+component Knowledge {
+  id = 1500;
+  map<EntityId, KnowledgeItem> knowledge_items = 1;
+}

@@ -1,0 +1,13 @@
+package ded.drama;
+import "dpge/PlotComponents.schema";
+import "ded/drama/Goals.schema";
+import "ded/drama/Acts.schema";
+
+component DramaInfo {
+  id = 1600;
+  EntityId director_id = 1;
+  dpge.Plot plot = 2;
+  ded.drama.Act current_act = 3;
+  list<ded.drama.Goal> drama_goals = 4;
+  list<ded.drama.Goal> character_goals = 5;
+}

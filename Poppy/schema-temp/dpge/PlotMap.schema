@@ -1,0 +1,18 @@
+package dpge;
+import "dpge/PlotComponents.schema";
+
+type PlotResponse {
+  EntityId plot_id = 1;
+  EntityId sender_id = 2;
+}
+
+type PlotRequest {
+  Plot plot = 1;
+}
+
+component PlotMap {
+  id = 1401;
+  map<EntityId, Plot> plot_map = 1;
+
+  command PlotResponse plot_command(PlotRequest);
+}

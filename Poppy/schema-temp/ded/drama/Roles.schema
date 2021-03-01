@@ -1,0 +1,47 @@
+package ded.drama;
+
+enum TraitEnum{
+    HONEST = 0;
+    RELIGIOUS = 1;
+    EXTROVERT = 2;
+    INTROVERT = 3;
+    CURIOUS = 4;
+    SUSPICOUS = 5;
+}
+
+enum TraitLevelEnum {
+    NONE = 0;
+    LOW = 1;
+    SOMEWHAT = 2;
+    MODERATELY = 3;
+    HIGH = 4;
+    VERY_HIGH = 5;
+    COMPLETELY = 6;
+}
+
+type Trait{
+    TraitEnum trait_type = 1;
+    TraitLevelEnum value = 2; 
+}
+
+enum RoleEnum{
+    MERCHANT = 0;
+    FARMER = 1;
+    OFFICER = 2;
+    OFFICER_COMMANDING = 3;
+    SMUGGLER = 4;
+    JOURNALIST = 5;
+    CHALLENGER = 6;
+    INTERROGATOR = 7;
+    PROVIDER = 8;
+    DIRECTOR = 9;
+}
+
+type Role{
+    RoleEnum role_type = 1;
+}
+
+component Roles{
+    id = 1602;
+    list<Role> roles = 1;
+}

@@ -1,0 +1,13 @@
+package ded.drama;
+import "ded/drama/Goals.schema";
+
+type Act{
+    uint32 number = 1;
+    list<Goal> drama_goals = 2;
+    list<Goal> character_goals = 3;
+}
+
+component Acts{
+    id = 1604;
+    list<Act> acts = 1;
+}

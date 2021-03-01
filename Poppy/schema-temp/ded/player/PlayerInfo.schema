@@ -1,0 +1,5 @@
+package ded.player;
+
+component PlayerInfo {
+  id = 1201;
+}

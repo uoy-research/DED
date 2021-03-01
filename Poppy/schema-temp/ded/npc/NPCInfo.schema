@@ -1,0 +1,5 @@
+package ded.npc;
+
+component NPCInfo {
+  id = 1802;
+}

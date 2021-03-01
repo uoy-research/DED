@@ -1,0 +1,8 @@
+package ded;
+import "ded/InfoEnum.schema";
+
+component CurrentState {
+  id = 1152;
+  State state = 1;
+  State action = 2;
+}

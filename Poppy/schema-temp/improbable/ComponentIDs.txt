@@ -1,0 +1,37 @@
+1001 UnityWorkerAuthorityCheck
+2000 ClientAuthorityCheck
+
+1002 Transform
+1003 Heartbeat
+1004 Inventory
+
+1100 PlayerSpawning
+
+1150 ActorInfo
+1151 EntitySpawning
+1152 CurrentState
+
+1200 PlayerControls
+1201 PlayerInfo
+
+1300 DirectorControls
+1301 DirectorInfo
+
+1400 PlotComponents
+1401 PlotMap
+1402 DirectorPlotMap
+
+1500 Knowledge
+
+1600 DramaInfo
+1601 DramaSchemas
+1602 Roles
+1603 Goals
+1604 Acts
+
+1703 NPCSpawner
+
+1800 TargetNavigation
+1802 NPC
+
+

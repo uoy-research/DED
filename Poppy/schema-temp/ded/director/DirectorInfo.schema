@@ -1,0 +1,10 @@
+package ded.director;
+
+component DirectorInfo {
+  id = 1301;
+  EntityId player_id = 1;
+  EntityId plot_id = 2;
+  EntityId drama_id = 3;
+  list<EntityId> npcs = 4;
+
+}
