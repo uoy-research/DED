@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MyFirstBot">
+</Property><Property Name="Solution File" Value="E:\SecondLife\MyFirstBot\MyFirstBot\MyFirstBot.sln">
+</Property><Property Name="User Options File" Value="E:\SecondLife\MyFirstBot\MyFirstBot\MyFirstBot.suo">
+</Property><Property Name="Date" Value="22 December 2009">
+</Property><Property Name="Time" Value="14:28">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MyFirstBot.sln" Description="File successfully backed up as E:\SecondLife\MyFirstBot\MyFirstBot\Backup\MyFirstBot.sln">
+</Event><Event ErrorLevel="0" Project="" Source="MyFirstBot.suo" Description="File successfully backed up as E:\SecondLife\MyFirstBot\MyFirstBot\Backup\MyFirstBot.suo">
+</Event><Event ErrorLevel="0" Project="MyFirstBot" Source="MyFirstBot.csproj" Description="Project file successfully backed up as E:\SecondLife\MyFirstBot\MyFirstBot\Backup\MyFirstBot.csproj">
+</Event><Event ErrorLevel="0" Project="MyFirstBot" Source="Appearance.cs" Description="File successfully backed up as E:\SecondLife\MyFirstBot\MyFirstBot\Backup\Appearance.cs">
+</Event><Event ErrorLevel="0" Project="MyFirstBot" Source="Gesture.cs" Description="File successfully backed up as E:\SecondLife\MyFirstBot\MyFirstBot\Backup\Gesture.cs">
+</Event><Event ErrorLevel="0" Project="MyFirstBot" Source="IMHandler.cs" Description="File successfully backed up as E:\SecondLife\MyFirstBot\MyFirstBot\Backup\IMHandler.cs">
+</Event><Event ErrorLevel="0" Project="MyFirstBot" Source="Move.cs" Description="File successfully backed up as E:\SecondLife\MyFirstBot\MyFirstBot\Backup\Move.cs">
+</Event><Event ErrorLevel="0" Project="MyFirstBot" Source="MyFirstBot.cs" Description="File successfully backed up as E:\SecondLife\MyFirstBot\MyFirstBot\Backup\MyFirstBot.cs">
+</Event><Event ErrorLevel="0" Project="MyFirstBot" Source="Teleport.cs" Description="File successfully backed up as E:\SecondLife\MyFirstBot\MyFirstBot\Backup\Teleport.cs">
+</Event><Event ErrorLevel="0" Project="MyFirstBot" Source="MyFirstBot.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MyFirstBot" Source="MyFirstBot.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MyFirstBot.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MyFirstBot.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MyFirstBot" Source="MyFirstBot.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

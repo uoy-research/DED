@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SerializationTest">
+</Property><Property Name="Solution File" Value="E:\SecondLife\SerializationTest\SerializationTest.sln">
+</Property><Property Name="Date" Value="23 September 2010">
+</Property><Property Name="Time" Value="22:17:17">
+</Property></Properties><Event ErrorLevel="0" Project="SerializationTest" Source="SerializationTest.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SerializationTest" Source="SerializationTest.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SerializationTest" Source="SerializationTest.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

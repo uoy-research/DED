@@ -1,0 +1,16 @@
+C:\SecondLife\MyFirstBot\MyFirstBot\bin\Debug\MyFirstBot.exe
+C:\SecondLife\MyFirstBot\MyFirstBot\bin\Debug\MyFirstBot.pdb
+C:\SecondLife\MyFirstBot\MyFirstBot\bin\Debug\libsecondlife.dll
+C:\SecondLife\MyFirstBot\MyFirstBot\bin\Debug\CookComputing.XmlRpcV2.dll
+C:\SecondLife\MyFirstBot\MyFirstBot\bin\Debug\libsecondlife.pdb
+C:\SecondLife\MyFirstBot\MyFirstBot\obj\Debug\ResolveAssemblyReference.cache
+C:\SecondLife\MyFirstBot\MyFirstBot\obj\Debug\MyFirstBot.exe
+C:\SecondLife\MyFirstBot\MyFirstBot\obj\Debug\MyFirstBot.pdb
+D:\SecondLife\MyFirstBot\MyFirstBot\obj\Debug\MyFirstBot.exe
+D:\SecondLife\MyFirstBot\MyFirstBot\obj\Debug\MyFirstBot.pdb
+D:\SecondLife\MyFirstBot\MyFirstBot\bin\Debug\MyFirstBot.exe
+D:\SecondLife\MyFirstBot\MyFirstBot\bin\Debug\MyFirstBot.pdb
+D:\SecondLife\MyFirstBot\MyFirstBot\bin\Debug\libsecondlife.dll
+D:\SecondLife\MyFirstBot\MyFirstBot\bin\Debug\CookComputing.XmlRpcV2.dll
+D:\SecondLife\MyFirstBot\MyFirstBot\bin\Debug\libsecondlife.pdb
+D:\SecondLife\MyFirstBot\MyFirstBot\obj\Debug\ResolveAssemblyReference.cache

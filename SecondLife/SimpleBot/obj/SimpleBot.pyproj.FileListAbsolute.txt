@@ -1,0 +1,10 @@
+C:\SecondLife\SimpleBot\bin\Debug\SimpleBot.exe
+C:\SecondLife\SimpleBot\bin\Debug\SimpleBot.pdb
+C:\SecondLife\SimpleBot\bin\Debug\IronPython.dll
+C:\SecondLife\SimpleBot\bin\Debug\IronMath.dll
+C:\SecondLife\SimpleBot\obj\Debug\ResolveAssemblyReference.cache
+C:\SecondLife\SimpleBot\obj\Debug\SimpleBot.exe
+C:\SecondLife\SimpleBot\obj\Debug\SimpleBot.pdb
+C:\SecondLife\SimpleBot\bin\Debug\libsecondlife.dll
+C:\SecondLife\SimpleBot\bin\Debug\libsecondlife.pdb
+C:\SecondLife\SimpleBot\bin\Debug\CookComputing.XmlRpcV2.dll

@@ -1,0 +1,7 @@
+E:\SecondLife\SerializationTest\bin\Debug\SerializationTest.exe
+E:\SecondLife\SerializationTest\bin\Debug\SerializationTest.pdb
+E:\SecondLife\SerializationTest\obj\Debug\ResolveAssemblyReference.cache
+E:\SecondLife\SerializationTest\obj\Debug\SerializationTest.Form1.resources
+E:\SecondLife\SerializationTest\obj\Debug\SerializationTest.csproj.GenerateResource.Cache
+E:\SecondLife\SerializationTest\obj\Debug\SerializationTest.exe
+E:\SecondLife\SerializationTest\obj\Debug\SerializationTest.pdb

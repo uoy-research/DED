@@ -1,0 +1,2 @@
+E:\SecondLife\MyFirstBot\MyFirstBot\obj\Debug\MyFirstBot.exe
+E:\SecondLife\MyFirstBot\MyFirstBot\obj\Debug\MyFirstBot.pdb

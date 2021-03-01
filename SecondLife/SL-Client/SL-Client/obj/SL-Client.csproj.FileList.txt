@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\SL-Client.dll
+bin\Debug\SL-Client.pdb
+bin\Debug\libsecondlife.dll
+bin\Debug\libsecondlife.Utilities.dll
+bin\Debug\libsecondlife.Utilities.pdb
+obj\Debug\SL-Client.dll
+obj\Debug\SL-Client.pdb

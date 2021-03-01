@@ -1,0 +1,91 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4EF3A8DB-6E27-41C5-9F91-298892AFA9E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SL_Client</RootNamespace>
+    <AssemblyName>SL-Client</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="libsecondlife, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BotControl\bin\Debug\libsecondlife.dll</HintPath>
+    </Reference>
+    <Reference Include="libsecondlife.Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BotControl\bin\Debug\libsecondlife.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\Animation\AnimationCommand.cs" />
+    <Compile Include="Commands\Animation\IndividualAnimationCommand.cs" />
+    <Compile Include="Arguments.cs" />
+    <Compile Include="ClientManager.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="Commands\Communication\IMCommand.cs" />
+    <Compile Include="Commands\Communication\ListenCommand.cs" />
+    <Compile Include="Commands\Communication\RealSayCommand.cs" />
+    <Compile Include="Commands\Communication\SayCommand.cs" />
+    <Compile Include="Commands\Movement\FollowRadiusCommand.cs" />
+    <Compile Include="Commands\Movement\MoveHomeCommand.cs" />
+    <Compile Include="Commands\Movement\SecureRadiusCommand.cs" />
+    <Compile Include="Commands\Movement\TurnTowardsCommand.cs" />
+    <Compile Include="Commands\ScanRadiusCommand.cs" />
+    <Compile Include="Commands\System\DebugCommand.cs" />
+    <Compile Include="Commands\System\HelpCommand.cs" />
+    <Compile Include="Commands\System\LoginCommand.cs" />
+    <Compile Include="Commands\System\LogoutCommand.cs" />
+    <Compile Include="Commands\Movement\GotoCommand.cs" />
+    <Compile Include="Commands\Movement\LocationCommand.cs" />
+    <Compile Include="Commands\Movement\MoveToCommand.cs" />
+    <Compile Include="Commands\Movement\SitCommand.cs" />
+    <Compile Include="Commands\Movement\SitOnCommand.cs" />
+    <Compile Include="Commands\Movement\StandCommand.cs" />
+    <Compile Include="Commands\SetDistanceCommand.cs" />
+    <Compile Include="EventSender.cs" />
+    <Compile Include="Parsing.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Commands\System\QuitCommand.cs" />
+    <Compile Include="Commands\StatsCommand.cs" />
+    <Compile Include="TestClient.cs" />
+    <Compile Include="Commands\System\UptimeCommand.cs" />
+    <Compile Include="Commands\WhoCommand.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

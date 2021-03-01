@@ -1,0 +1,155 @@
+//
+//  This basic script acts as a gun, by doing the following: 
+//
+//  Attach gun to right hand so that aiming animation is correct.
+//
+
+default
+{
+    run_time_permissions(integer perm)
+    { 
+        if (perm)
+        {
+            llAttachToAvatar(ATTACH_RHAND);
+            llStartAnimation("hold_R_handgun");
+        }
+    }
+    
+    
+    attach(key on)
+    {
+        if (on != NULL_KEY)
+        {
+            integer perm = llGetPermissions();
+            
+            if (perm != (PERMISSION_TRIGGER_ANIMATION | PERMISSION_ATTACH))
+            {
+                llRequestPermissions(on, PERMISSION_TRIGGER_ANIMATION | PERMISSION_ATTACH);
+            }
+            else
+            {
+                llStartAnimation("hold_R_handgun");
+            }
+            
+        }
+        else
+        {
+            llStopAnimation("hold_R_handgun");
+        }
+    }            
+}
+
+
+
+----------------------------------
+
+integer flag = 0;
+
+
+default
+{
+    state_entry()
+    {
+      llRequestPermissions(llGetOwner(),PERMISSION_TRIGGER_ANIMATION);
+         
+    }
+
+    run_time_permissions(integer parm)
+    {
+    if(parm == PERMISSION_TRIGGER_ANIMATION)
+        {
+        llSetTimerEvent(15);
+       
+         llStartAnimation("hold_R_handgun");
+         }
+    
+    }
+
+    on_rez(integer st)
+    {
+    llResetScript();
+    }
+
+    attach(key id)
+    {
+    llStopAnimation("hold_R_handgun");
+    }
+    
+    
+    
+    
+   timer()
+   {
+   
+    if(flag == 0)
+    {
+    llStartAnimation("drink");
+    }
+    
+    
+    
+    if(flag == 1)
+    {
+    llStartAnimation("drink");
+    }
+
+    flag = flag + 1;
+    
+    if(flag == 4)
+    {
+    flag = 0;
+    }    
+    
+    }
+    
+     
+      
+       
+     listen(integer channel, string name, key id, string message)
+    {
+    }
+
+
+}
+
+------------------------------------
+
+string anim ="drink";
+string anim2 ="hold_R_handgun";
+
+default
+{
+    attach(key victim)
+    {
+    if(victim == NULL_KEY)
+    {
+          llStopAnimation(anim);
+          llStopAnimation(anim2);
+          llSetTimerEvent(0);
+          
+        }
+        else
+        {
+         llRequestPermissions(victim,PERMISSION_TRIGGER_ANIMATION);
+    }
+}
+
+   run_time_permissions(integer permissions)
+    {
+        if (PERMISSION_TRIGGER_ANIMATION & permissions)
+        {
+        llStartAnimation(anim);
+         llStartAnimation(anim2);
+        
+        llSetTimerEvent(15);
+        }
+    }
+
+   timer()
+   {
+    llStartAnimation(anim2);
+    llStartAnimation(anim);
+    }
+
+}
+

@@ -1,0 +1,7 @@
+
+Prim Name 'Walnut Dining Table', ID 'c712b255-2dbf-f06d-c553-01ca5e5eb306', LocalID '14092', Position <97.63557, 146.0118, 26.00709>
+Prim Name 'Floor cupe', ID '8917fa55-8505-fa87-4f39-2228488d6de0', LocalID '14084', Position <96.92128, 147.9302, 24.05312>
+Prim Name 'Walnut Chair seat 0', ID '2d9ba0ce-0b71-1a1f-eabb-654673d3fa8a', LocalID '16524', Position <95.32621, 148.7998, 25.46422>
+Prim Name 'Walnut Chair seat 0', ID 'b2dc3607-2b1b-2b15-8524-c4b6d8a2b6a6', LocalID '16543', Position <94.31861, 149.4887, 25.43113>
+Prim Name 'Walnut Chair seat 0', ID 'c9aeda10-4a72-873e-24cc-fc636d0c0fb2', LocalID '16562', Position <93.42961, 148.4884, 25.44669>
+Prim Name 'Walnut Chair seat 0', ID '5c9cd0bf-22bf-2a42-5877-ce225b83aff6', LocalID '14111', Position <96.97148, 147.3834, 25.44014>

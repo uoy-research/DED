@@ -1,0 +1,5 @@
+D:\SecondLife\SL-Client\SL-Client\bin\Debug\SL-Client.dll
+D:\SecondLife\SL-Client\SL-Client\bin\Debug\SL-Client.pdb
+D:\SecondLife\SL-Client\SL-Client\obj\Debug\ResolveAssemblyReference.cache
+D:\SecondLife\SL-Client\SL-Client\obj\Debug\SL-Client.dll
+D:\SecondLife\SL-Client\SL-Client\obj\Debug\SL-Client.pdb

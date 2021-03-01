@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SL-Client">
+</Property><Property Name="Solution File" Value="E:\SecondLife\SL-Client\SL-Client\SL-Client.sln">
+</Property><Property Name="User Options File" Value="E:\SecondLife\SL-Client\SL-Client\SL-Client.suo">
+</Property><Property Name="Date" Value="16. maí 2009">
+</Property><Property Name="Time" Value="12:06">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="SL-Client.sln" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\SL-Client.sln">
+</Event><Event ErrorLevel="0" Project="" Source="SL-Client.suo" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\SL-Client.suo">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="SL-Client.csproj" Description="Project file successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\SL-Client.csproj">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Animation\AnimationCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Animation\AnimationCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Animation\IndividualAnimationCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Animation\IndividualAnimationCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Arguments.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Arguments.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="ClientManager.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\ClientManager.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Command.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Command.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Communication\IMCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Communication\IMCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Communication\ListenCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Communication\ListenCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Communication\RealSayCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Communication\RealSayCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Communication\SayCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Communication\SayCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Movement\FollowRadiusCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Movement\FollowRadiusCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Movement\MoveHomeCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Movement\MoveHomeCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Movement\SecureRadiusCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Movement\SecureRadiusCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Movement\TurnTowardsCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Movement\TurnTowardsCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\ScanRadiusCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\ScanRadiusCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\System\DebugCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\System\DebugCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\System\HelpCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\System\HelpCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\System\LoginCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\System\LoginCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\System\LogoutCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\System\LogoutCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Movement\GotoCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Movement\GotoCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Movement\LocationCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Movement\LocationCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Movement\MoveToCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Movement\MoveToCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Movement\SitCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Movement\SitCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Movement\SitOnCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Movement\SitOnCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\Movement\StandCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\Movement\StandCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\SetDistanceCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\SetDistanceCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="EventSender.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\EventSender.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Parsing.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Parsing.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\System\QuitCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\System\QuitCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\StatsCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\StatsCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="TestClient.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\TestClient.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\System\UptimeCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\System\UptimeCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="Commands\WhoCommand.cs" Description="File successfully backed up as E:\SecondLife\SL-Client\SL-Client\Backup\Commands\WhoCommand.cs">
+</Event><Event ErrorLevel="0" Project="SL-Client" Source="SL-Client.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="SL-Client" Source="SL-Client.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="SL-Client.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SL-Client.sln" Description="Converted">
+</Event></UpgradeLog>
