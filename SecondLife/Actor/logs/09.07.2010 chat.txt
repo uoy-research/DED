@@ -1,0 +1,238 @@
+
+[7:52]  Frida Evanier: Hello Penny
+[7:52]  Penny Kellman: Hello Frida, how are you?
+[7:52]  Frida Evanier: Hi Patrick how are you?
+[7:52]  Patrick Charmann: Fine thanks, Frida
+[7:52]  Frida Evanier: What do you do?
+[7:52]  Patrick Charmann: I'm a GP
+[7:52]  Frida Evanier: Why are you having a party?
+[7:52]  Patrick Charmann: We are holding a party celebrating Penny's recent inheritance!
+[7:52]  Frida Evanier: What do you do?
+[7:52]  Penny Kellman: I'm a judge
+[7:52]  Frida Evanier: Why are you having a party?
+[7:52]  Penny Kellman: We are holding a party celebrating my recent inheritance, I'm rich!
+[7:53]  Penny Kellman: Sit down please
+[7:53]  Penny Kellman: I'm a judge
+[7:53]  Shaun Juno is Offline
+[7:54]  Frida Evanier: Why are you having a party?
+[7:54]  Lydia Philipp: We are holding a party celebrating Penny's recent inheritance!
+[7:55]  Frida Evanier: Why are you having a party?
+[7:55]  Kenneth Dawid: We are holding a party celebrating Penny's recent inheritance!
+[7:55]  Snorri Haggwood: Oh no Penny is dead!!
+[7:55]  Patrick Charmann: Oh no Penny is dead!!
+[7:56]  Frida Evanier: Did you have a reason to kill Penny?
+[7:56]  Kenneth Dawid: NOOO, how can you say that! I absolutely had no reason to kill Penny!
+[7:56]  Patrick Charmann: Kenneth had a reason to kill Penny, Penny was blackmailing Kenneth, Penny knew nothing of Kenneth's secrets, Kenneth has deep dark secrets
+[7:56]  Frida Evanier: Did you blackmail Penny?
+[7:56]  Kenneth Dawid: I was not blackmailing Penny
+[7:56]  Patrick Charmann: Penny was not blackmailing Kenneth, Kenneth did not know that Penny had any secrets
+[7:56]  Frida Evanier: Did Penny threaten to expose you as blackmailer?
+[7:56]  Kenneth Dawid: Penny was trustworthy and kept silent
+[7:56]  Patrick Charmann: Penny wanted to expose Kenneth as a blackmailer
+[7:56]  Frida Evanier: Was Penny blackmailing you?
+[7:56]  Kenneth Dawid: Penny was not blackmailing me
+[7:56]  Patrick Charmann: Penny was blackmailing Kenneth, Penny knew nothing of Kenneth's secrets, Kenneth has deep dark secrets
+[7:56]  Frida Evanier: Did Penny know your secret?
+[7:57]  Kenneth Dawid: I'm sure Penny knew nothing
+[7:57]  Patrick Charmann: Penny knew nothing of Kenneth's secrets, Kenneth has deep dark secrets
+[7:57]  Frida Evanier: Did you know Penny's secret?
+[7:57]  Kenneth Dawid: I did not know that Penny had any secrets
+[7:57]  Patrick Charmann: Kenneth did not know that Penny had any secrets
+[7:57]  Frida Evanier: Do you have a secret?
+[7:57]  Kenneth Dawid: I have secrets... they are deeply personal...
+[7:57]  Patrick Charmann: Kenneth has deep dark secrets
+[7:57]  Frida Evanier: Were you having an affair with Penny?
+[7:57]  Kenneth Dawid: I was not having an affair 
+[7:57]  Patrick Charmann: Kenneth was not having an affair , Kenneth was not related to Penny, they hardly new each other, 
+[7:57]  Frida Evanier: Was Penny swindling you?
+[7:57]  Kenneth Dawid: Penny swindled me, I lost my life savings
+[7:57]  Patrick Charmann: Penny swindled Kenneth, Kenneth, you lost your life savings
+[7:58]  Frida Evanier: Did you lose a fortune?
+[7:58]  Kenneth Dawid: I lost my life savings
+[7:58]  Patrick Charmann: Kenneth, you lost your life savings
+[7:58]  Frida Evanier: Were you swindling Penny?
+[7:58]  Kenneth Dawid: I'm a swindler, Penny wanted to expose me as a swindler
+[7:58]  Patrick Charmann: Kenneth is a swindler, Penny wanted to expose Kenneth as a swindler
+[7:58]  Frida Evanier: Did Penny threaten to expose you as a swindler?
+[7:58]  Kenneth Dawid: Penny wanted to expose me as a swindler
+[7:58]  Patrick Charmann: Penny wanted to expose Kenneth as a swindler
+[7:58]  Frida Evanier: Did Penny harm you in the past?
+[7:58]  Kenneth Dawid: Penny harmed me
+[7:58]  Patrick Charmann: Penny harmed Kenneth
+[7:58]  Frida Evanier: Are you rich?
+[7:58]  Kenneth Dawid: I'm well rich! 
+[7:58]  Patrick Charmann: Kenneth is rich
+[7:59]  Frida Evanier: Are you in debt?
+[7:59]  Kenneth Dawid: I did not owe Penny anything
+[7:59]  Patrick Charmann: Penny did not owe Kenneth anything, Kenneth is rich
+[7:59]  Frida Evanier: Will you inherit from Penny?
+[7:59]  Kenneth Dawid: I wont inherit anything
+[7:59]  Patrick Charmann: Kenneth wont inherit anything, Kenneth not Penny's heir, Kenneth was not related to Penny, they hardly new each other, 
+[7:59]  Frida Evanier: Are you Penny's heir?
+[7:59]  Kenneth Dawid: I'm not Penny's heir
+[7:59]  Patrick Charmann: Kenneth not Penny's heir, Kenneth was not related to Penny, they hardly new each other, 
+[8:00]  Frida Evanier: What do you do?
+[8:00]  Lydia Philipp: I'm a realestate agent
+[8:00]  Frida Evanier: Did you have a reason to kill Penny?
+[8:00]  Lydia Philipp: NOOO, how can you say that! I absolutely had no reason to kill Penny!
+[8:00]  Patrick Charmann: Lydia had a reason to kill Penny, Penny was blackmailing Lydia, Penny knew nothing of Lydia's secrets, Lydia has deep dark secrets
+[8:00]  Frida Evanier: Did you blackmail Penny?
+[8:00]  Lydia Philipp: How dare you think I could blackmail Penny
+[8:00]  Patrick Charmann: Penny was not blackmailing Lydia, Lydia did not know that Penny had any secrets
+[8:00]  Frida Evanier: Did Penny threaten to expose you as blackmailer?
+[8:00]  Lydia Philipp: Penny was trustworthy and kept silent
+[8:00]  Patrick Charmann: Penny wanted to expose Lydia as a blackmailer
+[8:00]  Frida Evanier: Was Penny blackmailing you?
+[8:00]  Lydia Philipp: Penny was not blackmailing me
+[8:00]  Patrick Charmann: Penny was blackmailing Lydia, Penny knew nothing of Lydia's secrets, Lydia has deep dark secrets
+[8:01]  Frida Evanier: Did Penny know your secret?
+[8:01]  Lydia Philipp: I'm sure Penny knew nothing
+[8:01]  Patrick Charmann: Penny knew nothing of Lydia's secrets, Lydia has deep dark secrets
+[8:01]  Frida Evanier: Did you know Penny's secret?
+[8:01]  Lydia Philipp: I did not know that Penny had any secrets
+[8:01]  Patrick Charmann: Lydia did not know that Penny had any secrets
+[8:01]  Frida Evanier: Do you have a secret?
+[8:01]  Lydia Philipp: I have secrets... they are deeply personal...
+[8:01]  Patrick Charmann: Lydia has deep dark secrets
+[8:01]  Frida Evanier: Were you having an affair with Penny?
+[8:01]  Lydia Philipp: I was not having an affair 
+[8:01]  Patrick Charmann: Lydia was not having an affair , Lydia was not related to Penny, they hardly new each other, 
+[8:01]  Frida Evanier: Was Penny swindling you?
+[8:02]  Lydia Philipp: Penny swindled me, I lost my life savings
+[8:02]  Patrick Charmann: Penny swindled Lydia, Lydia, you lost your life savings
+[8:02]  Frida Evanier: Were you swindling Penny?
+[8:02]  Lydia Philipp: I'm a swindler, Penny wanted to expose me as a swindler
+[8:02]  Frida Evanier: Did you lose a fortune?
+[8:02]  Patrick Charmann: Lydia is a swindler, Penny wanted to expose Lydia as a swindler
+[8:02]  Lydia Philipp: I lost my life savings
+[8:02]  Frida Evanier: Did Penny threaten to expose you as a swindler?
+[8:02]  Patrick Charmann: Lydia, you lost your life savings
+[8:02]  Frida Evanier: Did Penny harm you in the past?
+[8:02]  Lydia Philipp: Penny wanted to expose me as a swindler
+[8:02]  Patrick Charmann: Penny wanted to expose Lydia as a swindler
+[8:02]  Lydia Philipp: Penny harmed me
+[8:02]  Patrick Charmann: Penny harmed Lydia
+[8:02]  Frida Evanier: Are you in debt?
+[8:02]  Lydia Philipp: I did not owe Penny anything
+[8:02]  Frida Evanier: Are you rich?
+[8:02]  Patrick Charmann: Penny did not owe Lydia anything, Lydia is rich
+[8:02]  Lydia Philipp: I'm well rich! 
+[8:03]  Patrick Charmann: Lydia is rich
+[8:03]  Frida Evanier: Will you inherit from Penny?
+[8:03]  Lydia Philipp: I wont inherit anything
+[8:03]  Patrick Charmann: Lydia wont inherit anything, Lydia not Penny's heir, Lydia was not related to Penny, they hardly new each other, 
+[8:03]  Frida Evanier: Are you Penny's heir?
+[8:03]  Lydia Philipp: I'm not Penny's heir
+[8:03]  Patrick Charmann: Lydia not Penny's heir, Lydia was not related to Penny, they hardly new each other, 
+[8:03]  Frida Evanier: Did you have a reason to kill Penny?
+[8:03]  Patrick Charmann: I had a reason to kill Penny, Penny was blackmailing me, I'm sure Penny knew nothing, I have secrets... they are deeply personal...
+[8:04]  Kenneth Dawid: Patrick had a reason to kill Penny, Patrick wont inherit anything, Patrick not Penny's heir, Patrick was not related to Penny, they hardly new each other, 
+[8:04]  Frida Evanier: Did you blackmail Penny?
+[8:04]  Patrick Charmann: How dare you think I could blackmail Penny
+[8:04]  Kenneth Dawid: Penny was not blackmailing Patrick, Patrick did not know that Penny had any secrets
+[8:04]  Frida Evanier: Did Penny threaten to expose you as blackmailer?
+[8:04]  Patrick Charmann: Penny wanted to expose me as a blackmailer
+[8:04]  Kenneth Dawid: Penny wanted to expose Patrick as a blackmailer
+[8:04]  Frida Evanier: Was Penny blackmailing you?
+[8:04]  Patrick Charmann: Penny was blackmailing me, I'm sure Penny knew nothing, I have secrets... they are deeply personal...
+[8:05]  Kenneth Dawid: Penny was blackmailing Patrick, Penny knew nothing of Patrick's secrets, Patrick has deep dark secrets
+[8:05]  Frida Evanier: Did Penny know your secret?
+[8:05]  Patrick Charmann: I'm sure Penny knew nothing
+[8:05]  Kenneth Dawid: Penny knew nothing of Patrick's secrets, Patrick has deep dark secrets
+[8:05]  Frida Evanier: Did you know Penny's secret?
+[8:05]  Patrick Charmann: I did not know that Penny had any secrets
+[8:05]  Kenneth Dawid: Patrick did not know that Penny had any secrets
+[8:05]  Frida Evanier: Do you have a secret?
+[8:05]  Patrick Charmann: I have secrets... they are deeply personal...
+[8:05]  Kenneth Dawid: Patrick has deep dark secrets
+[8:05]  Frida Evanier: Were you having an affair with Penny?
+[8:05]  Patrick Charmann: I was not having an affair 
+[8:05]  Kenneth Dawid: Patrick was not having an affair , Patrick was not related to Penny, they hardly new each other, 
+[8:05]  Frida Evanier: Was Penny swindling you?
+[8:05]  Patrick Charmann: Penny swindled me, I lost my life savings
+[8:05]  Kenneth Dawid: Penny swindled Patrick, Patrick, you lost your life savings
+[8:05]  Frida Evanier: Were you swindling Penny?
+[8:05]  Patrick Charmann: I'm a swindler, Penny wanted to expose me as a swindler
+[8:06]  Kenneth Dawid: Patrick is a swindler, Penny wanted to expose Patrick as a swindler
+[8:06]  Frida Evanier: Did you lose a fortune?
+[8:06]  Patrick Charmann: I lost my life savings
+[8:06]  Frida Evanier: Did Penny threaten to expose you as a swindler?
+[8:06]  Kenneth Dawid: Patrick, you lost your life savings
+[8:06]  Frida Evanier: Did Penny harm you in the past?
+[8:06]  Patrick Charmann: Penny wanted to expose me as a swindler
+[8:06]  Kenneth Dawid: Penny wanted to expose Patrick as a swindler
+[8:06]  Patrick Charmann: Penny harmed me
+[8:06]  Frida Evanier: Are you in debt?
+[8:06]  Kenneth Dawid: Penny harmed Patrick
+[8:06]  Frida Evanier: Are you rich?
+[8:06]  Patrick Charmann: I did not owe Penny anything
+[8:06]  Kenneth Dawid: Penny did not owe Patrick anything, Patrick is rich
+[8:06]  Patrick Charmann: I'm well rich! 
+[8:06]  Kenneth Dawid: Patrick is rich
+[8:06]  Frida Evanier: Will you inherit from Penny?
+[8:06]  Patrick Charmann: I wont inherit anything
+[8:06]  Kenneth Dawid: Patrick wont inherit anything, Patrick not Penny's heir, Patrick was not related to Penny, they hardly new each other, 
+[8:06]  Frida Evanier: Are you Penny's heir?
+[8:06]  Patrick Charmann: I'm not Penny's heir
+[8:06]  Kenneth Dawid: Patrick not Penny's heir, Patrick was not related to Penny, they hardly new each other, 
+[8:07]  Frida Evanier: What do you do?
+[8:07]  Snorri Haggwood: I'm a lawyer
+[8:07]  Frida Evanier: Why are you having a party?
+[8:07]  Frida Evanier: Did you have a reason to kill Penny?
+[8:07]  Snorri Haggwood: We are holding a party celebrating Penny's recent inheritance!
+[8:07]  Frida Evanier: Did you blackmail Penny?
+[8:07]  Frida Evanier: Did Penny threaten to expose you as blackmailer?
+[8:07]  Frida Evanier: Was Penny blackmailing you?
+[8:07]  Snorri Haggwood: I had a reason to kill Penny, I was not blackmailing Penny, I did not know that Penny had any secrets
+[8:07]  Frida Evanier: Did Penny know your secret?
+[8:07]  Lydia Philipp: Snorri had a reason to kill Penny, Snorri wont inherit anything, Snorri not Penny's heir, Snorri was not related to Penny, they hardly new each other, 
+[8:07]  Snorri Haggwood: I was not blackmailing Penny
+[8:07]  Lydia Philipp: Penny was not blackmailing Snorri, Snorri did not know that Penny had any secrets
+[8:07]  Snorri Haggwood: Penny was trustworthy and kept silent
+[8:07]  Frida Evanier: Did you know Penny's secret?
+[8:07]  Lydia Philipp: Penny wanted to expose Snorri as a blackmailer
+[8:07]  Snorri Haggwood: Penny was blackmailing me, I'm sure Penny knew nothing, I have secrets... they are deeply personal...
+[8:07]  Frida Evanier: Do you have a secret?
+[8:07]  Lydia Philipp: Penny was blackmailing Snorri, Penny knew nothing of Snorri's secrets, Snorri has deep dark secrets
+[8:07]  Frida Evanier: Were you having an affair with Penny?
+[8:07]  Snorri Haggwood: I'm sure Penny knew nothing
+[8:07]  Lydia Philipp: Penny knew nothing of Snorri's secrets, Snorri has deep dark secrets
+[8:07]  Frida Evanier: Was Penny swindling you?
+[8:08]  Snorri Haggwood: I did not know that Penny had any secrets
+[8:08]  Lydia Philipp: Snorri did not know that Penny had any secrets
+[8:08]  Snorri Haggwood: I have secrets... they are deeply personal...
+[8:08]  Lydia Philipp: Snorri has deep dark secrets
+[8:08]  Snorri Haggwood: I was not having an affair 
+[8:08]  Frida Evanier: Were you swindling Penny?
+[8:08]  Lydia Philipp: Snorri was not having an affair , Snorri was not related to Penny, they hardly new each other, 
+[8:08]  Snorri Haggwood: Penny swindled me, I lost my life savings
+[8:08]  Frida Evanier: Did you lose a fortune?
+[8:08]  Lydia Philipp: Penny swindled Snorri, Snorri, you lost your life savings
+[8:08]  Frida Evanier: Did Penny threaten to expose you as a swindler?
+[8:08]  Snorri Haggwood: I'm a swindler, Penny wanted to expose me as a swindler
+[8:08]  Lydia Philipp: Snorri is a swindler, Penny wanted to expose Snorri as a swindler
+[8:08]  Frida Evanier: Did Penny harm you in the past?
+[8:08]  Snorri Haggwood: I lost my life savings
+[8:08]  Lydia Philipp: Snorri, you lost your life savings
+[8:09]  Snorri Haggwood: Penny wanted to expose me as a swindler
+[8:09]  Lydia Philipp: Penny wanted to expose Snorri as a swindler
+[8:09]  Frida Evanier: Are you in debt?
+[8:09]  Snorri Haggwood: Penny harmed me
+[8:09]  Frida Evanier: Are you rich?
+[8:09]  Lydia Philipp: Penny harmed Snorri
+[8:09]  Snorri Haggwood: I did not owe Penny anything
+[8:09]  Frida Evanier: Will you inherit from Penny?
+[8:09]  Lydia Philipp: Penny did not owe Snorri anything, Snorri is rich
+[8:09]  Frida Evanier: Are you Penny's heir?
+[8:09]  Snorri Haggwood: I'm well rich! 
+[8:09]  Lydia Philipp: Snorri is rich
+[8:09]  Snorri Haggwood: I wont inherit anything
+[8:09]  Lydia Philipp: Snorri wont inherit anything, Snorri not Penny's heir, Snorri was not related to Penny, they hardly new each other, 
+[8:09]  Snorri Haggwood: I'm not Penny's heir
+[8:09]  Lydia Philipp: Snorri not Penny's heir, Snorri was not related to Penny, they hardly new each other, 
+[8:11]  Frida Evanier: Did you have a reason to kill Penny?
+[8:11]  Penny Kellman: , , , 
+[8:11]  Frida Evanier: Did you blackmail Penny?
+[8:11]  Frida Evanier: Did Penny threaten to expose you as blackmailer?
+[8:11]  Frida Evanier: Was Penny blackmailing you?
+[8:11]  Penny Kellman: , , 

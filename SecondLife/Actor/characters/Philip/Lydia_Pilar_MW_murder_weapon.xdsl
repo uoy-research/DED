@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="MW_murder_weapon_PREM">
+			<state id="Poison" />
+			<state id="Spanner" />
+			<state id="Club" />
+			<state id="Knife" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="MW_murder_weapon_INF">
+			<state id="Poison" />
+			<state id="Spanner" />
+			<state id="Club" />
+			<state id="Knife" />
+			<parents>MW_murder_weapon_PREM</parents>
+			<probabilities>0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="MW_murder_weapon" faultnameformat="nodestate">
+			<node id="MW_murder_weapon_PREM">
+				<name>MW_murder_weapon PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>250 50 380 100</position>
+			</node>
+			<node id="MW_murder_weapon_INF">
+				<name>MW_murder_weapon INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

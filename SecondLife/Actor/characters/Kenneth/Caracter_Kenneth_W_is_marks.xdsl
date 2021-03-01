@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="W_marks">
+			<state id="Square" />
+			<state id="Oval" />
+			<state id="Cut" />
+			<state id="Null" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="MW_murder_weapon_marks">
+			<state id="Square" />
+			<state id="Oval" />
+			<state id="Cut" />
+			<state id="Null" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="W_is_marks_PREM">
+			<state id="True" />
+			<state id="False" />
+			<parents>W_marks MW_murder_weapon_marks</parents>
+			<probabilities>1 0 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="W_is_marks_INF">
+			<state id="True" />
+			<state id="False" />
+			<parents>W_is_marks_PREM</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="W_is_marks" faultnameformat="nodestate">
+			<node id="W_is_marks_PREM">
+				<name>W_is_marks PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 300 630 350</position>
+			</node>
+			<node id="W_is_marks_INF">
+				<name>W_is_marks INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="W_marks">
+				<name>Marks</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 200 630 250</position>
+			</node>
+			<node id="MW_murder_weapon_marks">
+				<name>Murder weapon marks</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>50 150 180 200</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

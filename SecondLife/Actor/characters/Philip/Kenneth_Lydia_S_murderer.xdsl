@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="S_sufficient_strength">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.663025 0.336975</probabilities>
+		</cpt>
+		<cpt id="S_ShoePrintFoundOnScene">
+			<state id="Match" />
+			<state id="NoMatch" />
+			<state id="Null" />
+			<probabilities>0.04634332611070769 0.6502544237950828 0.3034022500942096</probabilities>
+		</cpt>
+		<cpt id="S_HairFoundOnScene">
+			<state id="Match" />
+			<state id="NoMatch" />
+			<state id="Null" />
+			<probabilities>0.08333333333333333 0.5833333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="S_HairFoundOnVictim">
+			<state id="Match" />
+			<state id="NoMatch" />
+			<state id="Null" />
+			<probabilities>0 1 0</probabilities>
+		</cpt>
+		<cpt id="S_murderer_PREM">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_sufficient_strength S_ShoePrintFoundOnScene S_HairFoundOnScene S_HairFoundOnVictim</parents>
+			<probabilities>1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="S_murderer_INF">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_murderer_PREM</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="S_murderer" faultnameformat="nodestate">
+			<node id="S_murderer_PREM">
+				<name>S_murderer PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 100 830 150</position>
+			</node>
+			<node id="S_murderer_INF">
+				<name>S_murderer INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="S_sufficient_strength">
+				<name>Sufficient strength</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 200 630 250</position>
+			</node>
+			<node id="S_ShoePrintFoundOnScene">
+				<name>Shoe print found on scene</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 300 630 350</position>
+			</node>
+			<node id="S_HairFoundOnScene">
+				<name>Hair found on scene</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 200 830 250</position>
+			</node>
+			<node id="S_HairFoundOnVictim">
+				<name>Hair found on victim</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 100 1030 150</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

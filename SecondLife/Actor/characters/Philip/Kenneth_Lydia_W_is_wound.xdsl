@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="MW_victim_wound_type">
+			<state id="Blunt_wound" />
+			<state id="Open_wound" />
+			<state id="null" />
+			<probabilities>0.49 0.26 0.25</probabilities>
+		</cpt>
+		<cpt id="W_blunt_wound">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="W_open_wound">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="W_is_wound_PREM">
+			<state id="True" />
+			<state id="False" />
+			<parents>MW_victim_wound_type W_blunt_wound W_open_wound</parents>
+			<probabilities>1 0 1 0 0 1 0 1 1 0 0 1 1 0 0 1 1 0 1 0 1 0 1 0</probabilities>
+		</cpt>
+		<cpt id="W_is_wound_INF">
+			<state id="True" />
+			<state id="False" />
+			<parents>W_is_wound_PREM</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="W_is_wound" faultnameformat="nodestate">
+			<node id="W_is_wound_PREM">
+				<name>W_is_wound PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 300 1030 350</position>
+			</node>
+			<node id="W_is_wound_INF">
+				<name>W_is_wound INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="MW_victim_wound_type">
+				<name>Victim wound type</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>450 150 580 200</position>
+			</node>
+			<node id="W_blunt_wound">
+				<name>Blunt wound</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 200 1030 250</position>
+			</node>
+			<node id="W_open_wound">
+				<name>Open wound</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1100 200 1230 250</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

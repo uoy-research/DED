@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="MW_murder_weapon">
+			<state id="Poison" />
+			<state id="Spanner" />
+			<state id="Club" />
+			<state id="Knife" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="MW_hair_on_victim_PREM">
+			<state id="True" />
+			<state id="False" />
+			<parents>MW_murder_weapon</parents>
+			<probabilities>0.02 0.98 0.67 0.33 0.33 0.6699999999999999 0.34 0.6599999999999999</probabilities>
+		</cpt>
+		<cpt id="MW_hair_on_victim_INF">
+			<state id="True" />
+			<state id="False" />
+			<parents>MW_hair_on_victim_PREM</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="MW_hair_on_victim" faultnameformat="nodestate">
+			<node id="MW_hair_on_victim_PREM">
+				<name>MW_hair_on_victim PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>50 50 180 100</position>
+			</node>
+			<node id="MW_hair_on_victim_INF">
+				<name>MW_hair_on_victim INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="MW_murder_weapon">
+				<name>Murder weapon</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>250 50 380 100</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

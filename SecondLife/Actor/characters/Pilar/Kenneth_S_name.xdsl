@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="S_name_PREM">
+			<state id="Philipp" />
+			<state id="Lydia" />
+			<state id="Kenneth" />
+			<state id="Pilar" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="S_name_INF">
+			<state id="Philipp" />
+			<state id="Lydia" />
+			<state id="Kenneth" />
+			<state id="Pilar" />
+			<parents>S_name_PREM</parents>
+			<probabilities>0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="S_name" faultnameformat="nodestate">
+			<node id="S_name_PREM">
+				<name>S_name PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 200 230 250</position>
+			</node>
+			<node id="S_name_INF">
+				<name>S_name INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="S_relation">
+			<state id="Child" />
+			<state id="Parent" />
+			<state id="Spouce" />
+			<state id="Friends" />
+			<state id="Adulterer" />
+			<state id="Null" />
+			<probabilities>0.1458333333333333 0.1458333333333333 0.08333333333333334 0.1458333333333333 0.08333333333333334 0.3958333333333333</probabilities>
+		</cpt>
+		<cpt id="S_heir_PREM">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_relation</parents>
+			<probabilities>0.98 0.02000000000000002 0.1 0.9 0.95 0.05000000000000004 0.15 0.85 0.2 0.8 0 1</probabilities>
+		</cpt>
+		<cpt id="S_heir_INF">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_heir_PREM</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="S_heir" faultnameformat="nodestate">
+			<node id="S_heir_PREM">
+				<name>S_heir PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 500 230 550</position>
+			</node>
+			<node id="S_heir_INF">
+				<name>S_heir INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="S_relation">
+				<name>Relation</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 400 230 450</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

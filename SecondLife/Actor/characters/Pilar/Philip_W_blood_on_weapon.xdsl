@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="MW_blood_on_murder_weapon">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.279525 0.720475</probabilities>
+		</cpt>
+		<cpt id="W_murder_weapon">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.01990310668945312 0.980096893310547</probabilities>
+		</cpt>
+		<cpt id="W_blood_on_weapon_PREM">
+			<state id="True" />
+			<state id="False" />
+			<parents>MW_blood_on_murder_weapon W_murder_weapon</parents>
+			<probabilities>1 0 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="W_blood_on_weapon_INF">
+			<state id="True" />
+			<state id="False" />
+			<parents>W_blood_on_weapon_PREM</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="W_blood_on_weapon" faultnameformat="nodestate">
+			<node id="W_blood_on_weapon_PREM">
+				<name>W_blood_on_weapon PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>800 400 930 450</position>
+			</node>
+			<node id="W_blood_on_weapon_INF">
+				<name>W_blood_on_weapon INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="MW_blood_on_murder_weapon">
+				<name>Blood on murder weapon</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>50 250 180 300</position>
+			</node>
+			<node id="W_murder_weapon">
+				<name>Murder weapon</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>600 400 730 450</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

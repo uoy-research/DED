@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="P_object_name">
+			<state id="Desk" />
+			<state id="Chair" />
+			<state id="Sink" />
+			<state id="FilingCabinet" />
+			<state id="Wastebasket" />
+			<state id="Table" />
+			<state id="Shelf" />
+			<state id="Door" />
+			<state id="Window" />
+			<probabilities>0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111</probabilities>
+		</cpt>
+		<cpt id="P_lock_PREM">
+			<state id="KeyLock" />
+			<state id="NonKeyLock" />
+			<state id="Null" />
+			<parents>P_object_name</parents>
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0 1 0 0 1 0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0 1 0 0 1 0 0 1 0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="P_lock_INF">
+			<state id="KeyLock" />
+			<state id="NonKeyLock" />
+			<state id="Null" />
+			<parents>P_lock_PREM</parents>
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="P_lock" faultnameformat="nodestate">
+			<node id="P_lock_PREM">
+				<name>P_lock PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 300 230 350</position>
+			</node>
+			<node id="P_lock_INF">
+				<name>P_lock INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="P_object_name">
+				<name>Object name</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 100 230 150</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="MW_murder_weapon">
+			<state id="Poison" />
+			<state id="Spanner" />
+			<state id="Club" />
+			<state id="Knife" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="MW_victim_wound_type_PREM">
+			<state id="Blunt_wound" />
+			<state id="Open_wound" />
+			<state id="null" />
+			<parents>MW_murder_weapon</parents>
+			<probabilities>0 0 1 0.97 0.03 0 0.99 0.01 0 0 1 0</probabilities>
+		</cpt>
+		<cpt id="MW_victim_wound_type_INF">
+			<state id="Blunt_wound" />
+			<state id="Open_wound" />
+			<state id="null" />
+			<parents>MW_victim_wound_type_PREM</parents>
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="MW_victim_wound_type" faultnameformat="nodestate">
+			<node id="MW_victim_wound_type_PREM">
+				<name>MW_victim_wound_type PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>450 150 580 200</position>
+			</node>
+			<node id="MW_victim_wound_type_INF">
+				<name>MW_victim_wound_type INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="MW_murder_weapon">
+				<name>Murder weapon</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>250 50 380 100</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

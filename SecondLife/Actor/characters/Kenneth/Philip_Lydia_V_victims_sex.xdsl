@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="V_name">
+			<state id="Philipp" />
+			<state id="Lydia" />
+			<state id="Kenneth" />
+			<state id="Pilar" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="V_victims_sex_PREM">
+			<state id="Male" />
+			<state id="Female" />
+			<parents>V_name</parents>
+			<probabilities>1 0 0 1 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="V_victims_sex_INF">
+			<state id="Male" />
+			<state id="Female" />
+			<parents>V_victims_sex_PREM</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="V_victims_sex" faultnameformat="nodestate">
+			<node id="V_victims_sex_PREM">
+				<name>V_victims_sex PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>250 50 380 100</position>
+			</node>
+			<node id="V_victims_sex_INF">
+				<name>V_victims_sex INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="V_name">
+				<name>Victim</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>250 250 380 300</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

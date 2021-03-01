@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="MS_shoe_print">
+			<state id="Nr_37" />
+			<state id="Nr_38" />
+			<state id="Nr_39" />
+			<state id="Nr_40" />
+			<state id="Nr_41" />
+			<state id="Nr_42" />
+			<state id="Nr_43" />
+			<state id="Nr_44" />
+			<state id="Nr_45" />
+			<state id="Null" />
+			<probabilities>0.007007965304663243 0.01401589060935329 0.04204777182799287 0.1196959198037337 0.106871928395808 0.03893317391477347 0.09673543518725843 0.09673543518725843 0.04240777158679304 0.4355487081823655</probabilities>
+		</cpt>
+		<cpt id="S_shoe_size">
+			<state id="Nr_37" />
+			<state id="Nr_38" />
+			<state id="Nr_39" />
+			<state id="Nr_40" />
+			<state id="Nr_41" />
+			<state id="Nr_42" />
+			<state id="Nr_43" />
+			<state id="Nr_44" />
+			<state id="Nr_45" />
+			<probabilities>0.06334452359937796 0.09766659311562223 0.09245497625351995 0.1192406905392342 0.1005075022065314 0.1440079365079365 0.1258333333333333 0.1313888888888889 0.1255555555555556</probabilities>
+		</cpt>
+		<cpt id="S_ShoePrintFoundOnScene_PREM">
+			<state id="Match" />
+			<state id="NoMatch" />
+			<state id="Null" />
+			<parents>MS_shoe_print S_shoe_size</parents>
+			<probabilities>1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 1 0 1 1 0 1 1 0 1 1 0 1 1 0 1 1 0 1 1 0 1 1 0 1 1</probabilities>
+		</cpt>
+		<cpt id="S_ShoePrintFoundOnScene_INF">
+			<state id="Match" />
+			<state id="NoMatch" />
+			<state id="Null" />
+			<parents>S_ShoePrintFoundOnScene_PREM</parents>
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="S_ShoePrintFoundOnScene" faultnameformat="nodestate">
+			<node id="S_ShoePrintFoundOnScene_PREM">
+				<name>S_ShoePrintFoundOnScene PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 300 630 350</position>
+			</node>
+			<node id="S_ShoePrintFoundOnScene_INF">
+				<name>S_ShoePrintFoundOnScene INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="MS_shoe_print">
+				<name>Shoe print</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 50 830 100</position>
+			</node>
+			<node id="S_shoe_size">
+				<name>Shoe size</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 200 430 250</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

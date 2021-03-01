@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="MW_victim_wound_type">
+			<state id="Blunt_wound" />
+			<state id="Open_wound" />
+			<state id="null" />
+			<probabilities>0.49 0.26 0.25</probabilities>
+		</cpt>
+		<cpt id="MW_murder_weapon">
+			<state id="Poison" />
+			<state id="Spanner" />
+			<state id="Club" />
+			<state id="Knife" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="MW_murder_weapon_needs_strength_PREM">
+			<state id="True" />
+			<state id="False" />
+			<parents>MW_victim_wound_type MW_murder_weapon</parents>
+			<probabilities>1 0 1 0 1 0 1 0 0 1 1 0 1 0 0.83 0.17 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="MW_murder_weapon_needs_strength_INF">
+			<state id="True" />
+			<state id="False" />
+			<parents>MW_murder_weapon_needs_strength_PREM</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="MW_murder_weapon_needs_strength" faultnameformat="nodestate">
+			<node id="MW_murder_weapon_needs_strength_PREM">
+				<name>MW_murder_weapon_needs_strength PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>450 250 580 300</position>
+			</node>
+			<node id="MW_murder_weapon_needs_strength_INF">
+				<name>MW_murder_weapon_needs_strength INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="MW_victim_wound_type">
+				<name>Victim wound type</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>450 150 580 200</position>
+			</node>
+			<node id="MW_murder_weapon">
+				<name>Murder weapon</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>250 50 380 100</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

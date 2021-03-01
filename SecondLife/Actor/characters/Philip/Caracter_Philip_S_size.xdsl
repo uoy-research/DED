@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="S_sex">
+			<state id="Male" />
+			<state id="Female" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_size_PREM">
+			<state id="Tall" />
+			<state id="Medium" />
+			<state id="Small" />
+			<parents>S_sex</parents>
+			<probabilities>0.4 0.4 0.2 0.2 0.5 0.3</probabilities>
+		</cpt>
+		<cpt id="S_size_INF">
+			<state id="Tall" />
+			<state id="Medium" />
+			<state id="Small" />
+			<parents>S_size_PREM</parents>
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="S_size" faultnameformat="nodestate">
+			<node id="S_size_PREM">
+				<name>S_size PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 100 230 150</position>
+			</node>
+			<node id="S_size_INF">
+				<name>S_size INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="S_sex">
+				<name>Sex</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 100 430 150</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

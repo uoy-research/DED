@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="W_weapon_name">
+			<state id="Poison" />
+			<state id="Spanner" />
+			<state id="Club" />
+			<state id="Knife" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="W_contained_PREM">
+			<state id="Object" />
+			<state id="Suspect" />
+			<parents>W_weapon_name</parents>
+			<probabilities>0.6 0.4 0.9 0.09999999999999998 0.95 0.05000000000000004 0.4 0.6</probabilities>
+		</cpt>
+		<cpt id="W_contained_INF">
+			<state id="Object" />
+			<state id="Suspect" />
+			<parents>W_contained_PREM</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="W_contained" faultnameformat="nodestate">
+			<node id="W_contained_PREM">
+				<name>W_contained PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 100 430 150</position>
+			</node>
+			<node id="W_contained_INF">
+				<name>W_contained INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="W_weapon_name">
+				<name>Weapon name</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>600 100 730 150</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

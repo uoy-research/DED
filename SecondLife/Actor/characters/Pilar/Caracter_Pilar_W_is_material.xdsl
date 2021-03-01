@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="W_material">
+			<state id="Iron" />
+			<state id="Wood" />
+			<state id="Steal" />
+			<state id="Rubber" />
+			<state id="FunnySmell" />
+			<probabilities>0.2708333333333333 0.0625 0.2708333333333333 0.1458333333333333 0.25</probabilities>
+		</cpt>
+		<cpt id="MW_murder_weapon_material">
+			<state id="Iron" />
+			<state id="Wood" />
+			<state id="Steal" />
+			<state id="Rubber" />
+			<state id="FunnySmell" />
+			<probabilities>0.2708333333333333 0.0625 0.2708333333333333 0.1458333333333333 0.25</probabilities>
+		</cpt>
+		<cpt id="W_is_material_PREM">
+			<state id="True" />
+			<state id="False" />
+			<parents>W_material MW_murder_weapon_material</parents>
+			<probabilities>1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="W_is_material_INF">
+			<state id="True" />
+			<state id="False" />
+			<parents>W_is_material_PREM</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="W_is_material" faultnameformat="nodestate">
+			<node id="W_is_material_PREM">
+				<name>W_is_material PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 300 830 350</position>
+			</node>
+			<node id="W_is_material_INF">
+				<name>W_is_material INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="W_material">
+				<name>Material</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 200 830 250</position>
+			</node>
+			<node id="MW_murder_weapon_material">
+				<name>Murder weapon material</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>450 50 580 100</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

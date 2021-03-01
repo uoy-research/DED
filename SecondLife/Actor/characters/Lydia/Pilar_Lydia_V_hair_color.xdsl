@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="V_hair_color_PREM">
+			<state id="Blond" />
+			<state id="Brown" />
+			<state id="Black" />
+			<state id="Red" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="V_hair_color_INF">
+			<state id="Blond" />
+			<state id="Brown" />
+			<state id="Black" />
+			<state id="Red" />
+			<parents>V_hair_color_PREM</parents>
+			<probabilities>0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="V_hair_color" faultnameformat="nodestate">
+			<node id="V_hair_color_PREM">
+				<name>V_hair_color PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>450 450 580 500</position>
+			</node>
+			<node id="V_hair_color_INF">
+				<name>V_hair_color INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

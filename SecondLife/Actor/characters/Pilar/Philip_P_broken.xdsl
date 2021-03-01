@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="P_breakable">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.1111111111111111 0.888888888888889</probabilities>
+		</cpt>
+		<cpt id="MS_glass">
+			<state id="Inside" />
+			<state id="Outside" />
+			<state id="Null" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="P_broken_PREM">
+			<state id="True" />
+			<state id="False" />
+			<parents>P_breakable MS_glass</parents>
+			<probabilities>0.5 0.5 0.5 0.5 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="P_broken_INF">
+			<state id="True" />
+			<state id="False" />
+			<parents>P_broken_PREM</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="P_broken" faultnameformat="nodestate">
+			<node id="P_broken_PREM">
+				<name>P_broken PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 350 430 400</position>
+			</node>
+			<node id="P_broken_INF">
+				<name>P_broken INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="P_breakable">
+				<name>Breakable</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 250 430 300</position>
+			</node>
+			<node id="MS_glass">
+				<name>Glass</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 150 830 200</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

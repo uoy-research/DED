@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="MS_hair_on_scene">
+			<state id="Blond" />
+			<state id="Brown" />
+			<state id="Black" />
+			<state id="Red" />
+			<state id="Null" />
+			<probabilities>0.125 0.125 0.125 0.125 0.5</probabilities>
+		</cpt>
+		<cpt id="S_hair_color">
+			<state id="Blond" />
+			<state id="Brown" />
+			<state id="Black" />
+			<state id="Red" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="S_HairFoundOnScene_PREM">
+			<state id="Match" />
+			<state id="NoMatch" />
+			<state id="Null" />
+			<parents>MS_hair_on_scene S_hair_color</parents>
+			<probabilities>1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 1 0 1 1 0 1 1 0 1 1</probabilities>
+		</cpt>
+		<cpt id="S_HairFoundOnScene_INF">
+			<state id="Match" />
+			<state id="NoMatch" />
+			<state id="Null" />
+			<parents>S_HairFoundOnScene_PREM</parents>
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="S_HairFoundOnScene" faultnameformat="nodestate">
+			<node id="S_HairFoundOnScene_PREM">
+				<name>S_HairFoundOnScene PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 200 830 250</position>
+			</node>
+			<node id="S_HairFoundOnScene_INF">
+				<name>S_HairFoundOnScene INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="MS_hair_on_scene">
+				<name>Hair on scene</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 450 830 500</position>
+			</node>
+			<node id="S_hair_color">
+				<name>Suspects hair color</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 200 1030 250</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
