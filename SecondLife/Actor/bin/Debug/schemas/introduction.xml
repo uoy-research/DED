@@ -1,0 +1,29 @@
+<schema>
+    <schema_name>introduction</schema_name>
+    <act>1</act>
+    <instances>1</instances>
+    <rank>0</rank>
+    
+    
+
+    
+    <role>
+        <name>suspect</name>
+        <applies>4</applies>
+        <essential>true</essential>
+    </role>       
+
+    
+    <goal>
+        <name>party_reply</name>
+        <owner>character</owner>
+        <goal_role>suspect</goal_role>
+        <applies>other</applies>
+        <drama_goal>introduce_victim</drama_goal>
+        <variable>C_party</variable>
+        <value>20</value>
+        <state>0</state>
+    </goal>
+    
+
+</schema>

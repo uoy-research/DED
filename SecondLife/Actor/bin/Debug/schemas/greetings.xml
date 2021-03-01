@@ -1,0 +1,129 @@
+<schema>
+    <schema_name>greetings</schema_name>
+    <act>1</act>
+    <act>2</act>
+    <act>3</act>
+    <instances>1</instances>
+    <rank>5</rank>
+        
+    <role>
+        <name>suspect</name>
+        <applies>all</applies>
+        <essential>true</essential>
+    </role>
+      
+    <action>
+        <name>say</name>
+        <action_role>suspect</action_role>
+        <essential>false</essential>
+        <nrExecutions>1</nrExecutions>
+        <action_rank>3</action_rank>
+        <action_variable>S_occupation</action_variable>
+        <action_subnet>suspect</action_subnet>
+        
+        <traits>
+            <trait>
+                <trait_name>chatty</trait_name>
+                <trait_value>0.9</trait_value>
+            </trait>
+        </traits>
+        <preconditions>
+            <precondition>
+                <precondition_name>C_greet</precondition_name>
+                <precondition_satisfier>self</precondition_satisfier>
+            </precondition>
+        </preconditions>
+		<action_goals>
+            <action_goal>
+                <action_name>occupation</action_name>
+                <value>20</value>
+            </action_goal>
+        </action_goals>
+    </action>
+      
+    <action>
+        <name>say</name>
+        <action_role>suspect</action_role>
+        <essential>false</essential>
+        <nrExecutions>1</nrExecutions>
+        <action_rank>3</action_rank>
+        <action_variable>C_seat</action_variable>
+        <action_subnet>chat</action_subnet>
+        <traits>
+            <trait>
+                <trait_name>chatty</trait_name>
+                <trait_value>0.9</trait_value>
+            </trait>
+        </traits>
+		<action_goals>
+            <action_goal>
+                <action_name>seat</action_name>
+                <value>20</value>
+            </action_goal>
+        </action_goals>
+        <preconditions>
+            <precondition>
+                <precondition_name>C_greet</precondition_name>
+                <precondition_satisfier>self</precondition_satisfier>
+            </precondition>
+        </preconditions>
+    </action>
+    
+    <action>
+        <name>say</name>
+        <action_role>suspect</action_role>
+        <essential>false</essential>
+        <nrExecutions>1</nrExecutions>
+        <action_rank>3</action_rank>
+        <action_variable>C_drink</action_variable>
+        <action_subnet>chat</action_subnet>
+        <traits>
+            <trait>
+                <trait_name>chatty</trait_name>
+                <trait_value>0.9</trait_value>
+            </trait>
+        </traits>
+        <preconditions>
+            <precondition>
+                <precondition_name>C_greet</precondition_name>
+                <precondition_satisfier>self</precondition_satisfier>
+            </precondition>
+        </preconditions>
+    </action>
+    
+    <goal>
+        <name>greet</name>
+        <owner>character</owner>
+        <goal_role>suspect</goal_role>
+        <applies>self</applies>
+        <drama_goal>greet</drama_goal>
+        <variable>C_greet</variable>
+        <state>0</state>
+    </goal>
+    
+    <goal>
+        <name>greet_reply</name>
+        <owner>character</owner>
+        <goal_role>suspect</goal_role>
+        <applies>self</applies>
+        <drama_goal>greet</drama_goal>
+        <variable>C_inquire</variable>
+        <state>1</state>
+    </goal>
+    
+
+
+    
+    <goal>
+        <name>occupation</name>
+        <owner>character</owner>
+        <goal_role>suspect</goal_role>
+        <applies>self</applies>
+        <drama_goal>smallchat</drama_goal>
+        <variable>S_occupation</variable>
+        <state></state>
+    </goal>
+    
+</schema>
+
+

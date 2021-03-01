@@ -1,0 +1,65 @@
+<schema>
+    <name>init</name>
+    <act>0</act>
+    <instances>1</instances>
+    <role>
+        <name>actor</name>
+        <applies>all</applies>
+        <essential>true</essential>
+    </role>
+    <action>
+        <name>initPosition</name>
+        <role>actor</role>
+        <essential>true</essential>
+        <preconditions>
+            <precondition>login</precondition>
+        </preconditions>
+        <nrExecutions>1</nrExecutions>
+        <action_goals>
+            <action_goal>
+                <name>init</name>
+                <value>34</value>
+            </action_goal>
+        </action_goals>
+    </action>
+    
+    <action>
+        <name>login</name>
+        <role>actor</role>
+        <essential>true</essential>
+        <nrExecutions>1</nrExecutions>
+        <action_goals>
+            <action_goal>
+                <name>init</name>
+                <value>34</value>
+            </action_goal>
+        </action_goals>
+    </action>
+    
+    <action>
+        <name>initPosition</name>
+        <role>createknowledgbase</role>
+        <essential>true</essential>
+        <preconditions>
+            <precondition>login</precondition>
+        </preconditions>
+        <nrExecutions>1</nrExecutions>
+        <action_goals>
+            <action_goal>
+                <name>init</name>
+                <value>34</value>
+            </action_goal>
+        </action_goals>
+    </action>
+    
+    <goal>
+        <name>init</name>
+        <owner>actor</owner>
+        <role>actor</role>
+        <applies>any</applies>
+        <aim>over</aim>
+        <value>100</value>
+        <drama_goal>init</drama_goal>
+    </goal>
+
+</schema>

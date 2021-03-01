@@ -1,0 +1,600 @@
+
+sub:victim;
+
+
+
+var:victim:V_name,Victim,250,250;
+states:V_name:victim:2,3,4,5,6,7;
+values:V_name:victim:normalized:1,1,1,1,1,1;
+
+var:victim:V_victims_sex,Victims sex,250,50;
+states:V_victims_sex:victim:Male,Female;
+parents:V_victims_sex:victim:V_name;
+values:V_victims_sex:victim:twoRows:1,1,1,0,0,1;
+
+var:victim:V_victims_size,Victims size,50,250;
+states:V_victims_size:victim:Tall,Medium,Small;
+parents:V_victims_size:victim:V_victims_sex;
+values:V_victims_size:victim::0.4,0.4,0.2,0.2,0.5,0.3;
+
+var:victim:V_victims_shoe_size,Victims shoe size,50,50;
+states:V_victims_shoe_size:victim:Nr_37,Nr_38,Nr_39,Nr_40,Nr_41,Nr_42,Nr_43,Nr_44,Nr_45;
+parents:V_victims_shoe_size:victim:V_victims_sex,V_victims_size;
+values:V_victims_shoe_size:victim:normalized:0,0,0,0,0,1,1,3,4,0,0,0,0,0,2,3,3,2,0,0,0,0,0,4,3,1,1,2,1,1,3,4,2,0,0,0,3,2,3,3,2,0,0,0,0,4,3,1,1,0,0,0,0,0;
+
+var:victim:V_victims_dark_secret,victims dark secret,650,450;
+states:V_victims_dark_secret:victim:True,False;
+values:V_victims_dark_secret:victim:normalized:1,1;
+
+var:victim:V_victim_rich,Victim rich,50,450;
+states:V_victim_rich:victim:True,False;
+values:V_victim_rich:victim:normalized:1,1;
+
+var:victim:V_hair_color,Victims hair color,450,450;
+states:V_hair_color:victim:Blond,Brown,Black,Red;
+values:V_hair_color:victim:normalized:1,1,1,1;
+
+sub:murder_weapon;
+
+
+var:murder_weapon:MW_murder_weapon,Murder weapon,250,50;
+states:MW_murder_weapon:murder_weapon:Revolver,Rifle,Shotgun,Spanner,Club,Robe,String,Hands,Arsenic,Cyanide,Water;
+values:MW_murder_weapon:murder_weapon:normalized:1,1,1,1,1,1,1,1,1,1,1;
+
+var:murder_weapon:MW_murder_weapon_marks,Murder weapon marks,50,50;
+states:MW_murder_weapon_marks:murder_weapon:Square,Oval,Cut,Null,RobeMarks,Bullethole,Bulletholes,Stringmarks;
+parents:MW_murder_weapon_marks:murder_weapon:MW_murder_weapon;
+values:MW_murder_weapon_marks:murder_weapon::0,0,0,0,0,0.8,0.2,0,0,0,0,0,0,0.98,0.02,0,0,0,0,0,0,0,1,0,0.8,0.2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0;
+
+var:murder_weapon:MW_murder_meathod,Murder meathod,250,150;
+states:MW_murder_meathod:murder_weapon:Strangled,Stabbed,Drowned,Shot,Bludgeoned,Poisoned;
+parents:MW_murder_meathod:murder_weapon:MW_murder_weapon;
+values:MW_murder_meathod:murder_weapon::0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0;
+
+var:murder_weapon:MW_hair_on_victim,Hair On Victim,50,150;
+states:MW_hair_on_victim:murder_weapon:True,False;
+parents:MW_hair_on_victim:murder_weapon:MW_murder_meathod;
+values:MW_hair_on_victim:murder_weapon:twoColumns:0.67,0.33,0.34,0,0.02,0;
+
+var:murder_weapon:MW_victim_wound_type,Victim wound type,450,150;
+states:MW_victim_wound_type:murder_weapon:Blunt_wound,Open_wound,null;
+parents:MW_victim_wound_type:murder_weapon:MW_murder_meathod;
+values:MW_victim_wound_type:murder_weapon::0,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,0,1;
+
+var:murder_weapon:MW_murder_weapon_needs_strength,Murder weapon needs strength,450,250;
+states:MW_murder_weapon_needs_strength:murder_weapon:True,False;
+parents:MW_murder_weapon_needs_strength:murder_weapon:MW_murder_meathod;
+values:MW_murder_weapon_needs_strength:murder_weapon:twoColumns:1,0.83,1,0,0.85,0;
+
+var:murder_weapon:MW_blood_on_murder_weapon,Blood on murder weapon,50,250;
+states:MW_blood_on_murder_weapon:murder_weapon:True,False;
+parents:MW_blood_on_murder_weapon:murder_weapon:MW_murder_meathod;
+values:MW_blood_on_murder_weapon:murder_weapon:twoColumns:0,0.95,0,0,0.2,0;
+
+var:murder_weapon:MW_hair_on_murder_weapon,Hair on murder weapon,250,250;
+states:MW_hair_on_murder_weapon:murder_weapon:True,False;
+parents:MW_hair_on_murder_weapon:murder_weapon:MW_murder_meathod;
+values:MW_hair_on_murder_weapon:murder_weapon:twoColumns:0,0.7,0,0,0.7,0;
+
+var:murder_weapon:MW_hands,Hands,450,350;
+states:MW_hands:murder_weapon:True,False;
+parents:MW_hands:murder_weapon:MW_murder_meathod;
+values:MW_hands:murder_weapon:twoColumns:0.9,0.6,0.8,0,0.75,0;
+
+var:murder_weapon:MW_neck,Neck,50,350;
+states:MW_neck:murder_weapon:True,False;
+parents:MW_neck:murder_weapon:MW_murder_meathod;
+values:MW_neck:murder_weapon:twoColumns:1,0,0,0,0,0;
+
+var:murder_weapon:MW_face,Face,250,350;
+states:MW_face:murder_weapon:True,False;
+parents:MW_face:murder_weapon:MW_murder_meathod;
+values:MW_face:murder_weapon:twoColumns:1,0,1,0,0,1;
+
+
+loop:weapon:6;
+sub:weapon;
+
+
+var:weapon:W_weapon_name,Weapon,500,50;
+states:W_weapon_name:weapon:Revolver,Rifle,Shotgun,Spanner,Club,Robe,String,Hands,Arsenic,Cyanide,Water;
+values:W_weapon_name:weapon:normalized:1,1,1,1,1,1,1,1,1,1,1;
+
+var:weapon:W_contained,Contained,300,50;
+states:W_contained:weapon:Object,Suspect;
+parents:W_contained:weapon:W_weapon_name;
+values:W_contained:weapon:twoColumns:0.5,1,1,1,0.8,1,0.2,0,0.7,0.7,1;
+
+var:weapon:W_contained_in_suspect,Contained in suspect,100,50;
+states:W_contained_in_suspect:weapon:Agatha,Jane,Mary,Sherlock,Hercule,Arthur,Null;
+parents:W_contained_in_suspect:weapon:W_contained;
+values:W_contained_in_suspect:weapon:normalized:0,0,0,0,0,0,1,1,1,1,1,1,1,0;
+
+var:weapon:W_contained_in_object,Contained in object,100,150;
+states:W_contained_in_object:weapon:Desk,Chair,Sink,FilingCabinet,Wastbasket,Table,Shelf,Door,Window,Null;
+parents:W_contained_in_object:weapon:W_contained;
+values:W_contained_in_object:weapon:normalized:1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1;
+
+
+var:weapon:W_weapon_marks,Weapon marks,850,250;
+states:W_weapon_marks:weapon:Square,Oval,Cut,Null,RobeMarks,Bullethole,Bulletholes,Stringmarks;
+parents:W_weapon_marks:weapon:W_weapon_name;
+values:W_weapon_marks:weapon::0,0,0,0,0,0.8,0.2,0,0,0,0,0,0,0.98,0.02,0,0,0,0,0,0,0,1,0,0.8,0.2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0;
+
+var:weapon:W_meathod,Meathod,500,150;
+states:W_meathod:weapon:Strangled,Stabbed,Drowned,Shot,Bludgeoned,Poisoned;
+parents:W_meathod:weapon:W_weapon_name;
+values:W_meathod:weapon::0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0;
+
+
+
+var:weapon:W_weapon_needs_strength,Weapon needs strength,700,250;
+states:W_weapon_needs_strength:weapon:True,False;
+parents:W_weapon_needs_strength:weapon:W_meathod;
+values:W_weapon_needs_strength:weapon:twoColumns:1,0.83,1,0,0.85,0;
+
+var:weapon:W_wound_type,Victim wound type,550,250;
+states:W_wound_type:weapon:Blunt_wound,Open_wound,null;
+parents:W_wound_type:weapon:W_meathod;
+values:W_wound_type:weapon::0,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,0,1;
+
+var:weapon:W_is_strength,Is strength,700,350;
+states:W_is_strength:weapon:True,False;
+parents:W_is_strength:weapon:W_weapon_needs_strength,MW_murder_weapon_needs_strength$murder_weapon;
+values:W_is_strength:weapon:twoColumns:1,0,0,1;
+
+var:weapon:W_is_marks,Is marks,850,350;
+states:W_is_marks:weapon:True,False;
+parents:W_is_marks:weapon:W_weapon_marks,MW_murder_weapon_marks$murder_weapon;
+values:W_is_marks:weapon:twoColumns:1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1;
+
+var:weapon:W_is_wound,Is wound,550,350;
+states:W_is_wound:weapon:True,False;
+parents:W_is_wound:weapon:MW_victim_wound_type$murder_weapon,W_wound_type;
+values:W_is_wound:weapon:twoColumns:1,0,0,0,1,0,0,0,1;
+
+var:weapon:W_murder_weapon,Murder weapon,500,500;
+states:W_murder_weapon:weapon:True,False;
+parents:W_murder_weapon:weapon:W_is_face,W_is_neck,W_is_hands,W_is_marks,W_is_strength,W_is_wound;
+
+var:weapon:W_blood_on_weapon,Blood on weapon,850,450;
+states:W_blood_on_weapon:weapon:True,False;
+parents:W_blood_on_weapon:weapon:MW_blood_on_murder_weapon$murder_weapon,W_murder_weapon;
+values:W_blood_on_weapon:weapon:twoColumns:1,0,0,0;
+
+var:weapon:W_weapons_hair_color,Weapons hair color,850,550;
+states:W_weapons_hair_color:weapon:Blond,Brown,Black,Red,Null;
+parents:W_weapons_hair_color:weapon:MW_hair_on_murder_weapon$murder_weapon,V_hair_color$victim,W_murder_weapon;
+values:W_weapons_hair_color:weapon::1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1;
+
+var:weapon:W_hands,Hands,250,250;
+states:W_hands:weapon:True,False;
+parents:W_hands:weapon:W_meathod;
+values:W_hands:weapon:twoColumns:0.9,0.6,0.8,0,0.75,0;
+
+var:weapon:W_is_hands,Is hands,250,350;
+states:W_is_hands:weapon:True,False;
+parents:W_is_hands:weapon:MW_hands$murder_weapon,W_hands;
+values:W_is_hands:weapon:twoColumns:1,0,0,1;
+
+var:weapon:W_neck,Neck,100,250;
+states:W_neck:weapon:True,False;
+parents:W_neck:weapon:W_meathod;
+values:W_neck:weapon:twoColumns:1,0,0,0,0,0;
+
+var:weapon:W_is_neck,Is neck,100,350;
+states:W_is_neck:weapon:True,False;
+parents:W_is_neck:weapon:MW_neck$murder_weapon,W_neck;
+values:W_is_neck:weapon:twoColumns:1,0,0,1;
+
+var:weapon:W_face,Face,400,250;
+states:W_face:weapon:True,False;
+parents:W_face:weapon:W_meathod;
+values:W_face:weapon:twoColumns:1,0,1,0,0,1;
+
+var:weapon:W_is_face,Is face,400,350;
+states:W_is_face:weapon:True,False;
+parents:W_is_face:weapon:MW_face$murder_weapon,W_face;
+values:W_is_face:weapon:twoColumns:1,0,0,1;
+
+
+
+
+sub:murder_scene;
+
+var:murder_scene:MS_Scene_name,Scene_name,100,100;
+states:MS_Scene_name:murder_scene:1,2,3,4,5,6;
+values:MS_Scene_name:murder_scene:normalized:1,1,1,1,1,1;
+
+
+var:murder_scene:MS_shoe_print,Shoe print,700,50;
+states:MS_shoe_print:murder_scene:Nr_37,Nr_38,Nr_39,Nr_40,Nr_41,Nr_42,Nr_43,Nr_44,Nr_45,Null;
+values:MS_shoe_print:murder_scene::0.00700797,0.0140159,0.0420478,0.119696,0.106872,0.0389332,0.0967355,0.0967355,0.0424078,0.435549;
+
+var:murder_scene:MS_glass,Glass,700,150;
+states:MS_glass:murder_scene:Inside,Outside,Null;
+values:MS_glass:murder_scene:normalized:1,1,1;
+
+var:murder_scene:MS_hair_on_scene,Hair on scene,700,450;
+states:MS_hair_on_scene:murder_scene:Blond,Brown,Black,Red,Null;
+parents:MS_hair_on_scene:murder_scene:M_hair_color$murderer;
+values:MS_hair_on_scene:murder_scene:normalized:1,0,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,1;
+
+
+
+loop:object:6;
+sub:object;
+
+
+var:object:P_object_name,Object name,100,100;
+states:P_object_name:object:Desk,Chair,Sink,FilingCabinet,Wastebasket,Table,Shelf,Door,Window;
+parents:P_object_name:object:MS_Scene_name$murder_scene;
+values:P_object_name:object:normalized:0,1,0,0,1,1,1,1,1,0,1,0,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1;
+
+
+var:object:P_position,Position,300,100;
+states:P_position:object:Middle_of_the_room,Up_by_a_wall,In_a_corner,On_the_floor;
+parents:P_position:object:P_object_name;
+values:P_position:object:normalized:1,1,1,0,1,1,1,1,0,1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,0,1,1,0,0,1,1,0,0,1,1,0;
+
+var:object:P_container,Container,500,200;
+states:P_container:object:True,False;
+parents:P_container:object:P_object_name;
+values:P_container:object:twoColumns:1,0,0,1,1,1,1,0,0;
+
+var:object:P_breakable,Breakable,300,250;
+states:P_breakable:object:True,False;
+parents:P_breakable:object:P_object_name;
+values:P_breakable:object:twoColumns:0,0,0,0,0,0,0,0,1;
+
+var:object:P_size,Size,500,300;
+states:P_size:object:Large,Tall,Medium,Small;
+parents:P_size:object:P_object_name;
+values:P_size:object:normalized:1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,0,1,1,1,1,0,0,1,1,0,1,1;
+
+var:object:P_lock,Lock,100,300;
+states:P_lock:object:KeyLock,NonKeyLock,Null;
+parents:P_lock:object:P_object_name;
+values:P_lock:object:normalized:1,1,1,0,0,1,0,0,1,1,1,1,0,0,1,0,0,1,0,0,1,1,1,1,0,1,1;
+
+var:object:P_broken,Broken,300,350;
+states:P_broken:object:True,False;
+parents:P_broken:object:P_breakable,MS_glass$murder_scene;
+values:P_broken:object:twoColumns:0.5,0.5,0,0,0,0;
+
+var:object:P_list_of_suspects,List of suspect,500,100;
+states:P_list_of_suspects:object:Notebook,Calendar,Casefile;
+values:P_list_of_suspects:object:normalized:1,1,1;
+
+var:object:P_key_in_lock,Key in lock,100,400;
+states:P_key_in_lock:object:True,False;
+parents:P_key_in_lock:object:P_lock;
+values:P_key_in_lock:object:twoColumns:0.5,0,0;
+
+var:object:P_locked,Locked,300,450;
+states:P_locked:object:True,False;
+parents:P_locked:object:P_lock;
+values:P_locked:object:twoColumns:0.5,0.5,0;
+
+
+
+sub:suspect;
+sub:murderer;
+sub:opportunity;
+
+var:suspect:S_name,Suspect,100,200;
+states:S_name:suspect:2,3,4,5,6,7;
+values:S_name:suspect:normalized:1,1,1,1,1,1;
+
+var:suspect:S_sex,Sex,300,100;
+states:S_sex:suspect:Male,Female;
+parents:S_sex:suspect:S_name;
+values:S_sex:suspect:twoRows:1,1,1,0,0,1;
+
+var:suspect:S_occupation,Occupation,300,300;
+states:S_occupation:suspect:Teacher,Nurse,Botanist,Dentist,Realestate_agent,Secratery,Judge,Lawyer,GP;
+values:S_occupation:suspect:normalized:1,1,1,1,1,1,1,1,1;
+
+var:suspect:S_strength,Strength,500,100;
+states:S_strength:suspect:Strong,Weak;
+parents:S_strength:suspect:S_sex;
+values:S_strength:suspect:twoColumns:0.7,0.3;
+
+var:suspect:S_size,Size,100,100;
+states:S_size:suspect:Tall,Medium,Small;
+parents:S_size:suspect:S_sex;
+values:S_size:suspect::0.4,0.4,0.2,0.2,0.5,0.3;
+
+var:suspect:S_shoe_size,Shoe size,300,200;
+states:S_shoe_size:suspect:Nr_37,Nr_38,Nr_39,Nr_40,Nr_41,Nr_42,Nr_43,Nr_44,Nr_45;
+parents:S_shoe_size:suspect:S_sex,S_size;
+values:S_shoe_size:suspect:normalized:0,0,0,0,0,1,1,3,4,0,0,0,0,0,2,3,3,2,0,0,0,0,0,4,3,1,1,0.2,1,1,3,4,2,0,0,0,0.3,2,3,3,2,0,0,0,0,4,3,1,1,0.24,0,0,0,0;
+
+var:suspect:S_sufficient_strength,Sufficient strength,500,200;
+states:S_sufficient_strength:suspect:True,False;
+parents:S_sufficient_strength:suspect:S_strength,MW_murder_weapon_needs_strength$murder_weapon;
+values:S_sufficient_strength:suspect:twoColumns:1,1,0,1;
+
+var:suspect:S_ShoePrintFoundOnScene,Shoe print found on scene,500,300;
+states:S_ShoePrintFoundOnScene:suspect:Match,NoMatch,Null;
+parents:S_ShoePrintFoundOnScene:suspect:MS_shoe_print$murder_scene,S_shoe_size;
+values:S_ShoePrintFoundOnScene:suspect:match;
+
+var:suspect:S_hair_color,Suspects hair color,900,200;
+states:S_hair_color:suspect:Blond,Brown,Black,Red;
+values:S_hair_color:suspect:normalized:1,1,1,1;
+
+var:suspect:S_HairFoundOnScene,Hair found on scene,700,200;
+states:S_HairFoundOnScene:suspect:Match,NoMatch,Null;
+parents:S_HairFoundOnScene:suspect:MS_hair_on_scene$murder_scene,S_hair_color;
+
+
+var:suspect:S_HairFoundOnVictim,Hair found on victim,900,100;
+states:S_HairFoundOnVictim:suspect:Match,NoMatch,Null;
+parents:S_HairFoundOnVictim:suspect:S_hair_color,M_hair_color$murderer,MW_hair_on_victim$murder_weapon;
+
+var:suspect:S_murderer,Murderer,700,100;
+states:S_murderer:suspect:True,False;
+parents:S_murderer:suspect:S_sufficient_strength,S_ShoePrintFoundOnScene,S_HairFoundOnScene,S_HairFoundOnVictim;
+
+var:suspect:S_relation,Relation,100,400;
+states:S_relation:suspect:Child,Parent,Spouce,Friends,Adulterer,Null;
+parents:S_relation:suspect:S_name,V_name$victim;
+
+var:suspect:S_heir,Heir,100,500;
+states:S_heir:suspect:True,False;
+parents:S_heir:suspect:S_relation;
+values:S_heir:suspect:twoColumns:0.98,0.1,0.95,0.15,0.2,0;
+
+var:suspect:S_rich,Rich,100,700;
+states:S_rich:suspect:True,False;
+values:S_rich:suspect:normalized:1,1;
+
+var:suspect:S_indebt,In dept,300,700;
+states:S_indebt:suspect:True,False;
+parents:S_indebt:suspect:S_rich;
+values:S_indebt:suspect:twoColumns:0,0.8;
+
+var:suspect:S_dark_secret,Dark secret,700,500;
+states:S_dark_secret:suspect:True,False;
+values:S_dark_secret:suspect:normalized:1,1;
+
+var:suspect:S_victim_knows_of_dark_secret,Victim knows of dark secret,500,500;
+states:S_victim_knows_of_dark_secret:suspect:True,False;
+parents:S_victim_knows_of_dark_secret:suspect:S_dark_secret;
+values:S_victim_knows_of_dark_secret:suspect:twoColumns:0.7,0;
+
+var:suspect:S_suspect_knows_of_dark_secret,Suspect knows of dark secret,700,400;
+states:S_suspect_knows_of_dark_secret:suspect:True,False;
+parents:S_suspect_knows_of_dark_secret:suspect:V_victims_dark_secret$victim;
+values:S_suspect_knows_of_dark_secret:suspect:twoColumns:0.7,0;
+
+var:suspect:S_harmed_suspect_in_past,Harmed suspect in past,700,700;
+states:S_harmed_suspect_in_past:suspect:True,False;
+values:S_harmed_suspect_in_past:suspect:normalized:1,1;
+
+var:suspect:S_victim_threatened_to_expose_swindle,Victim threatened to expose swindle,900,700;
+states:S_victim_threatened_to_expose_swindle:suspect:True,False;
+values:S_victim_threatened_to_expose_swindle:suspect:normalized:1,1;
+
+var:suspect:S_victim_threatened_to_expose_blackmail,Victim threatened to expose blackmail,900,300;
+states:S_victim_threatened_to_expose_blackmail:suspect:True,False;
+values:S_victim_threatened_to_expose_blackmail:suspect:normalized:1,1;
+
+var:suspect:S_lost_a_fortune,Lost a fortune,500,700;
+states:S_lost_a_fortune:suspect:True,False;
+values:S_lost_a_fortune:suspect:normalized:1,1;
+
+var:suspect:S_inheritance,Inheritance,100,600;
+states:S_inheritance:suspect:True,False;
+parents:S_inheritance:suspect:S_heir;
+values:S_inheritance:suspect:twoColumns:0.9,0;
+
+var:suspect:S_blackmailer,Blackmailer,700,300;
+states:S_blackmailer:suspect:True,False;
+parents:S_blackmailer:suspect:S_suspect_knows_of_dark_secret,S_victim_threatened_to_expose_blackmail;
+values:S_blackmailer:suspect:twoColumns:1,0,0,0;
+
+var:suspect:S_swindler,Swindler,900,600;
+states:S_swindler:suspect:True,False;
+parents:S_swindler:suspect:S_victim_threatened_to_expose_swindle;
+values:S_swindler:suspect:twoColumns:1,0;
+
+var:suspect:S_adultery,Adultery,900,500;
+states:S_adultery:suspect:True,False;
+parents:S_adultery:suspect:S_relation;
+values:S_adultery:suspect:normalized:0,1,0,1,0.6,0.4,0,1,0,1,0,1;
+
+
+var:suspect:S_isSwindled,isSwindled,500,600;
+states:S_isSwindled:suspect:True,False;
+parents:S_isSwindled:suspect:S_lost_a_fortune;
+values:S_isSwindled:suspect:twoColumns:1,0;
+
+var:suspect:S_revenge,Revenge,700,600;
+states:S_revenge:suspect:True,False;
+parents:S_revenge:suspect:S_isSwindled,S_harmed_suspect_in_past;
+values:S_revenge:suspect:twoColumns:1,1,1,0;
+
+var:suspect:S_isBlackmailed,isBlackmailed,500,400;
+states:S_isBlackmailed:suspect:True,False;
+parents:S_isBlackmailed:suspect:S_victim_knows_of_dark_secret;
+values:S_isBlackmailed:suspect:twoColumns:0.8,0;
+
+
+var:suspect:S_motive,Motive,1100,200;
+states:S_motive:suspect:True,False;
+parents:S_motive:suspect:S_blackmailer,S_inheritance,S_swindler,S_adultery,S_indebt,S_isSwindled,S_revenge,S_isBlackmailed;
+
+
+var:murderer:M_name,murderer,100,200;
+states:M_name:murderer:2,3,4,5,6,7;
+values:M_name:murderer:normalized:1,1,1,1,1,1;
+
+var:murderer:M_sex,Sex,300,100;
+states:M_sex:murderer:Male,Female;
+parents:M_sex:murderer:M_name;
+values:M_sex:murderer:twoRows:1,1,1,0,0,1;
+
+var:murderer:M_strength,Strength,500,100;
+states:M_strength:murderer:Strong,Weak;
+parents:M_strength:murderer:M_sex;
+values:M_strength:murderer:twoRows:0.7,0.8;
+
+var:murderer:M_size,Size,100,100;
+states:M_size:murderer:Tall,Medium,Small;
+parents:M_size:murderer:M_sex;
+values:M_size:murderer::0.4,0.4,0.2,0.2,0.5,0.3;
+
+var:murderer:M_shoe_size,Shoe size,300,200;
+states:M_shoe_size:murderer:Nr_37,Nr_38,Nr_39,Nr_40,Nr_41,Nr_42,Nr_43,Nr_44,Nr_45;
+parents:M_shoe_size:murderer:M_sex,M_size;
+values:M_shoe_size:murderer:normalized:0,0,0,0,0,1,1,3,4,0,0,0,0,0,2,3,3,2,0,0,0,0,0,4,3,1,1,0.2,1,1,3,4,2,0,0,0,0.3,2,3,3,2,0,0,0,0,4,3,1,1,0.24,0,0,0,0;
+
+var:murderer:M_sufficient_strength,Sufficient strength,500,200;
+states:M_sufficient_strength:murderer:True,False;
+parents:M_sufficient_strength:murderer:M_strength,MW_murder_weapon_needs_strength$murder_weapon;
+values:M_sufficient_strength:murderer:twoColumns:1,1,0,1;
+
+var:murderer:M_hair_color,murderers hair color,900,200;
+states:M_hair_color:murderer:Blond,Brown,Black,Red;
+values:M_hair_color:murderer:normalized:1,1,1,1;
+
+var:murderer:M_HairFoundOnVictim,Hair found on victim,900,100;
+states:M_HairFoundOnVictim:murderer:Match,NoMatch,Null;
+parents:M_HairFoundOnVictim:murderer:MW_hair_on_victim$murder_weapon;
+values:M_HairFoundOnVictim:murderer:normalized:1,1,0,1,1,1;
+
+var:murderer:M_murderer,Murderer,700,100;
+states:M_murderer:murderer:True,False;
+parents:M_murderer:murderer:M_sufficient_strength,M_HairFoundOnVictim;
+
+var:murderer:M_relation,Relation,100,400;
+states:M_relation:murderer:Child,Parent,Spouce,Friends,Adulterer,Null;
+parents:M_relation:murderer:M_name,V_name$victim;
+
+var:murderer:M_heir,Heir,100,500;
+states:M_heir:murderer:True,False;
+parents:M_heir:murderer:M_relation;
+values:M_heir:murderer:twoColumns:0.98,0.1,0.95,0.15,0.2,0;
+
+var:murderer:M_rich,Rich,100,700;
+states:M_rich:murderer:True,False;
+values:M_rich:murderer:normalized:1,1;
+
+var:murderer:M_indebt,In dept,300,700;
+states:M_indebt:murderer:True,False;
+parents:M_indebt:murderer:M_rich;
+values:M_indebt:murderer:twoColumns:0,0.8;
+
+var:murderer:M_dark_secret,Dark secret,700,500;
+states:M_dark_secret:murderer:True,False;
+values:M_dark_secret:murderer:normalized:1,1;
+
+var:murderer:M_victim_knows_of_dark_secret,Victim knows of dark secret,500,500;
+states:M_victim_knows_of_dark_secret:murderer:True,False;
+parents:M_victim_knows_of_dark_secret:murderer:M_dark_secret;
+values:M_victim_knows_of_dark_secret:murderer:twoColumns:0.7,0.2;
+
+var:murderer:M_murderer_knows_of_dark_secret,murderer knows of dark secret,700,400;
+states:M_murderer_knows_of_dark_secret:murderer:True,False;
+parents:M_murderer_knows_of_dark_secret:murderer:V_victims_dark_secret$victim;
+values:M_murderer_knows_of_dark_secret:murderer:twoColumns:0.7,0.2;
+
+var:murderer:M_harmed_murderer_in_past,Harmed murderer in past,700,700;
+states:M_harmed_murderer_in_past:murderer:True,False;
+values:M_harmed_murderer_in_past:murderer:normalized:1,1;
+
+var:murderer:M_victim_threatened_to_expose_swindle,Victim threatened to expose swindle,900,700;
+states:M_victim_threatened_to_expose_swindle:murderer:True,False;
+values:M_victim_threatened_to_expose_swindle:murderer:normalized:1,1;
+
+var:murderer:M_victim_threatened_to_expose_blackmail,Victim threatened to expose blackmail,900,300;
+states:M_victim_threatened_to_expose_blackmail:murderer:True,False;
+values:M_victim_threatened_to_expose_blackmail:murderer:normalized:1,1;
+
+var:murderer:M_lost_a_fortune,Lost a fortune,500,700;
+states:M_lost_a_fortune:murderer:True,False;
+values:M_lost_a_fortune:murderer:normalized:1,1;
+
+var:murderer:M_inheritance,Inheritance,100,600;
+states:M_inheritance:murderer:True,False;
+parents:M_inheritance:murderer:M_heir,M_rich;
+values:M_inheritance:murderer:twoColumns:0,1,0,0;
+
+var:murderer:M_blackmailer,Blackmailer,700,300;
+states:M_blackmailer:murderer:True,False;
+parents:M_blackmailer:murderer:M_murderer_knows_of_dark_secret,M_victim_threatened_to_expose_blackmail;
+values:M_blackmailer:murderer:twoColumns:1,0,0,0;
+
+var:murderer:M_swindler,Swindler,900,600;
+states:M_swindler:murderer:True,False;
+parents:M_swindler:murderer:M_victim_threatened_to_expose_swindle;
+values:M_swindler:murderer:twoColumns:1,0;
+
+var:murderer:M_adultery,Adultery,900,500;
+states:M_adultery:murderer:True,False;
+values:M_adultery:murderer:normalized:1,1;
+
+var:murderer:M_isSwindled,isSwindled,500,600;
+states:M_isSwindled:murderer:True,False;
+parents:M_isSwindled:murderer:M_lost_a_fortune;
+values:M_isSwindled:murderer:twoColumns:1,0;
+
+var:murderer:M_revenge,Revenge,700,600;
+states:M_revenge:murderer:True,False;
+parents:M_revenge:murderer:M_swindler,M_harmed_murderer_in_past;
+values:M_revenge:murderer:twoColumns:1,1,1,0;
+
+var:murderer:M_isBlackmailed,isBlackmailed,500,400;
+states:M_isBlackmailed:murderer:True,False;
+parents:M_isBlackmailed:murderer:M_murderer_knows_of_dark_secret;
+values:M_isBlackmailed:murderer:twoColumns:1,0;
+
+values:S_HairFoundOnScene:suspect:match;
+values:S_HairFoundOnVictim:suspect:match;
+values:S_motive:suspect:allFalseMatch;
+values:W_murder_weapon:weapon:first;
+values:M_murderer:murderer:first;
+values:S_murderer:suspect:first;
+
+var:opportunity:O_opportunity,Opportunity,100,200;
+states:O_opportunity:opportunity:True,False;
+values:O_opportunity:opportunity:normalized:1,1;
+
+sub:chat;
+
+var:chat:C_greet,Greet,700,400;
+states:C_greet:chat:True,False;
+values:C_greet:chat:normalized:1,0;
+
+var:chat:C_party,Party,500,400;
+states:C_party:chat:Lottery,deal,inheritance;
+values:C_party:chat:normalized:1,1,1;
+
+var:chat:C_inquire,Inquire,300,400;
+states:C_inquire:chat:True,False;
+values:C_inquire:chat:normalized:1,0;
+
+var:chat:C_introduction,Introduction,100,400;
+states:C_introduction:chat:True,False;
+values:C_introduction:chat:normalized:1,0;
+
+var:chat:C_drink,Drink,500,200;
+states:C_drink:chat:True,False;
+values:C_drink:chat:normalized:1,0;
+
+var:chat:C_seat,Seat,300,200;
+states:C_seat:chat:True,False;
+values:C_seat:chat:normalized:1,0;
+
+sub:reaction;
+
+var:reaction:R_look,Look at,300,200;
+states:R_look:reaction:True,False;
+values:R_look:reaction:normalized:1,0;
+
+
+var:reaction:R_react,React,500,400;
+states:R_react:reaction:distress,surprice,fear;
+values:R_react:reaction:normalized:1,1,1;

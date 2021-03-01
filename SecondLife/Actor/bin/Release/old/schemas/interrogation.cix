@@ -1,0 +1,125 @@
+<schema>
+    <schema_name>interrogation</schema_name>
+    <act>2</act>
+    <act></act>
+    <instances>1</instances>
+    <rank>5</rank>
+
+    <role>
+        <name>suspect</name>
+        <applies>all</applies>
+        <essential>true</essential>
+    </role>
+        
+    <action>
+        <name>sit</name>
+        <action_role>suspect</action_role>
+        <essential>false</essential>
+        <nrExecutions>10000</nrExecutions>
+        <localids>
+            <localid>16524</localid>
+            <localid>16543</localid>
+            <localid>16562</localid>
+            <localid>14111</localid>
+        </localids>
+        <action_rank>5</action_rank>
+        
+    </action>
+    
+    <action>
+        <name>holdglass</name>
+        <action_role>suspect</action_role>
+        <essential>false</essential>
+        <nrExecutions>10000</nrExecutions>
+
+        <action_rank>3</action_rank>
+        
+    </action>
+    
+    <action>
+        <name>drink</name>
+        <action_role>suspect</action_role>
+        <essential>false</essential>
+        <nrExecutions>10000</nrExecutions>
+
+        <action_rank>3</action_rank>
+        <preconditions>
+            <precondition>
+                <precondition_name>holdglass</precondition_name>
+                <precondition_satisfier>self</precondition_satisfier>
+            </precondition>
+        </preconditions>
+        
+    </action>
+        
+            
+    <goal>
+        <name>suspect_characteristics</name>
+        <owner>character</owner>
+        <goal_role>suspect</goal_role>
+        <applies>any</applies>
+        <value>70</value>
+        <drama_goal>characteristics</drama_goal>
+    </goal>
+    
+    <goal>
+        <name>character_motive</name>
+        <owner>character</owner>
+        <goal_role>suspect</goal_role>
+        <applies>SELF</applies>
+        <drama_goal>motive</drama_goal>        
+        <variable>S_motive</variable>
+        <state>1</state>
+    </goal>   
+   
+    <goal>
+        <name>actor_motive</name>
+        <owner>actor</owner>
+        <goal_role>suspect</goal_role>
+        <applies>any</applies>
+        <drama_goal>motive</drama_goal>
+        <variable>S_motive</variable>
+        <state>0</state>
+    </goal>
+    
+    <goal>
+        <name>character_means</name>
+        <owner>character</owner>
+        <goal_role>suspect</goal_role>
+        <applies>SELF</applies>
+        <drama_goal>murder_weapon</drama_goal>        
+        <variable>MW_murder_weapon</variable>
+        <state>1</state>
+    </goal>   
+   
+    <goal>
+        <name>actor_means</name>
+        <owner>actor</owner>
+        <goal_role>suspect</goal_role>
+        <applies>any</applies>
+        <drama_goal>murder_weapon</drama_goal>
+        <variable>MW_murder_weapon</variable>
+        <state>0</state>
+    </goal>
+    
+    <goal>
+        <name>character_opportunity</name>
+        <owner>character</owner>
+        <goal_role>suspect</goal_role>
+        <applies>SELF</applies>
+        <drama_goal>opportunity</drama_goal>        
+        <variable>O_opportunity</variable>
+        <state>1</state>
+    </goal>   
+   
+    <goal>
+        <name>actor_opportunity</name>
+        <owner>actor</owner>
+        <goal_role>suspect</goal_role>
+        <applies>any</applies>
+        <drama_goal>opportunity</drama_goal>
+        <variable>O_opportunity</variable>
+        <state>0</state>
+    </goal>
+
+</schema>

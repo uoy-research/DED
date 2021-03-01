@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<traits>
+    
+    <trait>
+        <character>2</character>
+        <name>Integrity</name>
+        <value>0.0</value>
+    </trait>
+    
+    <trait>
+        <character>3</character>
+        <name>Integrity</name>
+        <value>0.0</value>
+    </trait>
+    
+    <trait>
+        <character>4</character>
+        <name>Integrity</name>
+        <value>0.0</value>
+    </trait>
+    
+    <trait>
+        <character>5</character>
+        <name>Integrity</name>
+        <value>0.0</value>
+    </trait>
+    
+    <trait>
+        <character>6</character>
+        <name>Integrity</name>
+        <value>0.0</value>
+    </trait>
+    <trait>
+        <character>7</character>
+        <name>Integrity</name>
+        <value>0.0</value>
+    </trait>
+    
+    <trait>
+        <character>2</character>
+        <name>Chatty</name>
+        <value>1</value>
+    </trait>
+    
+    <trait>
+        <character>3</character>
+        <name>Chatty</name>
+        <value>1</value>
+    </trait>
+    
+    <trait>
+        <character>4</character>
+        <name>Chatty</name>
+        <value>1</value>
+    </trait>
+    
+    <trait>
+        <character>5</character>
+        <name>Chatty</name>
+        <value>1</value>
+    </trait>
+    
+    <trait>
+        <character>6</character>
+        <name>Chatty</name>
+        <value>1</value>
+    </trait>
+    <trait>
+        <character>7</character>
+        <name>Chatty</name>
+        <value>1</value>
+    </trait>
+    
+    
+    <trait>
+        <character>2</character>
+        <name>Emotional</name>
+        <value>0.8</value>
+    </trait>
+    
+    <trait>
+        <character>3</character>
+        <name>Emotional</name>
+        <value>0.6</value>
+    </trait>
+
+    <trait>
+        <character>4</character>
+        <name>Emotional</name>
+        <value>0.2</value>
+    </trait>
+    
+    <trait>
+        <character>5</character>
+        <name>Emotional</name>
+        <value>0.8</value>
+    </trait>
+    
+    <trait>
+        <character>6</character>
+        <name>Emotional</name>
+        <value>0.4</value>
+    </trait> 
+    <trait>
+        <character>7</character>
+        <name>Emotional</name>
+        <value>0.4</value>
+    </trait>
+    
+</traits>

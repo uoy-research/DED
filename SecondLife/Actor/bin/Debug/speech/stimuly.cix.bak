@@ -1,0 +1,489 @@
+<stimuly>
+    <section>
+        <title>Greet</title>
+        
+        <input>        
+            <msg>Hi {0}</msg>
+            <variable>
+                <name>C_greet</name>
+                <subnet>chat</subnet>
+                <state>0</state>
+		<gestures>
+			<gesture>
+				<gesture_name></gesture_name>
+			</gesture>
+		</gestures>
+            </variable>
+            <goal>
+                <name>greet</name>
+                <state>0</state>
+                <var>C_greet</var>
+                <value>10</value>
+            </goal>
+        </input>
+        
+        <input>        
+            <msg>Hello {0}</msg>
+            <variable>
+                <name>C_greet</name>
+                <subnet>chat</subnet>
+                <state>0</state>
+		<gesture>
+			<gesture_name></gesture_name>
+		</gesture>
+            </variable>
+            <goal>
+                <name>greet</name>
+                <state>0</state>
+                <var>C_greet</var>
+                <value>10</value>
+
+            </goal>
+        </input>
+        
+        
+        <input>        
+            <msg>Hi {0} how are you?</msg>
+            <variable>
+                <name>C_greet</name>
+                <subnet>chat</subnet>
+                <state>0</state>
+		<gesture>
+			<gesture_name></gesture_name>
+		</gesture>
+
+            </variable>
+            <variable>
+                <name>C_inquire</name>
+                <subnet>chat</subnet>
+                <state>1</state>
+            </variable>
+            <goal>
+                <name>greet_reply</name>
+                <state>0</state>
+                <var>C_inquire</var>
+                <value>10</value>
+            </goal>
+        </input>
+        
+        <input>        
+            <msg>How are you, {0}?</msg>            
+            <variable>
+                <name>C_inquire</name>
+                <subnet>chat</subnet>
+                <state>1</state>
+		<gesture>
+			<gesture_name></gesture_name>
+		</gesture>
+
+            </variable>
+            <goal>
+                <name>greet_reply</name>
+                <state>0</state>
+                <var>C_inquire</var>
+                <value>10</value>
+            </goal>
+        </input>
+        <input>        
+            <msg>I'm fine how are you, {0}?</msg>            
+            <variable>
+                <name>C_inquire</name>
+                <subnet>chat</subnet>
+                <state>1</state>
+		<gesture>
+			<gesture_name></gesture_name>
+		</gesture>
+
+            </variable>
+            <goal>
+                <name>greet_reply</name>
+                <state>0</state>
+                <var>C_inquire</var>
+                <value>10</value>
+            </goal>
+        </input>
+        
+    </section>
+    
+    <section>
+        <title>Ask about</title>
+        
+        <input>        
+            <msg>Can I have a drink please?</msg>
+            <variable>
+                <name>C_drink</name>
+                <subnet>chat</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>drink_reply</name>
+                <state>1</state>
+                <var>C_drink</var>
+                <value>10</value>
+            </goal>
+        </input>
+        
+        <input>        
+            <msg>Can I have a seat please?</msg>
+            <variable>
+                <name>C_seat</name>
+                <subnet>chat</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>seat_reply</name>
+                <state>1</state>
+                <var>C_seat</var>
+                <value>10</value>
+            </goal>
+        </input>
+        
+        <input>        
+            <msg>Why are you having a party?</msg>
+            <variable>
+                <name>C_party</name>
+                <subnet>chat</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>party</name>
+                <state>0</state>
+                <var>C_party</var>
+                <value>20</value>
+            </goal>
+            <goal>
+                <name>party_reply</name>
+                <state>0</state>
+                <var>C_party</var>
+                <value>20</value>
+            </goal>
+        </input>
+        
+        <input>        
+            <msg>Is it somebodies birthday?</msg>
+            <variable>
+                <name>C_party</name>
+                <subnet>chat</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>party</name>
+                <state>0</state>
+                <var>C_party</var>
+                <value>20</value>
+            </goal>
+            <goal>
+                <name>party_reply</name>
+                <state>0</state>
+                <var>C_party</var>
+                <value>20</value>
+            </goal>
+        </input>
+        
+        <input>        
+            <msg>What do you do?</msg>
+            <variable>
+                <name>S_occupation</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>occupation</name>
+                <state>0</state>
+                <var>S_occupation</var>
+                <value>20</value>
+            </goal>
+        </input> 
+
+	<input>        
+            <msg>Did you have a reason to kill {1}?</msg>
+            <variable>
+                <name>S_motive</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input> 
+
+	<input>        
+            <msg>Did you blackmail {1}?</msg>
+            <variable>
+                <name>S_blackmailer</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+              </goal>
+     <question>true</question>	    
+        </input> 
+
+	<input>        
+            <msg>Did {1} threaten to expose you as blackmailer?</msg>
+            <variable>
+                <name>S_victim_threatened_to_expose_blackmail</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input> 
+
+	<input>        
+            <msg>Was {1} blackmailing you?</msg>
+            <variable>
+                <name>S_isBlackmailed</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input> 
+
+	<input>        
+            <msg>Did {1} know your secret?</msg>
+            <variable>
+                <name>S_victim_knows_of_dark_secret</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input> 
+
+	<input>        
+            <msg>Did you know {1}'s secret?</msg>
+            <variable>
+                <name>S_suspect_knows_of_dark_secret</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input> 
+
+	<input>        
+            <msg>Do you have a secret?</msg>
+            <variable>
+                <name>S_dark_secret</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input> 
+
+	<input>        
+            <msg>Were you having an affair with {1}?</msg>
+            <variable>
+                <name>S_adultery</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input> 
+        
+	<input>        
+            <msg>Was {1} swindling you?</msg>
+            <variable>
+                <name>S_isSwindled</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input> 
+
+	<input>        
+            <msg>Were you swindling {1}?</msg>
+            <variable>
+                <name>S_swindler</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input> 
+
+	<input>        
+            <msg>Did you lose a fortune?</msg>
+            <variable>
+                <name>S_lost_a_fortune</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input> 
+
+	<input>        
+            <msg>Did {1} threaten to expose you as a swindler?</msg>
+            <variable>
+                <name>S_victim_threatened_to_expose_swindle</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input> 
+
+	<input>        
+            <msg>Did {1} harm you in the past?</msg>
+            <variable>
+                <name>S_harmed_suspect_in_past</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input>
+
+	<input>        
+            <msg>Are you in dept?</msg>
+            <variable>
+                <name>S_indebt</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input>
+
+	<input>        
+            <msg>Are you in rich?</msg>
+            <variable>
+                <name>S_rich</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input>
+
+	<input>        
+            <msg>Will you inherit from {1}?</msg>
+            <variable>
+                <name>S_inheritance</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+             </goal>
+     <question>true</question>
+        </input>
+
+	<input>        
+            <msg>Will you inherit from {1}?</msg>
+            <variable>
+                <name>S_inheritance</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+              </goal>
+     <question>true</question>
+        </input>
+
+	<input>        
+            <msg>Are you {1} heir?</msg>
+            <variable>
+                <name>S_heir</name>
+                <subnet>suspect</subnet>
+                <state>0</state>
+            </variable>
+            <goal>
+                <name>motive</name>
+                <state>0</state>
+                <var>S_motive</var>
+                <value>20</value>
+            </goal>	    
+	    <question>true</question>
+        </input>
+
+    </section>
+    
+    
+</stimuly>

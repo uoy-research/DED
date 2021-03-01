@@ -1,0 +1,6 @@
+actor_actions,users\{0}\{1}_actions.xml
+user_actions,users\{0}\User_Action.xml
+settings,users\{0}\settings.xml
+murder,users\{0}\murder.xml
+goals,users\{0}\goals.xml
+newgame,xml\newgame.xml

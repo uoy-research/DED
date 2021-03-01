@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="S_occupation">
+			<state id="nnTeacher" />
+			<state id="nnNurse" />
+			<state id="nnBotanist" />
+			<state id="nnDentist" />
+			<state id="nnRealestate_agent" />
+			<state id="nnSecratery" />
+			<state id="nnJudge" />
+			<state id="nnLawyer" />
+			<state id="nnGP" />
+			<probabilities>0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="S_occupation_occupation" faultnameformat="nodestate">
+			<node id="S_occupation">
+				<name>S_occupation</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

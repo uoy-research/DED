@@ -1,0 +1,31 @@
+LLWearable version 22
+Male Shape & Outfit Undershirt
+
+	permissions 0
+	{
+		base_mask	7fffffff
+		owner_mask	7fffffff
+		group_mask	00000000
+		everyone_mask	00000000
+		next_owner_mask	00082000
+		creator_id	d929385f-41e3-4a34-a04e-f1fc39f24f12
+		owner_id	d929385f-41e3-4a34-a04e-f1fc39f24f12
+		last_owner_id	d929385f-41e3-4a34-a04e-f1fc39f24f12
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 10
+parameters 7
+603 1
+604 1
+605 1
+779 1
+821 1
+822 1
+823 1
+textures 1
+16 d283de85-2dc3-dc07-dc45-2e1bfd4cf193

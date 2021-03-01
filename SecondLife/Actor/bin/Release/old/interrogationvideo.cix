@@ -1,0 +1,59 @@
+<schema>
+    <schema_name>interrogation</schema_name>
+    <act>1</act>
+    <act>2</act>
+    <act></act>
+    <instances>1</instances>
+    <rank>5</rank>
+
+    <role>
+        <name>suspect</name>
+        <applies>all</applies>
+        <essential>true</essential>
+    </role>
+        
+        <action>
+        <name>sit</name>
+        <action_role>suspect</action_role>
+        <essential>false</essential>
+        <nrExecutions>10000</nrExecutions>
+        <localids>
+            <localid>16524</localid>
+            <localid>16543</localid>
+            <localid>16562</localid>
+            <localid>14111</localid>
+        </localids>
+        <action_rank>5</action_rank>
+        
+    </action>
+        
+            
+    <goal>
+        <name>suspect_characteristics</name>
+        <owner>character</owner>
+        <goal_role>suspect</goal_role>
+        <applies>any</applies>
+        <value>70</value>
+        <drama_goal>characteristics</drama_goal>
+    </goal>
+    
+    
+    
+    <goal>
+        <name>character_motive</name>
+        <owner>character</owner>
+        <goal_role>suspect</goal_role>
+        <applies>SELF</applies>       
+        <variable>S_motive</variable>
+        <state>1</state>
+    </goal>   
+    <goal>
+        <name>actor_motive</name>
+        <owner>actor</owner>
+        <goal_role>suspect</goal_role>
+        <applies>any</applies>
+        <variable>S_motive</variable>
+        <state>0</state>
+    </goal>
+
+</schema>

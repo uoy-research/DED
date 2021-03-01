@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="MS_Scene_name">
+			<state id="n1" />
+			<state id="n2" />
+			<state id="n3" />
+			<state id="n4" />
+			<state id="n5" />
+			<state id="n6" />
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667</probabilities>
+		</cpt>
+		<cpt id="MS_shoe_print">
+			<state id="nNr_37" />
+			<state id="nNr_38" />
+			<state id="nNr_39" />
+			<state id="nNr_40" />
+			<state id="nNr_41" />
+			<state id="nNr_42" />
+			<state id="nNr_43" />
+			<state id="nNr_44" />
+			<state id="nNr_45" />
+			<state id="nNull" />
+			<probabilities>0.00700797 0.0140159 0.0420478 0.119696 0.106872 0.0389332 0.0967355 0.0967355 0.0424078 0.435549</probabilities>
+		</cpt>
+		<cpt id="MS_glass">
+			<state id="nInside" />
+			<state id="nOutside" />
+			<state id="nNull" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="M_hair_color">
+			<state id="nBlond" />
+			<state id="nBrown" />
+			<state id="nBlack" />
+			<state id="nRed" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="MS_hair_on_scene">
+			<state id="nBlond" />
+			<state id="nBrown" />
+			<state id="nBlack" />
+			<state id="nRed" />
+			<state id="nNull" />
+			<parents>M_hair_color</parents>
+			<probabilities>0.5 0 0 0 0.5 0 0.5 0 0 0.5 0 0 0.5 0 0.5 0 0 0 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="murder_scene" faultnameformat="nodestate">
+			<node id="MS_Scene_name">
+				<name>Scene_name</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 100 230 150</position>
+			</node>
+			<node id="MS_shoe_print">
+				<name>Shoe print</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 50 830 100</position>
+			</node>
+			<node id="MS_glass">
+				<name>Glass</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 150 830 200</position>
+			</node>
+			<node id="MS_hair_on_scene">
+				<name>Hair on scene</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 450 830 500</position>
+			</node>
+			<node id="M_hair_color">
+				<name>murderers hair color</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 100 1330 150</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="S_suspect_knows_of_dark_secret">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.35 0.65</probabilities>
+		</cpt>
+		<cpt id="S_victim_threatened_to_expose_blackmail">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_blackmailer_PREM">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>S_suspect_knows_of_dark_secret S_victim_threatened_to_expose_blackmail</parents>
+			<probabilities>1 0 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="S_blackmailer_INF">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>S_suspect_knows_of_dark_secret S_victim_threatened_to_expose_blackmail</parents>
+			<probabilities>1 0 0 1 0 1 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="S_blackmailer" faultnameformat="nodestate">
+			<node id="S_blackmailer_PREM">
+				<name>S_blackmailer PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 300 830 350</position>
+			</node>
+			<node id="S_blackmailer_INF">
+				<name>S_blackmailer INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 300 830 350</position>
+			</node>
+			<node id="S_suspect_knows_of_dark_secret">
+				<name>Suspect knows of dark secret</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 400 830 450</position>
+			</node>
+			<node id="S_victim_threatened_to_expose_blackmail">
+				<name>Victim threatened to expose blackmail</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 300 1030 350</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

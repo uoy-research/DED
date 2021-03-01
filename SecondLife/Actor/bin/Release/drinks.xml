@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<drinks>
+    <drink>
+        <name>Manhattan</name>
+        <gender>both</gender>
+    </drink>
+    <drink>
+        <name>coffee</name>
+        <gender>both</gender>
+    </drink>
+    
+    <drink>
+        <name>champagne</name>
+        <gender>both</gender>
+    </drink>
+    <drink>
+        <name>tea</name>
+        <gender>both</gender>
+    </drink>
+    
+    <drink>
+        <name>Cranberry Martini</name>
+        <gender>both</gender>
+    </drink>
+    <drink>
+        <name>gin</name>
+        <gender>both</gender>
+    </drink>
+
+    <drink>
+        <name>Pina Colada</name>
+        <gender>both</gender>
+    </drink>
+    <drink>
+        <name>red wine</name>
+        <gender>both</gender>
+    </drink>
+    <drink>
+        <name>Red wine glass</name>
+        <gender>both</gender>
+    </drink>
+
+    <drink>
+        <name>Glass of Champagne</name>
+        <gender>both</gender>
+    </drink>
+    <drink>
+        <name>High Class Wine</name>
+        <gender>both</gender>
+    </drink>
+    <drink>
+        <name>Lemonade</name>
+        <gender>both</gender>
+    </drink>
+</drinks>

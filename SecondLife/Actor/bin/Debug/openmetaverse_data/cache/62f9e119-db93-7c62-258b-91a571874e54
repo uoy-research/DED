@@ -1,0 +1,33 @@
+LLWearable version 22
+Male Shape & Outfit Pants
+
+	permissions 0
+	{
+		base_mask	7fffffff
+		owner_mask	7fffffff
+		group_mask	7fffffff
+		everyone_mask	7fffbfff
+		next_owner_mask	7fffffff
+		creator_id	00000000-0000-0000-0000-000000000000
+		owner_id	9f08d2a1-5f63-4396-b66e-e998b7c7c51c
+		last_owner_id	9f08d2a1-5f63-4396-b66e-e998b7c7c51c
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 5
+parameters 9
+625 .58
+638 .22
+806 1
+807 1
+808 1
+814 1
+815 .92
+816 .34
+869 0
+textures 1
+2 2be3557b-494d-6d9d-6eea-974006707ac7

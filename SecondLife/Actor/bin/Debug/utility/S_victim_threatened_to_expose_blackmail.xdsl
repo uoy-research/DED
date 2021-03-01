@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="S_victim_threatened_to_expose_blackmail_PREM">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_victim_threatened_to_expose_blackmail_INF">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="S_victim_threatened_to_expose_blackmail" faultnameformat="nodestate">
+			<node id="S_victim_threatened_to_expose_blackmail_PREM">
+				<name>S_victim_threatened_to_expose_blackmail PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 300 1030 350</position>
+			</node>
+			<node id="S_victim_threatened_to_expose_blackmail_INF">
+				<name>S_victim_threatened_to_expose_blackmail INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 300 1030 350</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

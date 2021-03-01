@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="M_hair_color">
+			<state id="nBlond" />
+			<state id="nBrown" />
+			<state id="nBlack" />
+			<state id="nRed" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="MS_hair_on_scene_PREM">
+			<state id="nBlond" />
+			<state id="nBrown" />
+			<state id="nBlack" />
+			<state id="nRed" />
+			<state id="nNull" />
+			<parents>M_hair_color</parents>
+			<probabilities>0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</probabilities>
+		</cpt>
+		<cpt id="MS_hair_on_scene_INF">
+			<state id="nBlond" />
+			<state id="nBrown" />
+			<state id="nBlack" />
+			<state id="nRed" />
+			<state id="nNull" />
+			<parents>M_hair_color</parents>
+			<probabilities>0.5 0 0 0 0.5 0 0.5 0 0 0.5 0 0 0.5 0 0.5 0 0 0 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="MS_hair_on_scene" faultnameformat="nodestate">
+			<node id="MS_hair_on_scene_PREM">
+				<name>MS_hair_on_scene PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 450 830 500</position>
+			</node>
+			<node id="MS_hair_on_scene_INF">
+				<name>MS_hair_on_scene INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 450 830 500</position>
+			</node>
+			<node id="M_hair_color">
+				<name>murderers hair color</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 200 1030 250</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

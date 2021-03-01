@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="V_name">
+			<state id="n2" />
+			<state id="n3" />
+			<state id="n4" />
+			<state id="n5" />
+			<state id="n6" />
+			<state id="n7" />
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667</probabilities>
+		</cpt>
+		<cpt id="V_victims_sex">
+			<state id="nMale" />
+			<state id="nFemale" />
+			<parents>V_name</parents>
+			<probabilities>1 0 1 0 1 0 0 1 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="V_victims_size">
+			<state id="nTall" />
+			<state id="nMedium" />
+			<state id="nSmall" />
+			<parents>V_victims_sex</parents>
+			<probabilities>0.4 0.4 0.2 0.2 0.5 0.3</probabilities>
+		</cpt>
+		<cpt id="V_victims_shoe_size">
+			<state id="nNr_37" />
+			<state id="nNr_38" />
+			<state id="nNr_39" />
+			<state id="nNr_40" />
+			<state id="nNr_41" />
+			<state id="nNr_42" />
+			<state id="nNr_43" />
+			<state id="nNr_44" />
+			<state id="nNr_45" />
+			<parents>V_victims_sex V_victims_size</parents>
+			<probabilities>0 0 0 0 0 0.1111111111111111 0.1111111111111111 0.3333333333333333 0.4444444444444444 0 0 0 0 0 0.2 0.3 0.3 0.2 0 0 0 0 0 0.4444444444444444 0.3333333333333333 0.1111111111111111 0.1111111111111111 0.1538461538461539 0.07692307692307693 0.07692307692307693 0.2307692307692308 0.3076923076923077 0.1538461538461539 0 0 0 0.2307692307692308 0.1538461538461539 0.2307692307692308 0.2307692307692308 0.1538461538461539 0 0 0 0 0.4444444444444444 0.3333333333333333 0.1111111111111111 0.1111111111111111 0 0 0 0 0</probabilities>
+		</cpt>
+		<cpt id="V_victims_dark_secret">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="V_victim_rich">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="V_hair_color">
+			<state id="nBlond" />
+			<state id="nBrown" />
+			<state id="nBlack" />
+			<state id="nRed" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="victim" faultnameformat="nodestate">
+			<node id="V_name">
+				<name>Victim</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>250 250 380 300</position>
+			</node>
+			<node id="V_victims_sex">
+				<name>Victims sex</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>250 50 380 100</position>
+			</node>
+			<node id="V_victims_size">
+				<name>Victims size</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>50 250 180 300</position>
+			</node>
+			<node id="V_victims_shoe_size">
+				<name>Victims shoe size</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>50 50 180 100</position>
+			</node>
+			<node id="V_victims_dark_secret">
+				<name>victims dark secret</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>650 450 780 500</position>
+			</node>
+			<node id="V_victim_rich">
+				<name>Victim rich</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>50 450 180 500</position>
+			</node>
+			<node id="V_hair_color">
+				<name>Victims hair color</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>450 450 580 500</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

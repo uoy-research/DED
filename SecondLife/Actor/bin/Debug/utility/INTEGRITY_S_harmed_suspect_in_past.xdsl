@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="INTEGRITY">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.3 0.7</probabilities>
+		</cpt>
+		<decision id="DECISION">
+			<state id="a1" />
+			<state id="a2" />
+			<state id="a3" />
+			<state id="a4" />
+			<state id="a5" />
+			<state id="a6" />
+		</decision>
+		<cpt id="CONTRADICTION">
+			<state id="True" />
+			<state id="False" />
+			<parents>DECISION</parents>
+			<probabilities>0.86 0.14 0.63 0.37 0.21 0.79 0.43 0.5700000000000001 0.75 0.25 0.32 0.6799999999999999</probabilities>
+		</cpt>
+		<utility id="UTILITY">
+			<parents>CONTRADICTION INTEGRITY</parents>
+			<utilities>0 100 100 100</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.3259.0" name="Unnamed" faultnameformat="nodestate">
+			<node id="INTEGRITY">
+				<name>INTEGRITY</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>372 316 502 366</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="DECISION">
+				<name>DECISION</name>
+				<interior color="008000" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>360 190 490 240</position>
+				<barchart width="102" height="126" />
+			</node>
+			<node id="CONTRADICTION">
+				<name>CONTRADICTION</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>537 192 667 242</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="UTILITY">
+				<name>UTILITY</name>
+				<interior color="0000ff" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>540 320 670 370</position>
+				<barchart width="128" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

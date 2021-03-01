@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="P_lock">
+			<state id="nKeyLock" />
+			<state id="nNonKeyLock" />
+			<state id="nNull" />
+			<probabilities>0 0 0</probabilities>
+		</cpt>
+		<cpt id="P_locked_PREM">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>P_lock</parents>
+			<probabilities>0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="P_locked_INF">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>P_lock</parents>
+			<probabilities>0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="P_locked" faultnameformat="nodestate">
+			<node id="P_locked_PREM">
+				<name>P_locked PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 450 430 500</position>
+			</node>
+			<node id="P_locked_INF">
+				<name>P_locked INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 450 430 500</position>
+			</node>
+			<node id="P_lock">
+				<name>Lock</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 300 230 350</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

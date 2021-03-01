@@ -1,0 +1,49 @@
+<prims>
+    <prim>
+        <name>Walnut Dining Table</name>
+        <ID>c712b255-2dbf-f06d-c553-01ca5e5eb306</ID>
+        <localID>14092</localID>
+        <applicability>table</applicability>
+    </prim>
+    <prim>
+        <name>Floor cupe</name>
+        <ID>8917fa55-8505-fa87-4f39-2228488d6de0</ID>
+        <localID>14084</localID>
+        <applicability>floor</applicability>
+    </prim>
+    
+    <prim>
+        <name>Walnut Chair seat 2</name>
+        <ID>b2dc3607-2b1b-2b15-8524-c4b6d8a2b6a6</ID>
+        <localID>16543</localID>
+        <applicability>seat</applicability>
+        <actorPosition>78.146.26</actorPosition>
+        <lookDirection>78.140.25</lookDirection>
+    </prim>
+    <prim>
+        <name>Walnut Chair seat 3</name>
+        <ID>c9aeda10-4a72-873e-24cc-fc636d0c0fb2</ID>
+        <localID>16562</localID>
+        <applicability>seat</applicability>
+        <actorPosition>75.146.26</actorPosition>
+        <lookDirection>70.146.25</lookDirection>
+        
+    </prim>
+    <prim>
+        <name>Walnut Chair seat 4</name>
+        <ID>5c9cd0bf-22bf-2a42-5877-ce225b83aff6</ID>
+        <localID>14111</localID>
+        <applicability>seat</applicability>
+        <actorPosition>78.146.26</actorPosition>
+        <lookDirection>85.146.25</lookDirection>
+    </prim>
+    <prim>
+        <name>Walnut Chair seat 1</name>
+        <ID>2d9ba0ce-0b71-1a1f-eabb-654673d3fa8a</ID>
+        <localID>16524</localID>
+        <applicability>seat</applicability>
+        <actorPosition>77.145.26</actorPosition>
+        <lookDirection>77.150.25</lookDirection>
+    </prim>
+</prims>
+

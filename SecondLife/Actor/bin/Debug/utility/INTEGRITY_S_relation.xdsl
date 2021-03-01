@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="INTEGRITY">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<decision id="DECISION">
+			<state id="S_name0" />
+			<state id="S_name1" />
+			<state id="S_name2" />
+			<state id="S_name3" />
+			<state id="S_name4" />
+			<state id="S_name5" />
+		</decision>
+		<cpt id="CONTRADICTION">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>DECISION</parents>
+			<probabilities>0.8333333333333334 0.1666666666666666 0.8333333333333334 0.1666666666666666 0.8333333333333334 0.1666666666666666 0.8333333333333334 0.1666666666666666 0.8333333333333334 0.1666666666666666 0.8333333333333334 0.1666666666666666</probabilities>
+		</cpt>
+		<utility id="UTILITY">
+			<parents>CONTRADICTION INTEGRITY</parents>
+			<utilities>0 100 100 100</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="Unnamed" faultnameformat="nodestate">
+			<node id="INTEGRITY">
+				<name>INTEGRITY</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="DECISION">
+				<name>DECISION</name>
+				<interior color="008000" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="CONTRADICTION">
+				<name>CONTRADICTION</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="UTILITY">
+				<name>UTILITY</name>
+				<interior color="0000ff" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

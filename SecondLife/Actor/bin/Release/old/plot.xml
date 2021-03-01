@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plot>
+    <variable>
+      <name>V_name</name>
+      <subnet>victim</subnet>
+      <state>any</state>
+    </variable>
+    
+    <variable>
+      <name>M_name</name>
+      <subnet>murderer</subnet>
+      <state>any</state>
+    </variable>
+    
+    <variable>
+      <name>MW_murder_weapon</name>
+      <subnet>murder_weapon</subnet>
+      <state>Poison</state>
+    </variable>
+    
+    <variable>
+      <name>S_isBlackmailed</name>
+      <subnet>suspect</subnet>
+      <state>True</state>
+    </variable>
+    
+    <variable>
+      <name>S_occupation</name>
+      <subnet>suspect</subnet>
+      <state>any</state>
+    </variable>
+    
+</plot>
+

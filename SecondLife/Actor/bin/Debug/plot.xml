@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plot>
+    <variable>
+      <name>V_name</name>
+      <subnet>victim</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+    
+    <variable>
+      <name>M_name</name>
+      <subnet>murderer</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+    
+    <variable>
+      <name>C_party</name>
+      <subnet>chat</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+    
+    <variable>
+      <name>MW_murder_weapon</name>
+      <subnet>murder_weapon</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>     
+    
+    <variable>
+      <name>MW_murder_meathod</name>
+      <subnet>murder_weapon</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+      <parents>
+        <parent> MW_murder_weapon</parent>
+      </parents>
+    </variable>
+
+    <variable>
+      <name>MW_hair_on_victim</name>
+      <subnet>murder_weapon</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+      <parents>
+        <parent> MW_murder_meathod</parent>
+      </parents>
+    </variable>
+    
+    <variable>
+      <name>MW_murder_weapon_marks</name>
+      <subnet>murder_weapon</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+      <parents>
+        <parent> MW_murder_weapon</parent>
+      </parents>
+    </variable>
+    
+
+    <variable>
+      <name>MW_victim_wound_type</name>
+      <subnet>murder_weapon</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+      <parents>
+        <parent> MW_murder_meathod</parent>
+      </parents>
+    </variable>
+    
+    <variable>
+      <name>MW_blood_on_murder_weapon</name>
+      <subnet>murder_weapon</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+      <parents>
+        <parent> MW_murder_meathod</parent>
+      </parents>
+    </variable>
+    
+    <variable>
+      <name>MW_hair_on_murder_weapon</name>
+      <subnet>murder_weapon</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+      <parents>
+        <parent> MW_murder_meathod</parent>
+      </parents>
+    </variable>                     
+
+    <variable>
+      <name>MW_murder_weapon_needs_strength</name>
+      <subnet>murder_weapon</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+      <parents>
+        <parent>MW_murder_meathod </parent>
+      </parents>
+    </variable>
+    
+    <variable>
+      <name>MW_neck</name>
+      <subnet>murder_weapon</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+      <parents>
+        <parent>MW_murder_meathod </parent>
+      </parents>
+    </variable>
+    
+    <variable>
+      <name>MW_face</name>
+      <subnet>murder_weapon</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+      <parents>
+        <parent>MW_murder_meathod </parent>
+      </parents>
+    </variable>
+    
+    <variable>
+      <name>MW_hands</name>
+      <subnet>murder_weapon</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+      <parents>
+        <parent>MW_murder_meathod </parent>
+      </parents>
+    </variable>
+
+    <variable>
+      <name>S_motive</name>
+      <subnet>suspect</subnet>
+      <state>0</state>
+      <singular>false</singular>
+      <setParent>true</setParent>
+    </variable>
+
+    <variable>
+      <name>S_occupation</name>
+      <subnet>suspect</subnet>
+      <state>-2</state>
+      <singular>false</singular>
+    </variable>
+
+
+    <variable>
+      <name>S_relation</name>
+      <subnet>suspect</subnet>
+      <state>-2</state>
+      <singular>false</singular>
+    </variable>
+    
+    <variable>
+      <name>MS_Scene_name</name>
+      <subnet>murder_scene</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+
+    </variable>
+
+    <variable>
+      <name>MS_shoe_print</name>
+      <subnet>murder_scene</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+
+
+    <variable>
+      <name>MS_hair_on_scene</name>
+      <subnet>murder_scene</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+    
+    <variable>
+      <name>P_object_name</name>
+      <subnet>object</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+    
+    <variable>
+      <name>P_position</name>
+      <subnet>object</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+    
+    <variable>
+      <name>P_container</name>
+      <subnet>object</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+    
+    <variable>
+      <name>P_size</name>
+      <subnet>object</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+    
+    <variable>
+      <name>P_lock</name>
+      <subnet>object</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+    
+    <variable>
+      <name>P_locked</name>
+      <subnet>object</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+    
+    <variable>
+      <name>P_key_in_lock</name>
+      <subnet>object</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+    
+    <variable>
+      <name>P_breakable</name>
+      <subnet>object</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+    
+    <variable>
+      <name>P_broken</name>
+      <subnet>object</subnet>
+      <state>-2</state>
+      <singular>true</singular>
+    </variable>
+
+
+
+
+</plot>
+

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="W_weapon_name">
+			<state id="nRevolver" />
+			<state id="nRifle" />
+			<state id="nShotgun" />
+			<state id="nSpanner" />
+			<state id="nClub" />
+			<state id="nRobe" />
+			<state id="nString" />
+			<state id="nHands" />
+			<state id="nArsenic" />
+			<state id="nCyanide" />
+			<state id="nWater" />
+			<probabilities>0.09090909090909091 0.09090909090909091 0.09090909090909091 0.09090909090909091 0.09090909090909091 0.09090909090909091 0.09090909090909091 0.09090909090909091 0.09090909090909091 0.09090909090909091 0.09090909090909091</probabilities>
+		</cpt>
+		<cpt id="W_contained">
+			<state id="nObject" />
+			<state id="nSuspect" />
+			<parents>W_weapon_name</parents>
+			<probabilities>0.5 0.5 1 0 1 0 1 0 0.8 0.2 1 0 0.2 0.8 0 1 0.7 0.3 0.7 0.3 1 0</probabilities>
+		</cpt>
+		<cpt id="W_contained_in_suspect">
+			<state id="nAgatha" />
+			<state id="nJane" />
+			<state id="nMary" />
+			<state id="nSherlock" />
+			<state id="nHercule" />
+			<state id="nArthur" />
+			<state id="nNull" />
+			<parents>W_contained</parents>
+			<probabilities>0 0 0 0 0 0 1 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0</probabilities>
+		</cpt>
+		<cpt id="W_contained_in_object">
+			<state id="nDesk" />
+			<state id="nChair" />
+			<state id="nSink" />
+			<state id="nFilingCabinet" />
+			<state id="nWastbasket" />
+			<state id="nTable" />
+			<state id="nShelf" />
+			<state id="nDoor" />
+			<state id="nWindow" />
+			<state id="nNull" />
+			<parents>W_contained</parents>
+			<probabilities>0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0 0 0 0 0 0 0 0 0 0 1</probabilities>
+		</cpt>
+		<cpt id="W_weapon_marks">
+			<state id="nSquare" />
+			<state id="nOval" />
+			<state id="nCut" />
+			<state id="nNull" />
+			<state id="nRobeMarks" />
+			<state id="nBullethole" />
+			<state id="nBulletholes" />
+			<state id="nStringmarks" />
+			<parents>W_weapon_name</parents>
+			<probabilities>0 0 0 0 0 0.8 0.2 0 0 0 0 0 0 0.98 0.02 0 0 0 0 0 0 0 1 0 0.8 0.2 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0</probabilities>
+		</cpt>
+		<cpt id="W_meathod">
+			<state id="nStrangled" />
+			<state id="nStabbed" />
+			<state id="nDrowned" />
+			<state id="nShot" />
+			<state id="nBludgeoned" />
+			<state id="nPoisoned" />
+			<parents>W_weapon_name</parents>
+			<probabilities>0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 0 0</probabilities>
+		</cpt>
+		<cpt id="W_weapon_needs_strength">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>W_meathod</parents>
+			<probabilities>1 0 0.83 0.17 1 0 0 1 0.85 0.15 0 1</probabilities>
+		</cpt>
+		<cpt id="W_wound_type">
+			<state id="nBlunt_wound" />
+			<state id="nOpen_wound" />
+			<state id="nnull" />
+			<parents>W_meathod</parents>
+			<probabilities>0 0 1 0 1 0 0 0 1 0 1 0 1 0 0 0 0 1</probabilities>
+		</cpt>
+		<cpt id="MW_murder_weapon_needs_strength">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5181818181818182 0.4818181818181818</probabilities>
+		</cpt>
+		<cpt id="W_is_strength">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>W_weapon_needs_strength MW_murder_weapon_needs_strength</parents>
+			<probabilities>1 0 0 1 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="MW_murder_weapon_marks">
+			<state id="nSquare" />
+			<state id="nOval" />
+			<state id="nCut" />
+			<state id="nNull" />
+			<state id="nRobeMarks" />
+			<state id="nBullethole" />
+			<state id="nBulletholes" />
+			<state id="nStringmarks" />
+			<probabilities>0.07272727272727274 0.1090909090909091 0 0.3636363636363637 0.09090909090909091 0.1618181818181818 0.1109090909090909 0.09090909090909091</probabilities>
+		</cpt>
+		<cpt id="W_is_marks">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>W_weapon_marks MW_murder_weapon_marks</parents>
+			<probabilities>1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="MW_victim_wound_type">
+			<state id="nBlunt_wound" />
+			<state id="nOpen_wound" />
+			<state id="nnull" />
+			<probabilities>0.1818181818181819 0.2727272727272727 0.5454545454545454</probabilities>
+		</cpt>
+		<cpt id="W_is_wound">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>MW_victim_wound_type W_wound_type</parents>
+			<probabilities>1 0 0 1 0 1 0 1 1 0 0 1 0 1 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="MW_face">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5454545454545454 0.4545454545454545</probabilities>
+		</cpt>
+		<cpt id="W_face">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>W_meathod</parents>
+			<probabilities>1 0 0 1 1 0 0 1 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="W_is_face">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>MW_face W_face</parents>
+			<probabilities>1 0 0 1 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="MW_neck">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.2727272727272727 0.7272727272727273</probabilities>
+		</cpt>
+		<cpt id="W_neck">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>W_meathod</parents>
+			<probabilities>1 0 0 1 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="W_is_neck">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>MW_neck W_neck</parents>
+			<probabilities>1 0 0 1 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="MW_hands">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.4545454545454545 0.5454545454545454</probabilities>
+		</cpt>
+		<cpt id="W_hands">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>W_meathod</parents>
+			<probabilities>0.9 0.09999999999999998 0.6 0.4 0.8 0.2 0 1 0.75 0.25 0 1</probabilities>
+		</cpt>
+		<cpt id="W_is_hands">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>MW_hands W_hands</parents>
+			<probabilities>1 0 0 1 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="W_murder_weapon">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>W_is_face W_is_neck W_is_hands W_is_marks W_is_strength W_is_wound</parents>
+			<probabilities>1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="MW_blood_on_murder_weapon">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.03636363636363637 0.9636363636363636</probabilities>
+		</cpt>
+		<cpt id="W_blood_on_weapon">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>MW_blood_on_murder_weapon W_murder_weapon</parents>
+			<probabilities>1 0 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="MW_hair_on_murder_weapon">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.1272727272727273 0.8727272727272728</probabilities>
+		</cpt>
+		<cpt id="V_hair_color">
+			<state id="nBlond" />
+			<state id="nBrown" />
+			<state id="nBlack" />
+			<state id="nRed" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="W_weapons_hair_color">
+			<state id="nBlond" />
+			<state id="nBrown" />
+			<state id="nBlack" />
+			<state id="nRed" />
+			<state id="nNull" />
+			<parents>MW_hair_on_murder_weapon V_hair_color W_murder_weapon</parents>
+			<probabilities>1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="weapon_3" faultnameformat="nodestate">
+			<node id="W_weapon_name">
+				<name>Weapon</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 50 630 100</position>
+			</node>
+			<node id="W_contained">
+				<name>Contained</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 50 430 100</position>
+			</node>
+			<node id="W_contained_in_suspect">
+				<name>Contained in suspect</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 50 230 100</position>
+			</node>
+			<node id="W_contained_in_object">
+				<name>Contained in object</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 150 230 200</position>
+			</node>
+			<node id="W_weapon_marks">
+				<name>Weapon marks</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>850 250 980 300</position>
+			</node>
+			<node id="W_meathod">
+				<name>Meathod</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 150 630 200</position>
+			</node>
+			<node id="W_weapon_needs_strength">
+				<name>Weapon needs strength</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 250 830 300</position>
+			</node>
+			<node id="W_wound_type">
+				<name>Victim wound type</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>550 250 680 300</position>
+			</node>
+			<node id="W_is_strength">
+				<name>Is strength</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 350 830 400</position>
+			</node>
+			<node id="W_is_marks">
+				<name>Is marks</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>850 350 980 400</position>
+			</node>
+			<node id="W_is_wound">
+				<name>Is wound</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>550 350 680 400</position>
+			</node>
+			<node id="W_murder_weapon">
+				<name>Murder weapon</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 500 630 550</position>
+			</node>
+			<node id="W_blood_on_weapon">
+				<name>Blood on weapon</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>850 450 980 500</position>
+			</node>
+			<node id="W_weapons_hair_color">
+				<name>Weapons hair color</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>850 550 980 600</position>
+			</node>
+			<node id="W_hands">
+				<name>Hands</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>250 250 380 300</position>
+			</node>
+			<node id="W_is_hands">
+				<name>Is hands</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>250 350 380 400</position>
+			</node>
+			<node id="W_neck">
+				<name>Neck</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 250 230 300</position>
+			</node>
+			<node id="W_is_neck">
+				<name>Is neck</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 350 230 400</position>
+			</node>
+			<node id="W_face">
+				<name>Face</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>400 250 530 300</position>
+			</node>
+			<node id="W_is_face">
+				<name>Is face</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>400 350 530 400</position>
+			</node>
+			<node id="MW_murder_weapon_needs_strength">
+				<name>Murder weapon needs strength</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 100 1330 150</position>
+			</node>
+			<node id="MW_murder_weapon_marks">
+				<name>Murder weapon marks</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 200 1330 250</position>
+			</node>
+			<node id="MW_victim_wound_type">
+				<name>Victim wound type</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 300 1330 350</position>
+			</node>
+			<node id="MW_blood_on_murder_weapon">
+				<name>Blood on murder weapon</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 400 1330 450</position>
+			</node>
+			<node id="MW_hair_on_murder_weapon">
+				<name>Hair on murder weapon</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 500 1330 550</position>
+			</node>
+			<node id="V_hair_color">
+				<name>Victims hair color</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 600 1330 650</position>
+			</node>
+			<node id="MW_hands">
+				<name>Hands</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 700 1330 750</position>
+			</node>
+			<node id="MW_neck">
+				<name>Neck</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 800 1330 850</position>
+			</node>
+			<node id="MW_face">
+				<name>Face</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 900 1330 950</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

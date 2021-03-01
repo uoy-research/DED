@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="P_object_name">
+			<state id="nDesk" />
+			<state id="nChair" />
+			<state id="nSink" />
+			<state id="nFilingCabinet" />
+			<state id="nWastebasket" />
+			<state id="nTable" />
+			<state id="nShelf" />
+			<state id="nDoor" />
+			<state id="nWindow" />
+			<probabilities>0 0 0 0 0 0 0 0 0</probabilities>
+		</cpt>
+		<cpt id="P_size_PREM">
+			<state id="nLarge" />
+			<state id="nTall" />
+			<state id="nMedium" />
+			<state id="nSmall" />
+			<parents>P_object_name</parents>
+			<probabilities>0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1</probabilities>
+		</cpt>
+		<cpt id="P_size_INF">
+			<state id="nLarge" />
+			<state id="nTall" />
+			<state id="nMedium" />
+			<state id="nSmall" />
+			<parents>P_object_name</parents>
+			<probabilities>0.3333333333333333 0 0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0.3333333333333333 0.3333333333333333 0.25 0.25 0.25 0.25 0.3333333333333333 0 0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0.3333333333333333 0.3333333333333333 0 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.5 0 0 0.5 0.3333333333333333 0 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="P_size" faultnameformat="nodestate">
+			<node id="P_size_PREM">
+				<name>P_size PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 300 630 350</position>
+			</node>
+			<node id="P_size_INF">
+				<name>P_size INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 300 630 350</position>
+			</node>
+			<node id="P_object_name">
+				<name>Object name</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 100 230 150</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

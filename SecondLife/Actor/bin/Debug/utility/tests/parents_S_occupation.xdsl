@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="S_occupation_PREM">
+			<state id="nTeacher" />
+			<state id="nNurse" />
+			<state id="nBotanist" />
+			<state id="nDentist" />
+			<state id="nRealestate_agent" />
+			<state id="nSecratery" />
+			<state id="nJudge" />
+			<state id="nLawyer" />
+			<state id="nGP" />
+			<probabilities>0 1 0 0 0 0 0 0 0</probabilities>
+		</cpt>
+		<cpt id="S_occupation_INF">
+			<state id="nTeacher" />
+			<state id="nNurse" />
+			<state id="nBotanist" />
+			<state id="nDentist" />
+			<state id="nRealestate_agent" />
+			<state id="nSecratery" />
+			<state id="nJudge" />
+			<state id="nLawyer" />
+			<state id="nGP" />
+			<probabilities>0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="S_occupation" faultnameformat="nodestate">
+			<node id="S_occupation_PREM">
+				<name>S_occupation PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 300 430 350</position>
+			</node>
+			<node id="S_occupation_INF">
+				<name>S_occupation INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 300 430 350</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

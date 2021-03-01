@@ -1,0 +1,19 @@
+act:2;
+instances:3;
+role:suspect:+;
+role:Witness:*;
+role:Police:*;
+
+#each suspect needs to realize the murder;
+
+goal:character:suspect:self:<:suspect:S_motive:0;
+goal:character:suspect:self:<:suspect:S_murderer:0;
+goal:character:suspect:any:<:murderer:M_name:self;
+
+goal:actor:suspect:any:>=:victim:V_name:*;
+goal:actor:suspect:any:>=:murderer:M_name:*;
+goal:actor:suspect:any:>=:murder_weapon:MW_murder_weapon:*;
+goal:actor:suspect:any:>=:murder_weapon:MW_victim_wound_type:*;
+goal:actor:suspect:any:>=:suspect:S_motive:0;
+goal:actor:suspect:any:>=:suspect:S_murderer:0;
+

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="M_name">
+			<state id="n2" />
+			<state id="n3" />
+			<state id="n4" />
+			<state id="n5" />
+			<state id="n6" />
+			<state id="n7" />
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667</probabilities>
+		</cpt>
+		<cpt id="M_sex">
+			<state id="nMale" />
+			<state id="nFemale" />
+			<parents>M_name</parents>
+			<probabilities>1 0 1 0 1 0 0 1 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="M_strength">
+			<state id="nStrong" />
+			<state id="nWeak" />
+			<parents>M_sex</parents>
+			<probabilities>0.7 0.3 0.8 0.2</probabilities>
+		</cpt>
+		<cpt id="M_size">
+			<state id="nTall" />
+			<state id="nMedium" />
+			<state id="nSmall" />
+			<parents>M_sex</parents>
+			<probabilities>0.4 0.4 0.2 0.2 0.5 0.3</probabilities>
+		</cpt>
+		<cpt id="M_shoe_size">
+			<state id="nNr_37" />
+			<state id="nNr_38" />
+			<state id="nNr_39" />
+			<state id="nNr_40" />
+			<state id="nNr_41" />
+			<state id="nNr_42" />
+			<state id="nNr_43" />
+			<state id="nNr_44" />
+			<state id="nNr_45" />
+			<parents>M_sex M_size</parents>
+			<probabilities>0 0 0 0 0 0.1111111111111111 0.1111111111111111 0.3333333333333333 0.4444444444444444 0 0 0 0 0 0.2 0.3 0.3 0.2 0 0 0 0 0 0.4444444444444444 0.3333333333333333 0.1111111111111111 0.1111111111111111 0.01785714285714286 0.08928571428571429 0.08928571428571429 0.2678571428571429 0.3571428571428572 0.1785714285714286 0 0 0 0.02912621359223301 0.1941747572815534 0.2912621359223301 0.2912621359223301 0.1941747572815534 0 0 0 0 0.4329004329004329 0.3246753246753247 0.1082251082251082 0.1082251082251082 0.02597402597402597 0 0 0 0</probabilities>
+		</cpt>
+		<cpt id="MW_murder_weapon_needs_strength">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5181818181818182 0.4818181818181818</probabilities>
+		</cpt>
+		<cpt id="M_sufficient_strength">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>M_strength MW_murder_weapon_needs_strength</parents>
+			<probabilities>1 0 1 0 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="M_hair_color">
+			<state id="nBlond" />
+			<state id="nBrown" />
+			<state id="nBlack" />
+			<state id="nRed" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="MW_hair_on_victim">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.2172727272727273 0.7827272727272727</probabilities>
+		</cpt>
+		<cpt id="M_HairFoundOnVictim">
+			<state id="nMatch" />
+			<state id="nNoMatch" />
+			<state id="nNull" />
+			<parents>MW_hair_on_victim</parents>
+			<probabilities>0.5 0.5 0 0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="M_murderer">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>M_sufficient_strength M_HairFoundOnVictim</parents>
+			<probabilities>1 0 0 1 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="V_name">
+			<state id="n2" />
+			<state id="n3" />
+			<state id="n4" />
+			<state id="n5" />
+			<state id="n6" />
+			<state id="n7" />
+			<probabilities>0.1666666666666666 0.1666666666666666 0.1666666666666666 0.1666666666666667 0.1666666666666667 0.1666666666666666</probabilities>
+		</cpt>
+		<cpt id="M_relation">
+			<state id="nChild" />
+			<state id="nParent" />
+			<state id="nSpouce" />
+			<state id="nFriends" />
+			<state id="nAdulterer" />
+			<state id="nNull" />
+			<parents>M_name V_name</parents>
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667</probabilities>
+		</cpt>
+		<cpt id="M_heir">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>M_relation</parents>
+			<probabilities>0.98 0.02000000000000002 0.1 0.9 0.95 0.05000000000000004 0.15 0.85 0.2 0.8 0 1</probabilities>
+		</cpt>
+		<cpt id="M_rich">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="M_indebt">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>M_rich</parents>
+			<probabilities>0 1 0.8 0.2</probabilities>
+		</cpt>
+		<cpt id="M_dark_secret">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="M_victim_knows_of_dark_secret">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>M_dark_secret</parents>
+			<probabilities>0.7 0.3 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="V_victims_dark_secret">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="M_murderer_knows_of_dark_secret">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>V_victims_dark_secret</parents>
+			<probabilities>0.7 0.3 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="M_harmed_murderer_in_past">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="M_victim_threatened_to_expose_swindle">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="M_victim_threatened_to_expose_blackmail">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="M_lost_a_fortune">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="M_inheritance">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>M_heir M_rich</parents>
+			<probabilities>0 1 1 0 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="M_blackmailer">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>M_murderer_knows_of_dark_secret M_victim_threatened_to_expose_blackmail</parents>
+			<probabilities>1 0 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="M_swindler">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>M_victim_threatened_to_expose_swindle</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="M_adultery">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="M_isSwindled">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>M_lost_a_fortune</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="M_revenge">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>M_swindler M_harmed_murderer_in_past</parents>
+			<probabilities>1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="M_isBlackmailed">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>M_murderer_knows_of_dark_secret</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="murderer" faultnameformat="nodestate">
+			<node id="M_name">
+				<name>murderer</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 200 230 250</position>
+			</node>
+			<node id="M_sex">
+				<name>Sex</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 100 430 150</position>
+			</node>
+			<node id="M_strength">
+				<name>Strength</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 100 630 150</position>
+			</node>
+			<node id="M_size">
+				<name>Size</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 100 230 150</position>
+			</node>
+			<node id="M_shoe_size">
+				<name>Shoe size</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 200 430 250</position>
+			</node>
+			<node id="M_sufficient_strength">
+				<name>Sufficient strength</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 200 630 250</position>
+			</node>
+			<node id="M_hair_color">
+				<name>murderers hair color</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 200 1030 250</position>
+			</node>
+			<node id="M_HairFoundOnVictim">
+				<name>Hair found on victim</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 100 1030 150</position>
+			</node>
+			<node id="M_murderer">
+				<name>Murderer</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 100 830 150</position>
+			</node>
+			<node id="M_relation">
+				<name>Relation</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 400 230 450</position>
+			</node>
+			<node id="M_heir">
+				<name>Heir</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 500 230 550</position>
+			</node>
+			<node id="M_rich">
+				<name>Rich</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 700 230 750</position>
+			</node>
+			<node id="M_indebt">
+				<name>In dept</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 700 430 750</position>
+			</node>
+			<node id="M_dark_secret">
+				<name>Dark secret</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 500 830 550</position>
+			</node>
+			<node id="M_victim_knows_of_dark_secret">
+				<name>Victim knows of dark secret</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 500 630 550</position>
+			</node>
+			<node id="M_murderer_knows_of_dark_secret">
+				<name>murderer knows of dark secret</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 400 830 450</position>
+			</node>
+			<node id="M_harmed_murderer_in_past">
+				<name>Harmed murderer in past</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 700 830 750</position>
+			</node>
+			<node id="M_victim_threatened_to_expose_swindle">
+				<name>Victim threatened to expose swindle</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 700 1030 750</position>
+			</node>
+			<node id="M_victim_threatened_to_expose_blackmail">
+				<name>Victim threatened to expose blackmail</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 300 1030 350</position>
+			</node>
+			<node id="M_lost_a_fortune">
+				<name>Lost a fortune</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 700 630 750</position>
+			</node>
+			<node id="M_inheritance">
+				<name>Inheritance</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 600 230 650</position>
+			</node>
+			<node id="M_blackmailer">
+				<name>Blackmailer</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 300 830 350</position>
+			</node>
+			<node id="M_swindler">
+				<name>Swindler</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 600 1030 650</position>
+			</node>
+			<node id="M_adultery">
+				<name>Adultery</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 500 1030 550</position>
+			</node>
+			<node id="M_isSwindled">
+				<name>isSwindled</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 600 630 650</position>
+			</node>
+			<node id="M_revenge">
+				<name>Revenge</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 600 830 650</position>
+			</node>
+			<node id="M_isBlackmailed">
+				<name>isBlackmailed</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 400 630 450</position>
+			</node>
+			<node id="MW_murder_weapon_needs_strength">
+				<name>Murder weapon needs strength</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 100 1330 150</position>
+			</node>
+			<node id="MW_hair_on_victim">
+				<name>Hair On Victim</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 200 1330 250</position>
+			</node>
+			<node id="V_name">
+				<name>Victim</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 300 1330 350</position>
+			</node>
+			<node id="V_victims_dark_secret">
+				<name>victims dark secret</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 400 1330 450</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

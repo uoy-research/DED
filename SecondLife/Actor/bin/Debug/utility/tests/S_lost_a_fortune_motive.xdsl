@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="S_lost_a_fortune">
+			<state id="nnTrue" />
+			<state id="nnFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_isSwindled">
+			<state id="nnTrue" />
+			<state id="nnFalse" />
+			<parents>S_lost_a_fortune</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="S_harmed_suspect_in_past">
+			<state id="nnTrue" />
+			<state id="nnFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_revenge">
+			<state id="nnTrue" />
+			<state id="nnFalse" />
+			<parents>S_isSwindled S_harmed_suspect_in_past</parents>
+			<probabilities>1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="S_blackmailer">
+			<state id="nnTrue" />
+			<state id="nnFalse" />
+			<probabilities>0.175 0.825</probabilities>
+		</cpt>
+		<cpt id="S_inheritance">
+			<state id="nnTrue" />
+			<state id="nnFalse" />
+			<probabilities>0.357 0.643</probabilities>
+		</cpt>
+		<cpt id="S_swindler">
+			<state id="nnTrue" />
+			<state id="nnFalse" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_adultery">
+			<state id="nnTrue" />
+			<state id="nnFalse" />
+			<probabilities>0.1 0.9000000000000001</probabilities>
+		</cpt>
+		<cpt id="S_indebt">
+			<state id="nnTrue" />
+			<state id="nnFalse" />
+			<probabilities>0.4 0.6</probabilities>
+		</cpt>
+		<cpt id="S_isBlackmailed">
+			<state id="nnTrue" />
+			<state id="nnFalse" />
+			<probabilities>0.28 0.72</probabilities>
+		</cpt>
+		<cpt id="S_motive">
+			<state id="nnTrue" />
+			<state id="nnFalse" />
+			<parents>S_blackmailer S_inheritance S_swindler S_adultery S_indebt S_isSwindled S_revenge S_isBlackmailed</parents>
+			<probabilities>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="S_lost_a_fortune_motive" faultnameformat="nodestate">
+			<node id="S_lost_a_fortune">
+				<name>S_lost_a_fortune</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="S_isSwindled">
+				<name>S_isSwindled</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="S_revenge">
+				<name>S_revenge</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="S_harmed_suspect_in_past">
+				<name>S_harmed_suspect_in_past</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="S_motive">
+				<name>S_motive</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="S_blackmailer">
+				<name>S_blackmailer</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="S_inheritance">
+				<name>S_inheritance</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="S_swindler">
+				<name>S_swindler</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="S_adultery">
+				<name>S_adultery</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="S_indebt">
+				<name>S_indebt</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="S_isBlackmailed">
+				<name>S_isBlackmailed</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,96 @@
+<acts>
+    <act>
+    <number>0</number>
+    <goal>
+        <name>init</name>
+        <aim>greater</aim>
+        <value>149</value>
+    </goal>
+    </act>
+
+    <act>
+    <number>1</number>
+    
+    <goal>
+        <name>greet</name>
+        <aim>greater</aim>
+        <value>100</value>
+    </goal>
+    
+    <goal>
+        <name>smallchat</name>
+        <aim>greater</aim>
+        <value>50</value>
+    </goal>
+    
+    <goal>
+        <name>introduce_victim</name>
+        <aim>greater</aim>
+        <value>-1</value>
+    </goal>
+
+    <goal>
+        <name>murder</name>
+        <aim>greater</aim>
+        <value>0</value>
+    </goal>
+   
+    <goal>
+        <name>victim_dies</name>
+        <aim>greater</aim>
+        <value>0</value>
+        <die>victim</die>
+    </goal>
+
+    <goal>
+        <name>motive</name>
+        <aim>greater</aim>
+        <value>80</value>
+    </goal>
+    <goal>
+        <name>means</name>
+        <aim>greater</aim>
+        <value>80</value>
+    </goal>
+    <goal>
+        <name>opportunity</name>
+        <aim>greater</aim>
+        <value>80</value>
+    </goal>
+
+     <goal>
+        <name>characteristics</name>
+        <aim>greater</aim>
+        <value>80</value>
+    </goal>
+
+    </act>
+
+    <act>
+    <number>2</number>
+    <goal>
+        <name>motif</name>
+        <aim>greater</aim>
+        <value>80</value>
+    </goal>
+    <goal>
+        <name>means</name>
+        <aim>greater</aim>
+        <value>80</value>
+    </goal>
+    <goal>
+        <name>opportunity</name>
+        <aim>greater</aim>
+        <value>80</value>
+    </goal>
+    </act>
+    
+    <act>
+    <number>3</number>
+    <goal>
+        <name>revealmurderer</name>
+        <aim>greater</aim>
+        <value>100</value>
+    </goal>
+    </act>
+</acts>

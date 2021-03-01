@@ -1,0 +1,33 @@
+<avatars>
+    <avatar>
+        <first_name>Penny</first_name>
+        <last_name>Kellman</last_name>
+        <password>steingeit</password>
+        <init_possition>74.140.26</init_possition>
+    </avatar>
+    <avatar>
+        <first_name>Lydia</first_name>
+        <last_name>Philipp</last_name>
+        <password>steingeit</password>
+        <init_possition>74.142.26</init_possition>
+    </avatar>
+    
+    <avatar>
+        <first_name>Kenneth</first_name>
+        <last_name>Dawid</last_name>
+        <password>alanturing</password>
+        <init_possition>77.144.26</init_possition>
+    </avatar>
+    <avatar>
+        <first_name>Patrick</first_name>
+        <last_name>Charmann</last_name>
+        <password>alanturing</password>
+        <init_possition>77.145.26</init_possition>
+    </avatar>
+    <avatar>
+        <first_name>Snorri</first_name>
+        <last_name>Haggwood</last_name>
+        <password>steingeit</password>
+        <init_possition>80.143.26</init_possition>
+    </avatar>
+</avatars>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="S_victim_knows_of_dark_secret">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0.35 0.65</probabilities>
+		</cpt>
+		<cpt id="S_isBlackmailed_PREM">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>S_victim_knows_of_dark_secret</parents>
+			<probabilities>0.8 0.2 0 1</probabilities>
+		</cpt>
+		<cpt id="S_isBlackmailed_INF">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>S_victim_knows_of_dark_secret</parents>
+			<probabilities>0.8 0.2 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="S_isBlackmailed" faultnameformat="nodestate">
+			<node id="S_isBlackmailed_PREM">
+				<name>S_isBlackmailed PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 400 630 450</position>
+			</node>
+			<node id="S_isBlackmailed_INF">
+				<name>S_isBlackmailed INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 400 630 450</position>
+			</node>
+			<node id="S_victim_knows_of_dark_secret">
+				<name>Victim knows of dark secret</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 500 630 550</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

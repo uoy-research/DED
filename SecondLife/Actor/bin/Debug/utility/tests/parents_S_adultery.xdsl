@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="S_relation">
+			<state id="nChild" />
+			<state id="nParent" />
+			<state id="nSpouce" />
+			<state id="nFriends" />
+			<state id="nAdulterer" />
+			<state id="nNull" />
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667</probabilities>
+		</cpt>
+		<cpt id="S_adultery_PREM">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>S_relation</parents>
+			<probabilities>0 1 0 1 0.6 0.4 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="S_adultery_INF">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>S_relation</parents>
+			<probabilities>0 1 0 1 0.6 0.4 0 1 0 1 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="S_adultery" faultnameformat="nodestate">
+			<node id="S_adultery_PREM">
+				<name>S_adultery PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 500 1030 550</position>
+			</node>
+			<node id="S_adultery_INF">
+				<name>S_adultery INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 500 1030 550</position>
+			</node>
+			<node id="S_relation">
+				<name>Relation</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 400 230 450</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

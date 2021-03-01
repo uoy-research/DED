@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="C_greet">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>1 0</probabilities>
+		</cpt>
+		<cpt id="C_party">
+			<state id="Lottery" />
+			<state id="deal" />
+			<state id="inheritance" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="C_inquire">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>1 0</probabilities>
+		</cpt>
+		<cpt id="C_introduction">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>1 0</probabilities>
+		</cpt>
+		<cpt id="C_drink">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>1 0</probabilities>
+		</cpt>
+		<cpt id="C_seat">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>1 0</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="chat" faultnameformat="nodestate">
+			<node id="C_greet">
+				<name>Greet</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 400 830 450</position>
+			</node>
+			<node id="C_party">
+				<name>Party</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 400 630 450</position>
+			</node>
+			<node id="C_inquire">
+				<name>Inquire</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 400 430 450</position>
+			</node>
+			<node id="C_introduction">
+				<name>Introduction</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 400 230 450</position>
+			</node>
+			<node id="C_drink">
+				<name>Drink</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 200 630 250</position>
+			</node>
+			<node id="C_seat">
+				<name>Seat</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 200 430 250</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

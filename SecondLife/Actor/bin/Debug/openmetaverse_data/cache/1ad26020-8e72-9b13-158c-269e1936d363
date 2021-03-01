@@ -1,0 +1,34 @@
+LLWearable version 22
+Female Shape and Outfit Shoes
+
+	permissions 0
+	{
+		base_mask	7fffffff
+		owner_mask	7fffffff
+		group_mask	7fffffff
+		everyone_mask	7fffbfff
+		next_owner_mask	7fffffff
+		creator_id	00000000-0000-0000-0000-000000000000
+		owner_id	d929385f-41e3-4a34-a04e-f1fc39f24f12
+		last_owner_id	00000000-0000-0000-0000-000000000000
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 6
+parameters 10
+198 .02
+503 .32
+508 .32
+513 .65
+514 .58
+616 .24
+654 .2
+812 1
+813 1
+817 1
+textures 1
+7 f2142f89-a1b0-0d61-6f89-ccc0d912d798

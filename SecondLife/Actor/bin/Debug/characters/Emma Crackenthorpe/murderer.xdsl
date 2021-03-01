@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="M_name_PREM">
+			<state id="n2" />
+			<state id="n3" />
+			<state id="n4" />
+			<state id="n5" />
+			<state id="n6" />
+			<state id="n7" />
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667</probabilities>
+		</cpt>
+		<cpt id="M_name_INF">
+			<state id="n2" />
+			<state id="n3" />
+			<state id="n4" />
+			<state id="n5" />
+			<state id="n6" />
+			<state id="n7" />
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="M_name" faultnameformat="nodestate">
+			<node id="M_name_PREM">
+				<name>M_name PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 200 230 250</position>
+			</node>
+			<node id="M_name_INF">
+				<name>M_name INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 200 230 250</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

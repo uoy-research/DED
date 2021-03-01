@@ -1,0 +1,34 @@
+<schema>
+    <schema_name>init</schema_name>
+    <act>0</act>
+    <instances>1</instances>
+    <role>
+        <name>actor</name>
+        <applies>all</applies>
+        <essential>true</essential>
+    </role>
+
+    <action>
+        <name>createknowledgbase</name>
+        <action_role>actor</action_role>
+        <essential>true</essential>
+
+        <nrExecutions>1</nrExecutions>
+        <action_goals>
+            <action_goal>
+                <action_name>init</action_name>
+                <value>30</value>
+            </action_goal>
+        </action_goals>
+    </action>
+
+    <goal>
+        <name>init</name>
+        <owner>actor</owner>
+        <goal_role>actor</goal_role>
+        <applies>SELF</applies>
+        <aim>equal</aim>
+        <drama_goal>init</drama_goal>
+    </goal>
+
+</schema>

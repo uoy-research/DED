@@ -1,0 +1,11 @@
+act:1;
+instacnes:1;
+role:tester:+;
+role:master:1;
+action:tester:sit:+:true:stand;
+action:tester:stand:+:true:sit;
+action:tester:sip:+:true:sit;
+action:master:setupgame:1:true;
+
+goal:actor:tester:any:>,70:characteristics:V_name:*;
+goal:actor:master:any:>,70:characteristics:V_name:*;

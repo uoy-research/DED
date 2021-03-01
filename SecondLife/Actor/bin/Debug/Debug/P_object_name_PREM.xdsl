@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="MS_Scene_name">
+			<state id="n1" />
+			<state id="n2" />
+			<state id="n3" />
+			<state id="n4" />
+			<state id="n5" />
+			<state id="n6" />
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667</probabilities>
+		</cpt>
+		<cpt id="P_object_name_PREM">
+			<state id="nDesk" />
+			<state id="nChair" />
+			<state id="nSink" />
+			<state id="nFilingCabinet" />
+			<state id="nWastebasket" />
+			<state id="nTable" />
+			<state id="nShelf" />
+			<state id="nDoor" />
+			<state id="nWindow" />
+			<parents>MS_Scene_name</parents>
+			<probabilities>0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0</probabilities>
+		</cpt>
+		<cpt id="P_object_name_INF">
+			<state id="nDesk" />
+			<state id="nChair" />
+			<state id="nSink" />
+			<state id="nFilingCabinet" />
+			<state id="nWastebasket" />
+			<state id="nTable" />
+			<state id="nShelf" />
+			<state id="nDoor" />
+			<state id="nWindow" />
+			<parents>MS_Scene_name</parents>
+			<probabilities>0 0.1666666666666667 0 0 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0 0.1666666666666667 0 0 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0 0.1428571428571429 0.1428571428571429 0 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.125 0.125 0 0.125 0.125 0.125 0.125 0.125 0.125 0.1428571428571429 0.1428571428571429 0 0 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.125 0.125 0 0.125 0.125 0.125 0.125 0.125 0.125</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="P_object_name" faultnameformat="nodestate">
+			<node id="P_object_name_PREM">
+				<name>P_object_name PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 100 230 150</position>
+			</node>
+			<node id="P_object_name_INF">
+				<name>P_object_name INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 100 230 150</position>
+			</node>
+			<node id="MS_Scene_name">
+				<name>Scene_name</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 100 230 150</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

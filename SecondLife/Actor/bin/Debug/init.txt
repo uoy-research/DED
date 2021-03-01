@@ -1,0 +1,9 @@
+act:0;
+instances:1;
+role:actor:all:1;
+
+
+action:actor:initPosition:1:true:init%34:login;
+action:actor:login:1:true:init%34;
+action:actor:createknowledgbase:1:true:init%34:login;
+

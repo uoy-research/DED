@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="INTEGRITY">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<decision id="DECISION">
+			<state id="S_blackmailer0" />
+			<state id="S_blackmailer1" />
+			<state id="S_inheritance0" />
+			<state id="S_inheritance1" />
+			<state id="S_swindler0" />
+			<state id="S_swindler1" />
+			<state id="S_adultery0" />
+			<state id="S_adultery1" />
+			<state id="S_indebt0" />
+			<state id="S_indebt1" />
+			<state id="S_isSwindled0" />
+			<state id="S_isSwindled1" />
+			<state id="S_revenge0" />
+			<state id="S_revenge1" />
+			<state id="S_isBlackmailed0" />
+			<state id="S_isBlackmailed1" />
+		</decision>
+		<cpt id="CONTRADICTION">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<parents>DECISION</parents>
+			<probabilities>0.825 0.175 0.175 0.825 0.643 0.357 0.357 0.643 0.5 0.5 0.5 0.5 0.9 0.09999999999999998 0.1 0.9 0.6 0.4 0.4 0.6 0.5 0.5 0.5 0.5 0.25 0.75 0.75 0.25 0.72 0.28 0.28 0.72</probabilities>
+		</cpt>
+		<utility id="UTILITY">
+			<parents>CONTRADICTION INTEGRITY</parents>
+			<utilities>0 100 100 100</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="Unnamed" faultnameformat="nodestate">
+			<node id="INTEGRITY">
+				<name>INTEGRITY</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="DECISION">
+				<name>DECISION</name>
+				<interior color="008000" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="CONTRADICTION">
+				<name>CONTRADICTION</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+			<node id="UTILITY">
+				<name>UTILITY</name>
+				<interior color="0000ff" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

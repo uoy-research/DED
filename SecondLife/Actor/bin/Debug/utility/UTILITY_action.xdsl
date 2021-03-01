@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="INTEGRITY">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.6 0.4</probabilities>
+		</cpt>
+		<cpt id="PREM">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0 0</probabilities>
+		</cpt>
+		<decision id="DECISION">
+			<state id="True" />
+			<state id="False" />
+		</decision>
+		<cpt id="EVALUATION">
+			<state id="True" />
+			<state id="False" />
+			<parents>PREM DECISION</parents>
+			<probabilities>0 1 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<utility id="UTILITY">
+			<parents>EVALUATION</parents>
+			<utilities>0 0</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 25 2008" name="Unnamed" faultnameformat="nodestate">
+			<node id="INTEGRITY">
+				<name>INTEGRITY</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>250 100 380 150</position>
+			</node>
+			<node id="PREM">
+				<name>PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>50 100 180 150</position>
+			</node>
+			<node id="DECISION">
+				<name>DECISION</name>
+				<interior color="008000" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>50 200 180 250</position>
+			</node>
+			<node id="EVALUATION">
+				<name>EVALUATION</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>250 200 380 250</position>
+			</node>
+			<node id="UTILITY">
+				<name>UTILITY</name>
+				<interior color="0000ff" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>450 200 580 250</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

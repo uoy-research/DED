@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Murder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <murder_weapon>Spanner</murder_weapon>
+  <murder_meathod>Bludgeoned</murder_meathod>
+  <hair_on_victim>False</hair_on_victim>
+  <murder_weapon_marks>Oval</murder_weapon_marks>
+  <victim_wound_type>Blunt_wound</victim_wound_type>
+  <blood_on_murder_weapon>False</blood_on_murder_weapon>
+  <hair_on_murder_weapon>True</hair_on_murder_weapon>
+  <murder_weapon_needs_strength>True</murder_weapon_needs_strength>
+  <neck>False</neck>
+  <face>False</face>
+  <hands>True</hands>
+  <murder_scene>4</murder_scene>
+  <Shoe_print>Null</Shoe_print>
+  <Hair_on_scene>Brown</Hair_on_scene>
+</Murder>

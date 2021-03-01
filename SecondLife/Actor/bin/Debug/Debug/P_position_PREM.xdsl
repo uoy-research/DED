@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="P_object_name">
+			<state id="nDesk" />
+			<state id="nChair" />
+			<state id="nSink" />
+			<state id="nFilingCabinet" />
+			<state id="nWastebasket" />
+			<state id="nTable" />
+			<state id="nShelf" />
+			<state id="nDoor" />
+			<state id="nWindow" />
+			<probabilities>0 0 0 0 0 0 0 0 0</probabilities>
+		</cpt>
+		<cpt id="P_position_PREM">
+			<state id="nMiddle_of_the_room" />
+			<state id="nUp_by_a_wall" />
+			<state id="nIn_a_corner" />
+			<state id="nOn_the_floor" />
+			<parents>P_object_name</parents>
+			<probabilities>0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0</probabilities>
+		</cpt>
+		<cpt id="P_position_INF">
+			<state id="nMiddle_of_the_room" />
+			<state id="nUp_by_a_wall" />
+			<state id="nIn_a_corner" />
+			<state id="nOn_the_floor" />
+			<parents>P_object_name</parents>
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0.25 0.25 0.25 0.25 0 0.5 0.5 0 0 0.5 0.5 0 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0 0.5 0.5 0 0 0.5 0.5 0 0 0.5 0.5 0</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="P_position" faultnameformat="nodestate">
+			<node id="P_position_PREM">
+				<name>P_position PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 100 430 150</position>
+			</node>
+			<node id="P_position_INF">
+				<name>P_position INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 100 430 150</position>
+			</node>
+			<node id="P_object_name">
+				<name>Object name</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 100 230 150</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

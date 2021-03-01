@@ -1,0 +1,74 @@
+<schema>
+    <schema_name>init</schema_name>
+    <act>0</act>
+    <instances>1</instances>
+    <role>
+        <name>actor</name>
+        <applies>all</applies>
+        <essential>true</essential>
+    </role>
+    <action>
+        <name>initPosition</name>
+        <action_role>actor</action_role>
+        <essential>true</essential>
+        <preconditions>
+            <precondition>
+                <precondition_name>login</precondition_name>
+                <precondition_satisfier>self</precondition_satisfier>
+            </precondition>
+        </preconditions>
+        <nrExecutions>1</nrExecutions>
+        <action_goals>
+            <action_goal>
+                <action_name>init</action_name>
+                <value>10</value>
+            </action_goal>
+        </action_goals>
+    </action>
+    
+    <action>
+        <name>login</name>
+        <action_role>actor</action_role>
+        <essential>true</essential>
+        <nrExecutions>1</nrExecutions>
+        <action_goals>
+            <action_goal>
+                <action_name>init</action_name>
+                <value>10</value>
+            </action_goal>
+        </action_goals>
+    </action>
+    
+    <action>
+        <name>createknowledgbase</name>
+        <action_role>actor</action_role>
+        <essential>true</essential>
+        <preconditions>
+            <precondition>
+                <precondition_name>login</precondition_name>
+                <precondition_satisfier>self</precondition_satisfier>
+            </precondition>
+            <precondition>
+                <precondition_name>initPosition</precondition_name>
+                <precondition_satisfier>self</precondition_satisfier>
+            </precondition>
+        </preconditions>
+        <nrExecutions>1</nrExecutions>
+        <action_goals>
+            <action_goal>
+                <action_name>init</action_name>
+                <value>10</value>
+            </action_goal>
+        </action_goals>
+    </action>
+    
+    <goal>
+        <name>init</name>
+        <owner>actor</owner>
+        <goal_role>actor</goal_role>
+        <applies>SELF</applies>
+        <aim>equal</aim>
+        <drama_goal>init</drama_goal>
+    </goal>
+
+</schema>

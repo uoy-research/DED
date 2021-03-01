@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="S_victim_threatened_to_expose_swindle_PREM">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_victim_threatened_to_expose_swindle_INF">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_victim_threatened_to_expose_swindle_PREM</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="S_victim_threatened_to_expose_swindle" faultnameformat="nodestate">
+			<node id="S_victim_threatened_to_expose_swindle_PREM">
+				<name>S_victim_threatened_to_expose_swindle PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 700 1030 750</position>
+			</node>
+			<node id="S_victim_threatened_to_expose_swindle_INF">
+				<name>S_victim_threatened_to_expose_swindle INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>0 0 130 50</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

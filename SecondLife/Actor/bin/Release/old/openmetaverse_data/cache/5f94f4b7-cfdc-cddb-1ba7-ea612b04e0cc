@@ -1,0 +1,52 @@
+LLWearable version 22
+Real Skin light make up
+
+	permissions 0
+	{
+		base_mask	7fffffff
+		owner_mask	7fffffff
+		group_mask	7fff1fff
+		everyone_mask	7fff3fff
+		next_owner_mask	7fff3fff
+		creator_id	00000000-0000-0000-0000-000000000000
+		owner_id	c0975146-b803-449d-90a6-ad47c75265d5
+		last_owner_id	00000000-0000-0000-0000-000000000000
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	0
+	}
+type 1
+parameters 26
+108 0
+110 .09
+111 .42
+116 .39
+117 .45
+150 .15
+162 .09
+163 0
+165 .64
+700 .25
+701 0
+702 0
+703 0
+704 0
+705 .5
+706 .6
+707 0
+708 0
+709 0
+710 0
+711 .5
+712 0
+713 .7
+714 0
+715 0
+775 0
+textures 3
+0 95916ec5-63d0-39a4-4688-bd78a8dc1b15
+5 4e3ac493-6a62-6ff5-dc6c-2d5b646cff5e
+6 f9239cb3-9cfc-560d-1f8c-416f7f75f815

@@ -1,0 +1,40 @@
+<userinput>
+    <user>
+        <input>
+            <has>motive</has>
+        </input>
+        <variable>S_motive</variable>
+        <subnet>suspect</subnet>
+        <state>1</state>    
+    </user>
+    
+    <user>
+        <input>
+            <has>had</has>
+            <has>secret</has>
+        </input>
+        <variable>S_isBlackmailed</variable>
+        <subnet>suspect</subnet>
+        <state>1</state>    
+    </user>
+    
+    <user>
+        <input>
+            <has>in debt</has>
+        </input>
+        <variable>S_indebt</variable>
+        <subnet>suspect</subnet>
+        <state>1</state>    
+    </user>
+
+    <user>
+        <input>
+            <has>you knew</has>
+            <has>secret</has>
+        </input>
+        <variable>S_suspect_knows_of_dark_secret</variable>
+        <subnet>suspect</subnet>
+        <state>1</state>    
+    </user>
+
+</userinput>

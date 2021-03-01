@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <act>0</act>
+  <victim>n7</victim>
+  <event>e1</event>
+  <plot>true</plot>
+  <knowledgebase>false</knowledgebase>
+  <characters>false</characters>
+  <newgame>false</newgame>
+</Settings>

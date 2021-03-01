@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="C_party_PREM">
+			<state id="nLottery" />
+			<state id="ndeal" />
+			<state id="ninheritance" />
+			<probabilities>0 1 0</probabilities>
+		</cpt>
+		<cpt id="C_party_INF">
+			<state id="nLottery" />
+			<state id="ndeal" />
+			<state id="ninheritance" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="C_party" faultnameformat="nodestate">
+			<node id="C_party_PREM">
+				<name>C_party PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 400 630 450</position>
+			</node>
+			<node id="C_party_INF">
+				<name>C_party INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 400 630 450</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

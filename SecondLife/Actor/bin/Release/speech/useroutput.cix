@@ -1,0 +1,3559 @@
+<useroutput>
+  <user>
+    <action>S_blackmailer</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{1} was not blackmailing {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <traits>
+            <trait>
+              <trait_name>Emotional Stability</trait_name>
+              <trait_value>high</trait_value>
+            </trait>            
+            <trait>
+              <trait_name>Apprehension</trait_name>
+              <trait_value>low</trait_value>
+            </trait>
+            <trait>
+              <trait_name>Tension</trait_name>
+              <trait_value>low</trait_value>
+            </trait>
+          </traits>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>Of course {1} was not blackmailing {0}, it is illigal</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <traits>
+            <trait>
+              <trait_name>Emotional Stability</trait_name>
+              <trait_value>high</trait_value>
+            </trait>
+            <trait>
+              <trait_name>Rule-Consiousness</trait_name>
+              <trait_value>high</trait_value>
+            </trait>
+            <trait>
+              <trait_name>Apprehension</trait_name>
+              <trait_value>low</trait_value>
+            </trait>
+            <trait>
+              <trait_name>Tension</trait_name>
+              <trait_value>low</trait_value>
+            </trait>
+          </traits>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>of course {1} was not blackmailing {0}, ... just not the type...</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <traits>
+            <trait>
+              <trait_name>Emotional Stability</trait_name>
+              <trait_value>low</trait_value>
+            </trait>
+            <trait>
+              <trait_name>Apprehension</trait_name>
+              <trait_value>high</trait_value>
+            </trait>
+            <trait>
+              <trait_name>Tension</trait_name>
+              <trait_value>high</trait_value>
+            </trait>
+          </traits>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I was not blackmailing {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>How dare you think I could blackmail {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>No I was absolutely not blackmailing {0}</speech>
+          <attributes>
+            <attribute>victim</attribute> 
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{1} was blackmailing {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{1} most deffinately blackmailed {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+
+        <sentence>
+          <speech>Oh yes {1} was blackmailing {0},just the sort too do that!</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>Yes I blackmailed {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>OK.. I admit it! {0} deserved it! Don't blame me...</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>I only took what was justly mine, it was {0} choice to keep paying me</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{1} was not blackmailing {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I was not blackmailing {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{1} was blackmailing {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I was blackmailing {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>I only took what was justly mine, it was {0} choice to keep paying me</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  
+  <user>
+    <action>S_motive</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{1} did not have a reason to kill {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>Of course {0} has no motive</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I'm certain {0} has no motive</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I had no reason to kill {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>NOOO, how can you say that! I absolutely had no reason to kill {0}!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>Of course I have no motive, It's absurd!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{1} had a reason to kill {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>It was {0}!!</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I know {1} had a very good reason to murder {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I had a reason to kill {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>I had a very good reason to murder {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>Ok so I had a motive! So what? </speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{1} had a reason to kill {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        
+        <sentence>
+          <speech>I had a very good reason to murder {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>Ok so I had a motive! So what? </speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{1} did not have a reason to kill {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>Of course {0} has no motive</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I'm certain {0} has no motive</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I had no reason to kill {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>NOOO, how can you say that! I absolutely had no reason to kill {0}!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+    
+  <user>
+    <action>S_revenge</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{1} had nothing to revenge for. {0} never did {2} any harm!</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I had nothing to revenge for. {0} never did me any harm!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} wanted a revenge</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} had it comming.</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{1} had nothing to revenge for. {0} never did {1} any harm!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I had nothing to revenge for. {0} never did me any harm!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} wanted a revenge</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} had it comming.</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+    
+  <user>
+    <action>S_rich</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} is poor</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} is dirt poor</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} hasen't got a penny!</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>So I'm not the wealthiest around, so what?</speech>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>Ok I'm poor!</speech>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>Yeah mate, I'm not rich...</speech>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} is rich</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} is posh mate!</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I'm well rich! </speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>I have enough :)</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} is poor</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} is dirt poor</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} hasen't got a penny!</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>So I'm not the wealthiest around, so what?</speech>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>Ok I'm poor!</speech>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>Yeah mate, I'm not rich...</speech>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} is rich</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} is posh mate!</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I'm well rich! </speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>I have enough !!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+    
+  <user>
+    <action>S_victim_knows_of_dark_secret</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} knew nothing of {1}'s secrets</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I'm sure {0} knew nothing</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} knew all about {1}'s secrets</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} knew a lot</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} knew nothing of {1}'s secrets</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I'm sure {0} knew nothing</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} knew all about {1}'s secrets</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} knew a lot</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  
+  <user>
+    <action>S_dark_secret</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} has no secrets</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I'm sure {0} has no secrets</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} surely can't have any secrets</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I have no secrets</speech>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>of course I have no secrets</speech>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>ME! Secrets! Are you serious?</speech>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} has deep dark secrets</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I know about {0}'s deep dark secrets</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I have secrets... they are deeply personal...</speech>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>Everyone has secrets </speech>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} has no secrets</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I'm sure {0} has no secrets</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} surely can't have any secrets</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I have no secrets</speech>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>of course I have no secrets</speech>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>ME! Secrets! Are you serious?</speech>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} has deep dark secrets</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I know about {0}'s deep dark secrets</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I have secrets... they are deeply personal...</speech>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>Everyone has secrets </speech>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+    
+  <user>
+    <action>S_suspect_knows_of_dark_secret</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} did not know that {1} had any secrets</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I did not know that {0} had any secrets</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} knew about {1} secrets</speech>
+          <target>OTHER</target>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+        </sentence>
+        <sentence>
+          <speech>I knew about {0} secrets</speech>
+          <target>SELF</target>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{1} did not know that {0} had any secrets</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{1} knew about {0} secrets</speech>
+          <target>OTHER</target>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+        </sentence>
+        <sentence>
+          <speech>I knew about {0} secrets</speech>
+          <target>SELF</target>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  
+  
+  <user>
+    <action>S_victim_threatened_to_expose_blackmail</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} was trustworthy and kept silent</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} wanted to expose {1} as a blackmailer</speech>
+          <target>OTHER</target>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+        </sentence>
+        <sentence>
+          <speech>{0} wanted to expose me as a blackmailer</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} was trustworthy and kept silent</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} wanted to expose {1} as a blackmailer</speech>
+          <target>OTHER</target>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+        </sentence>
+        <sentence>
+          <speech>{0} wanted to expose me as a blackmailer</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  
+  
+  <user>
+    <action>S_isBlackmailed</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} was not blackmailing {1}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>{0} was not blackmailing me</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} was blackmailing {1}</speech>
+          <target>OTHER</target>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+        </sentence>
+        <sentence>
+          <speech>{0} was blackmailing me</speech>
+          <target>SELF</target>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} was not blackmailing {1}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>{0} was not blackmailing me</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} was blackmailing {1}</speech>
+          <target>OTHER</target>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+        </sentence>
+        <sentence>
+          <speech>{0} was blackmailing me</speech>
+          <target>SELF</target>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>S_wedlock</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{1} could divorce {0} if {1} wanted to</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+        <sentence>
+          <speech>Yes we were married, but I could divorce {0} if I wanted to</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} refused to give {1} a divorce</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} refused to give me a divorce</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{1} could divorce {0} if {1} wanted to</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+        <sentence>
+          <speech>Yes we were married, but I could divorce {0} if I wanted to</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} refused to give {1} a divorce</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} refused to give me a divorce</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>S_lost_a_fortune</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} havent lost a dime</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I haven't lost a dime</speech>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0}, you lost your life savings</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I lost my life savings</speech>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} havent lost a dime</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I haven't lost a dime</speech>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0}, you lost your life savings</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I lost my life savings</speech>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>S_isSwindled</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} did not swindle {1}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>{0} did not swindle me</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} swindled {1}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} swindled me</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} did not swindle {1}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>{0} did not swindle me</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} swindled {1}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} swindled me</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>S_inheritance</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} wont inherit anything</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I wont inherit anything</speech>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{1} stands to inherit a large sum from {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>Of course I will inherit a large sum from  {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} wont inherit anything</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I wont inherit anything</speech>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{1} stands to inherit a large sum from {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>Of course I will inherit a large sum from  {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>S_heir</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{1} not {0}'s heir</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I'm not {0}'s heir</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{1} is {0}'s heir</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I'm {0}'s heir</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{1} not {0}'s heir</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I'm not {0}'s heir</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{1} is {0}'s heir</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I'm {0}'s heir</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>S_adultery</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} was not having an affair </speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I was not having an affair </speech>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} was having an affair</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I was having an affair</speech>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} was not having an affair </speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I was not having an affair </speech>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} was having an affair</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I was having an affair</speech>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>S_swindler</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} are no swindler</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I'm no swindler</speech>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} is a swindler</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I'm a swindler</speech>
+          <target>self</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} are no swindler</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I'm no swindler</speech>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} is a swindler</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I'm a swindler</speech>
+          <target>self</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>S_indebt</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{1} did not owe {0} anything</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I did not owe {0} anything</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{1} owed {0} money</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I owed {0} money</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{1} owed {0} money</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>I owed {0} money</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{1} did not owe {0} anything</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I did not owe {0} anything</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>S_victim_threatened_to_expose_swindle</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} was trustworthy and kept silent</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} wanted to expose {1} as a swindler</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} wanted to expose me as a swindler</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} was trustworthy and kept silent</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} wanted to expose {1} as a swindler</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>{0} wanted to expose me as a swindler</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>S_harmed_suspect_in_past</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} never harmed {1}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>{0} never harmed me</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} harmed {1}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>{0} harmed me</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} never harmed {1}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>{0} never harmed me</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} harmed {1}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>{0} harmed me</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>S_relation</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} was {1}'s child</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>{0} was my child</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} was {1}'s parent</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>{0} was my parent</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>{1} was married to {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I was married to {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>{1} was friends with {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I was a close friend to {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>4</state>
+        <sentence>
+          <speech>{1} was having an affair with {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I was having an affair with {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>5</state>
+        <sentence>
+          <speech>{1} was not related to {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I was not related to {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} was {1}'s child</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>{0} was my child</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} was {1}'s parent</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>{0} was my parent</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>{1} was married to {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I was married to {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>{1} was friends with {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I was a close friend to {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>4</state>
+        <sentence>
+          <speech>{1} was having an affair with {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I was having an affair with {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>5</state>
+        <sentence>
+          <speech>{1} was not related to {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+        <sentence>
+          <speech>I was not related to {0}</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>self</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>C_introduction</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>I'm {0}'s parent</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>I'm {0}'s child</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>I'm {0}'s spouce</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>I'm {0}'s friend</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>4</state>
+        <sentence>
+          <speech>I'm {0}'s friend</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+      </sentences>
+    </goal>    
+  </user>
+  <user>
+    <action>V_victims_dark_secret</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} didn't have a dark secret</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} had a dark secret</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>Default</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} didn't have a dark secret</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} had a dark secret</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>Default</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>V_hair_color</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0}'s hair was blond</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0}'s hair was brown</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>{0}'s hair was black</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>{0}'s hair was red</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0}'s hair was blond</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0}'s hair was brown</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>{0}'s hair was black</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>{0}'s hair was red</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>V_victims_size</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} was tall</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} was of an avarage height</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>{0} was short</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>{0}'s hair was red</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0} was tall</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0} was of an avarage height</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>{0} was short</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>{0}'s hair was red</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>V_victims_shoe_size</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0}'s shoe size was 37</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0}'s shoe size was 38</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>{0}'s shoe size was 39</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>{0}'s shoe size was 40</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>4</state>
+        <sentence>
+          <speech>{0}'s shoe size was 41</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>5</state>
+        <sentence>
+          <speech>{0}'s shoe size was 42</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>6</state>
+        <sentence>
+          <speech>{0}'s shoe size was 43</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>7</state>
+        <sentence>
+          <speech>{0}'s shoe size was 44</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>8</state>
+        <sentence>
+          <speech>{0}'s shoe size was 45</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0}'s shoe size was 37</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0}'s shoe size was 38</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>{0}'s shoe size was 39</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>{0}'s shoe size was 40</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>4</state>
+        <sentence>
+          <speech>{0}'s shoe size was 41</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>5</state>
+        <sentence>
+          <speech>{0}'s shoe size was 42</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>6</state>
+        <sentence>
+          <speech>{0}'s shoe size was 43</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>7</state>
+        <sentence>
+          <speech>{0}'s shoe size was 44</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>8</state>
+        <sentence>
+          <speech>{0}'s shoe size was 45</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>M_shoe_size</action>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0}'s shoe size was 37</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0}'s shoe size was 38</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>{0}'s shoe size was 39</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>{0}'s shoe size was 40</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>4</state>
+        <sentence>
+          <speech>{0}'s shoe size was 41</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>5</state>
+        <sentence>
+          <speech>{0}'s shoe size was 42</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>6</state>
+        <sentence>
+          <speech>{0}'s shoe size was 43</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>7</state>
+        <sentence>
+          <speech>{0}'s shoe size was 44</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>8</state>
+        <sentence>
+          <speech>{0}'s shoe size was 45</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>{0}'s shoe size was 37</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>{0}'s shoe size was 38</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>{0}'s shoe size was 39</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>{0}'s shoe size was 40</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>4</state>
+        <sentence>
+          <speech>{0}'s shoe size was 41</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>5</state>
+        <sentence>
+          <speech>{0}'s shoe size was 42</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>6</state>
+        <sentence>
+          <speech>{0}'s shoe size was 43</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>7</state>
+        <sentence>
+          <speech>{0}'s shoe size was 44</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>8</state>
+        <sentence>
+          <speech>{0}'s shoe size was 45</speech>
+          <attributes>
+            <attribute>murderer</attribute>
+          </attributes>
+          <target>default</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>S_shoe_size</action>
+    <goal>
+      <variable>S_murderer</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>my shoe size is 37</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 37</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>my shoe size is 38</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 38</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>my shoe size is 39</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 39</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>my shoe size is 40</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 40</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>4</state>
+        <sentence>
+          <speech>my shoe size is 41</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 41</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>5</state>
+        <sentence>
+          <speech>my shoe size is 42</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 42</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>6</state>
+        <sentence>
+          <speech>my shoe size is 43</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 43</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>7</state>
+        <sentence>
+          <speech>my shoe size is 44</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 44</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>8</state>
+        <sentence>
+          <speech>my shoe size is 45</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 45</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>S_motive</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>my shoe size is 37</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 37</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>my shoe size is 38</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 38</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>my shoe size is 39</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 39</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>my shoe size is 40</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 40</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>4</state>
+        <sentence>
+          <speech>my shoe size is 41</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 41</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>5</state>
+        <sentence>
+          <speech>my shoe size is 42</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 42</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>6</state>
+        <sentence>
+          <speech>my shoe size is 43</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 43</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>7</state>
+        <sentence>
+          <speech>my shoe size is 44</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 44</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>8</state>
+        <sentence>
+          <speech>my shoe size is 45</speech>
+          <target>self</target>
+        </sentence>
+        <sentence>
+          <speech>{0}'s shoe size is 45</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>other</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>C_greet</action>
+    <goal>
+      <variable>C_greet</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>Hi</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>wave</gesture_name>
+            </gesture>
+            <gesture>
+              <gesture_name>wave short</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+        <sentence>
+          <speech>Hi, how are you?</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>wave</gesture_name>
+            </gesture>
+            <gesture>
+              <gesture_name>wave short</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+        <sentence>
+          <speech>Hi {0}, how are you?</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>wave</gesture_name>
+            </gesture>
+            <gesture>
+              <gesture_name>wave short</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+        <sentence>
+          <speech>Hi {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>wave</gesture_name>
+            </gesture>
+            <gesture>
+              <gesture_name>wave short</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+        <sentence>
+          <speech>Hello</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>wave</gesture_name>
+            </gesture>
+            <gesture>
+              <gesture_name>wave short</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+        <sentence>
+          <speech>Hello, how are you?</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>wave</gesture_name>
+            </gesture>
+            <gesture>
+              <gesture_name>wave short</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+        <sentence>
+          <speech>Hello {0}, how are you?</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>wave</gesture_name>
+            </gesture>
+            <gesture>
+              <gesture_name>wave short</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+        <sentence>
+          <speech>Hello {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>wave</gesture_name>
+            </gesture>
+            <gesture>
+              <gesture_name>wave short</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>S_occupation</action>
+    <goal>
+      <variable>S_occupation</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>I'm a teacher</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>I am</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>I'm a nurse</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>I am</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>I'm a botanist</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>I am</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>I'm a dentist</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>I am</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>4</state>
+        <sentence>
+          <speech>I'm a realestate agent</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>I am</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>5</state>
+        <sentence>
+          <speech>I'm a judge</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>I am</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>6</state>
+        <sentence>
+          <speech>I'm a lawyer</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>I am</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>7</state>
+        <sentence>
+          <speech>I'm a GP</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>I am</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>8</state>
+        <sentence>
+          <speech>I'm a Computer Scientist</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>I am</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>C_introduction</action>
+    <goal>
+      <variable>C_introduction</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>Welcome to my house!</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>C_inquire</action>
+    <goal>
+      <variable>C_inquire</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>How are you {0}?</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+        <sentence>
+          <speech>Are you alright {0}?</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+        <sentence>
+          <speech>How are you?</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+        <sentence>
+          <speech>Are you alright</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>C_inquire</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>I'm fine thanks {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>I am</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+        <sentence>
+          <speech>Fine thanks, {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+        <sentence>
+          <speech>Yeah, I'm good</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>I am</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>C_party</action>
+    <goal>
+      <variable>C_party</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>We are holding a party celebrating that {0} won the Lottery!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>We are holding a party celebrating that I won the Lottery!</speech>
+          <target>SELF</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>We are holding a party celebrating {0}'s recent excellent buisness deal!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>We are holding a party celebrating my recent excellent buisness deal, I'm rich!</speech>
+          <target>SELF</target>
+          <gestures>
+            <gesture>
+              <gesture_name>I am</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>We are holding a party celebrating my recent inheritance, I'm rich!</speech>
+          <target>SELF</target>
+        </sentence>
+        <sentence>
+          <speech>We are holding a party celebrating {0}'s recent inheritance!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>3</state>
+        <sentence>
+          <speech>We are holding a party celebrating that {0} won at the races!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>OTHER</target>
+        </sentence>
+        <sentence>
+          <speech>We are holding a party celebrating that I won at the races, I'm rich!</speech>
+          <target>SELF</target>
+          <gestures>
+            <gesture>
+              <gesture_name>I am</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>C_drink</action>
+    <goal>
+      <variable>C_drink</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>Have a drink</speech>
+          <target>DEFAULT</target>
+        </sentence>
+        <sentence>
+          <speech>Do you want something to drink</speech>
+          <target>DEFAULT</target>
+        </sentence>
+        <sentence>
+          <speech>There are drinks over by the bar</speech>
+          <target>DEFAULT</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>C_drink</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>sure have some, {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+        <sentence>
+          <speech>Of course {0} have anything you want</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+        <sentence>
+          <speech>Drinks are over by the bar</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>C_seat</action>
+    <goal>
+      <variable>C_seat</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>Have a seat</speech>
+          <target>DEFAULT</target>
+        </sentence>
+        <sentence>
+          <speech>Sit down please</speech>
+          <target>DEFAULT</target>
+        </sentence>
+        <sentence>
+          <speech>Would you like to take a seat</speech>
+          <target>DEFAULT</target>
+        </sentence>
+      </sentences>
+    </goal>
+    <goal>
+      <variable>C_seat</variable>
+      <goalstate>1</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>Sure have a seat {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+        <sentence>
+          <speech>of course {0}</speech>
+          <attributes>
+            <attribute>addressedto</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+  <user>
+    <action>R_react</action>
+    <goal>
+      <variable>R_react</variable>
+      <goalstate>0</goalstate>
+      <sentences>
+        <state>0</state>
+        <sentence>
+          <speech>Oh no {0} is dead!!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>shock</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>1</state>
+        <sentence>
+          <speech>Oh no {0} is dead!!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>shock</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+        <sentence>
+          <speech>No {1} was not blackmailing {0}</speech>
+          <target>OTHER</target>
+        </sentence>
+      </sentences>
+      <sentences>
+        <state>2</state>
+        <sentence>
+          <speech>Oh no {0} is dead!!</speech>
+          <attributes>
+            <attribute>victim</attribute>
+          </attributes>
+          <target>DEFAULT</target>
+          <gestures>
+            <gesture>
+              <gesture_name>shock</gesture_name>
+            </gesture>
+          </gestures>
+        </sentence>
+      </sentences>
+    </goal>
+  </user>
+</useroutput>

@@ -1,0 +1,110 @@
+<schema>
+    <schema_name>introduction</schema_name>
+    <act>1</act>
+    <instances>1</instances>
+    <rank>0</rank>
+    
+    
+    <role>
+        <name>victim</name>
+        <role_variable>V_name</role_variable>
+        <role_subnet>victim</role_subnet>
+        <applies>1</applies>
+        <essential>true</essential>
+    </role> 
+    
+    <role>
+        <name>suspect</name>
+        <applies>4</applies>
+        <essential>true</essential>
+    </role>   
+    
+    <action>
+        <name>say</name>
+        <action_role>victim</action_role>
+        <essential>false</essential>
+        <nrExecutions>1</nrExecutions>
+        <action_rank>3</action_rank>        
+        <action_variable>C_introduction</action_variable>
+        <action_subnet>chat</action_subnet>
+        <action_goals>
+            <action_goal>
+                <action_name>welcome</action_name>
+                <value>20</value>
+            </action_goal>
+        </action_goals>
+    </action>
+            
+    <action>
+        <name>say</name>
+        <action_role>victim</action_role>
+        <essential>false</essential>
+        <action_variable>C_party</action_variable>
+        <action_subnet>chat</action_subnet>
+        <nrExecutions>1</nrExecutions>
+        <action_rank>3</action_rank>
+        <preconditions>
+            <precondition>
+                <precondition_name>C_introduction</precondition_name>
+                <precondition_satisfier>self</precondition_satisfier>
+            </precondition>
+        </preconditions>
+        <action_goals>
+            <action_goal>
+                <action_name>party</action_name>
+                <value>20</value>
+            </action_goal>
+        </action_goals>
+    </action>
+    
+    <action>
+        <name>say</name>
+        <action_role>victim</action_role>
+        <essential>false</essential>
+        <action_variable>S_relation</action_variable>
+        <action_subnet>suspect</action_subnet>
+        <nrExecutions>1</nrExecutions>
+        <action_rank>3</action_rank>
+        <preconditions>
+            <precondition>
+                <precondition_name>C_party</precondition_name>
+                <precondition_satisfier>self</precondition_satisfier>
+            </precondition>
+        </preconditions>
+    </action>
+    
+    <goal>
+        <name>party</name>
+        <owner>character</owner>
+        <goal_role>victim</goal_role>
+        <applies>self</applies>
+        <drama_goal>introduce_victim</drama_goal>
+        <variable>C_party</variable>
+        <value>30</value>
+        <state>0</state>
+    </goal>
+
+	<goal>
+        <name>welcome</name>
+        <owner>character</owner>
+        <goal_role>victim</goal_role>
+        <applies>self</applies>
+        <drama_goal>introduce_victim</drama_goal>
+        <variable>C_introduction</variable>
+        <value>30</value>
+        <state>0</state>
+    </goal>
+    
+    <goal>
+        <name>party_reply</name>
+        <owner>character</owner>
+        <goal_role>suspect</goal_role>
+        <applies>other</applies>
+        <drama_goal>introduce_victim</drama_goal>
+        <variable>C_party</variable>
+        <value>20</value>
+        <state>0</state>
+    </goal>
+    
+
+</schema>

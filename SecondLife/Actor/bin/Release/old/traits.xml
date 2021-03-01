@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<traits>
+    
+    <trait>
+        <character>Penny Kellman</character>
+        <name>Integrity</name>
+        <value>0.8</value>
+    </trait>
+    
+    <trait>
+        <character>Lydia Philipp</character>
+        <name>Integrity</name>
+        <value>0.2</value>
+    </trait>
+    
+    <trait>
+        <character>Patrick Charmann</character>
+        <name>Integrity</name>
+        <value>0.8</value>
+    </trait>
+    
+    <trait>
+        <character>Kenneth Dawid</character>
+        <name>Integrity</name>
+        <value>0.2</value>
+    </trait>
+    
+    <trait>
+        <character>snorri haggwood</character>
+        <name>Integrity</name>
+        <value>0.6</value>
+    </trait>
+    
+    <trait>
+        <character>Penny Kellman</character>
+        <name>Chatty</name>
+        <value>0.9</value>
+    </trait>
+    
+    <trait>
+        <character>Lydia Philipp</character>
+        <name>Chatty</name>
+        <value>0.4</value>
+    </trait>
+    
+    <trait>
+        <character>Patrick Charmann</character>
+        <name>Chatty</name>
+        <value>0.1</value>
+    </trait>
+    
+    <trait>
+        <character>Kenneth Dawid</character>
+        <name>Chatty</name>
+        <value>0.8</value>
+    </trait>
+    
+    <trait>
+        <character>snorri haggwood</character>
+        <name>Chatty</name>
+        <value>0.4</value>
+    </trait>
+    
+    
+    <trait>
+        <character>Penny Kellman</character>
+        <name>Emotional</name>
+        <value>0.8</value>
+    </trait>
+    
+    <trait>
+        <character>Lydia Philipp</character>
+        <name>Emotional</name>
+        <value>0.6</value>
+    </trait>
+    
+    <trait>
+        <character>Patrick Charmann</character>
+        <name>Emotional</name>
+        <value>0.2</value>
+    </trait>
+    
+    <trait>
+        <character>Kenneth Dawid</character>
+        <name>Emotional</name>
+        <value>0.8</value>
+    </trait>
+    
+    <trait>
+        <character>snorri haggwood</character>
+        <name>Emotional</name>
+        <value>0.4</value>
+    </trait> 
+    
+</traits>

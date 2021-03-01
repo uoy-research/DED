@@ -1,0 +1,65 @@
+<acts>
+    <act>
+    <number>0</number>
+    <goal>
+        <name>init</name>
+        <aim>greater</aim>
+        <value>100</value>
+        <applies>all</applies>
+    </goal>
+    </act>
+
+    <act>
+    <number>1</number>
+    <goal>
+        <name>characteristics</name>
+        <value>70</value>
+        <applies>all</applies>
+    </goal>
+    
+    <goal>
+        <name>casual</name>
+        <value>70</value>
+        <applies>all</applies>
+    </goal>
+    
+    <goal>
+        <name>findbody</name>
+        <aim>greater</aim>
+        <value>100</value>
+        <applies>player</applies>
+    </goal>
+    </act>
+
+    <act>
+    <number>2</number>
+    <goal>
+        <name>motif</name>
+        <aim>greater</aim>
+        <value>80</value>
+        <applies>all</applies>
+    </goal>
+    <goal>
+        <name>means</name>
+        <aim>greater</aim>
+        <value>80</value>
+        <applies>all</applies>
+    </goal>
+    <goal>
+        <name>opportunity</name>
+        <aim>greater</aim>
+        <value>80</value>
+        <applies>all</applies>
+    </goal>
+    </act>
+    
+    <act>
+    <number>3</number>
+    <goal>
+        <name>revealmurderer</name>
+        <aim>greater</aim>
+        <value>100</value>
+        <applies>1</applies>
+    </goal>
+    </act>
+</acts>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="P_object_name">
+			<state id="Desk" />
+			<state id="Chair" />
+			<state id="Sink" />
+			<state id="FilingCabinet" />
+			<state id="Wastebasket" />
+			<state id="Table" />
+			<state id="Shelf" />
+			<state id="Door" />
+			<state id="Window" />
+			<probabilities>0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111</probabilities>
+		</cpt>
+		<cpt id="P_position">
+			<state id="Middle_of_the_room" />
+			<state id="Up_by_a_wall" />
+			<state id="In_a_corner" />
+			<state id="On_the_floor" />
+			<parents>P_object_name</parents>
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0.25 0.25 0.25 0.25 0 0.5 0.5 0 0 0.5 0.5 0 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0 0.5 0.5 0 0 0.5 0.5 0 0 0.5 0.5 0</probabilities>
+		</cpt>
+		<cpt id="P_container">
+			<state id="True" />
+			<state id="False" />
+			<parents>P_object_name</parents>
+			<probabilities>1 0 0 1 0 1 1 0 1 0 1 0 1 0 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="P_breakable">
+			<state id="True" />
+			<state id="False" />
+			<parents>P_object_name</parents>
+			<probabilities>0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="P_size">
+			<state id="Large" />
+			<state id="Tall" />
+			<state id="Medium" />
+			<state id="Small" />
+			<parents>P_object_name</parents>
+			<probabilities>0.3333333333333333 0 0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0.3333333333333333 0.3333333333333333 0.25 0.25 0.25 0.25 0.3333333333333333 0 0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0.3333333333333333 0.3333333333333333 0 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.5 0 0 0.5 0.3333333333333333 0 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="P_lock">
+			<state id="KeyLock" />
+			<state id="NonKeyLock" />
+			<state id="Null" />
+			<parents>P_object_name</parents>
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0 1 0 0 1 0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0 1 0 0 1 0 0 1 0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="MS_glass">
+			<state id="Inside" />
+			<state id="Outside" />
+			<state id="Null" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="P_broken">
+			<state id="True" />
+			<state id="False" />
+			<parents>P_breakable MS_glass</parents>
+			<probabilities>5 -4 5 -4 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="P_list_of_suspects">
+			<state id="Notebook" />
+			<state id="Calendar" />
+			<state id="Casefile" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="P_key_in_lock">
+			<state id="True" />
+			<state id="False" />
+			<parents>P_lock</parents>
+			<probabilities>5 -4 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="P_locked">
+			<state id="True" />
+			<state id="False" />
+			<parents>P_lock</parents>
+			<probabilities>5 -4 5 -4 0 1</probabilities>
+		</cpt>
+		<cpt id="MW_murder_weapon">
+			<state id="Poison" />
+			<state id="Spanner" />
+			<state id="Club" />
+			<state id="Knife" />
+			<probabilities>0.004950495049504951 0.4950495049504951 0.4950495049504951 0.004950495049504951</probabilities>
+		</cpt>
+		<cpt id="P_contains_weapon">
+			<state id="Knife" />
+			<state id="Poison" />
+			<state id="Club" />
+			<state id="Spanner" />
+			<parents>MW_murder_weapon</parents>
+			<probabilities>0 1 0 0 0 0 0 1 0 0 1 0 1 0 0 0</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="object" faultnameformat="nodestate">
+			<node id="P_object_name">
+				<name>Object name</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 100 230 150</position>
+			</node>
+			<node id="P_position">
+				<name>Position</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 100 430 150</position>
+			</node>
+			<node id="P_container">
+				<name>Container</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 200 630 250</position>
+			</node>
+			<node id="P_breakable">
+				<name>Breakable</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 250 430 300</position>
+			</node>
+			<node id="P_size">
+				<name>Size</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 300 630 350</position>
+			</node>
+			<node id="P_lock">
+				<name>Lock</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 300 230 350</position>
+			</node>
+			<node id="P_broken">
+				<name>Broken</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 350 430 400</position>
+			</node>
+			<node id="P_list_of_suspects">
+				<name>List of suspect</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 100 630 150</position>
+			</node>
+			<node id="P_key_in_lock">
+				<name>Key in lock</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>100 400 230 450</position>
+			</node>
+			<node id="P_locked">
+				<name>Locked</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 450 430 500</position>
+			</node>
+			<node id="P_contains_weapon">
+				<name>Contains weapon</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>500 400 630 450</position>
+			</node>
+			<node id="MS_glass">
+				<name>Glass</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 100 1330 150</position>
+			</node>
+			<node id="MW_murder_weapon">
+				<name>Murder weapon</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1200 200 1330 250</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

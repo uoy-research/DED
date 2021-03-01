@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000">
+	<nodes>
+		<cpt id="INTEGRITY">
+			<state id="High" />
+			<state id="Low" />
+			<probabilities>0.8 0.2</probabilities>
+		</cpt>
+		<cpt id="PREMISE">
+			<state id="Pro" />
+			<state id="Con" />
+			<probabilities>0.8 0.2</probabilities>
+		</cpt>
+		<decision id="DECISION">
+			<state id="Pro" />
+			<state id="Con" />
+		</decision>
+		<cpt id="EVALUATION">
+			<state id="True" />
+			<state id="False" />
+			<parents>PREMISE DECISION</parents>
+			<probabilities>0 1 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<utility id="UTILITY">
+			<parents>EVALUATION INTEGRITY</parents>
+			<utilities>0 1 1 0</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.3006.0" name="Unnamed" faultnameformat="nodestate">
+			<node id="INTEGRITY">
+				<name>ATTRIBUTE</name>
+				<interior color="ffffff" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="8" />
+				<position>410 106 540 156</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="PREMISE">
+				<name>PREMISE</name>
+				<interior color="ffffff" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="8" />
+				<position>251 106 381 156</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="DECISION">
+				<name>DECISION</name>
+				<interior color="ffffff" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="8" />
+				<position>95 199 225 249</position>
+			</node>
+			<node id="EVALUATION">
+				<name>EVALUATION</name>
+				<interior color="ffffff" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="8" />
+				<position>251 199 381 249</position>
+			</node>
+			<node id="UTILITY">
+				<name>UTILITY</name>
+				<interior color="ffffff" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="8" />
+				<position>411 199 541 249</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,37 @@
+<schema>
+    <schema_name>casual</schema_name>
+    <act>1</act>
+    <act>2</act>
+    <act>3</act>
+    <instances>1</instances>
+    <rank>0</rank>
+    <role>
+        <name>actor</name>
+        <applies>all</applies>
+        <essential>true</essential>
+    </role>   
+    
+    <action>
+        <name>holdglass</name>
+        <action_role>actor</action_role>
+        <essential>false</essential>
+        <nrExecutions>1</nrExecutions>   
+        <action_rank>3</action_rank>
+    </action>
+        
+    <action>
+        <name>drink</name>
+        <action_role>actor</action_role>
+        <essential>false</essential>
+        <nrExecutions>10000</nrExecutions>
+
+        <action_rank>3</action_rank>
+        <preconditions>
+            <precondition>
+                <precondition_name>holdglass</precondition_name>
+                <precondition_satisfier>self</precondition_satisfier>
+            </precondition>
+        </preconditions>
+        
+    </action>
+</schema>

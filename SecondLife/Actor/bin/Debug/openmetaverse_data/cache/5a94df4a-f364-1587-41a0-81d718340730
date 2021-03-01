@@ -1,0 +1,34 @@
+LLWearable version 22
+Sexy - Male Shirt
+
+	permissions 0
+	{
+		base_mask	00082000
+		owner_mask	00082000
+		group_mask	00000000
+		everyone_mask	00000000
+		next_owner_mask	00082000
+		creator_id	a2ca4958-431a-4179-8d04-e58a388e28ab
+		owner_id	3d924400-038e-6ad9-920b-cfbb9b40585c
+		last_owner_id	101358d5-469d-4b24-9b85-4dc3c05e635d
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 4
+parameters 10
+781 1
+800 1
+801 1
+802 1
+803 .75
+804 .75
+805 .75
+828 0
+840 .07
+868 0
+textures 1
+1 9ebaaf02-95f3-1a68-ff5a-f3fc63bbcac6

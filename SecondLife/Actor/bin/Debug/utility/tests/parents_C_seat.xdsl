@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="C_seat_PREM">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>1 0</probabilities>
+		</cpt>
+		<cpt id="C_seat_INF">
+			<state id="nTrue" />
+			<state id="nFalse" />
+			<probabilities>1 0</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Jun 16 2009" name="C_seat" faultnameformat="nodestate">
+			<node id="C_seat_PREM">
+				<name>C_seat PREM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 200 430 250</position>
+			</node>
+			<node id="C_seat_INF">
+				<name>C_seat INF</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>300 200 430 250</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

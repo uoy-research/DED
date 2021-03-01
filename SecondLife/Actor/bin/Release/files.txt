@@ -1,0 +1,7 @@
+actor_actions,z:\gidy\DED\users\{0}a\{1}_actions.xml
+actor_motive,z:\gidy\DED\users\{0}a\{1}_motive.xml
+user_actions,z:\gidy\DED\users\{0}\User_Action.xml
+settings,z:\gidy\DED\users\{0}a\settings.xml
+murder,z:\gidy\DED\users\{0}\murder.xml
+goals,z:\gidy\DED\users\{0}\goals.xml
+newgame,z:\gidy\DED\xml\newgame.xml

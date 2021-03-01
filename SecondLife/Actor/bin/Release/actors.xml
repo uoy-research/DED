@@ -1,0 +1,48 @@
+<ArrayOfAvatar>
+
+  <Avatar>
+    <id>2</id>
+    <title>Mr</title>
+    <first_name>Alfred</first_name>
+    <last_name>Crackenthorpe</last_name>
+    <img>Alfred Crackenthorpe.JPG</img>
+  </Avatar>
+  <Avatar>
+    <id>3</id>
+    <title>Mr</title>
+    <first_name>Bryan</first_name>
+    <last_name>Eastley</last_name>
+    <img>Bryan Eastley.JPG</img>
+  </Avatar>
+  <Avatar>
+    <id>4</id>
+    <title>Mr</title>
+    <first_name>Cedric</first_name>
+    <last_name>Crackenthorpe</last_name>
+    <img>Cedric Crackenthorpe.JPG</img>
+  </Avatar>
+  <Avatar>
+    <id>5</id>
+    <title>Mrs</title>
+    <first_name>Elspeth</first_name>
+    <last_name>McGuillicuddy</last_name>
+    <img>Elspeth McGuillicuddy.JPG</img>
+  </Avatar>
+  <Avatar>
+    <id>6</id>
+    <title>Mrs</title>
+    <first_name>Emma</first_name>
+    <last_name>Crackenthorpe</last_name>
+    <img>Emma Crackenthorpe.JPG</img>
+  </Avatar>
+  <Avatar>
+    <id>7</id>
+    <title>Mr</title>
+    <first_name>Harold</first_name>
+    <last_name>Crackenthorpe</last_name>
+    <img>Harold Crackenthorpe.JPG</img>
+  </Avatar>
+
+
+
+</ArrayOfAvatar>
