@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC6CEAD5-3699-440A-BB3E-37D158D7B8CB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DED</RootNamespace>
+    <AssemblyName>Actor</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Decision\ActionFilter.cs" />
+    <Compile Include="Decision\BaseUtility.cs" />
+    <Compile Include="Decision\Utility.cs" />
+    <Compile Include="Decision\UtilityGreaterEqualVariable.cs" />
+    <Compile Include="Decision\UtilityLessVariable.cs" />
+    <Compile Include="Director\DirectorDrama.cs" />
+    <Compile Include="Director\DirectorSchema.cs" />
+    <Compile Include="Director\Schema.cs" />
+    <Compile Include="NPC\Actions\ActCreateKnowledgebase.cs" />
+    <Compile Include="NPC\Actions\ActInitPosition.cs" />
+    <Compile Include="NPC\Actions\Action.cs" />
+    <Compile Include="NPC\Actions\ActLogin.cs" />
+    <Compile Include="NPC\Perception.cs" />
+    <Compile Include="SL\Avatar.cs" />
+    <Compile Include="SL\Appearance.cs" />
+    <Compile Include="DPGE\Plot.cs" />
+    <Compile Include="Utils\Values.cs" />
+    <Compile Include="SL\IMHandler.cs" />
+    <Compile Include="DED.cs" />
+    <Compile Include="SL\Gesture.cs" />
+    <Compile Include="NPC\Knowledgebase.cs" />
+    <Compile Include="NPC\Actor.cs" />
+    <Compile Include="SL\Search.cs" />
+    <Compile Include="SL\Teleport.cs" />
+    <Compile Include="Utils\Bayes.cs" />
+    <Compile Include="Utils\Constants.cs" />
+    <Compile Include="Utils\Node.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="libsecondlife, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL" />
+    <Reference Include="smilenet, Version=1.1.3006.30883, Culture=neutral" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+</Project>
