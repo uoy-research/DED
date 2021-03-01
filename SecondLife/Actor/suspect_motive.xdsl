@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="S_name">
+			<state id="Philipp" />
+			<state id="Lydia" />
+			<state id="Kenneth" />
+			<state id="Pilar" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="S_sex">
+			<state id="Male" />
+			<state id="Female" />
+			<parents>S_name</parents>
+			<probabilities>1 0 0 1 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="S_strength">
+			<state id="Strong" />
+			<state id="Weak" />
+			<parents>S_sex</parents>
+			<probabilities>0.7 0.3 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="S_size">
+			<state id="Tall" />
+			<state id="Medium" />
+			<state id="Small" />
+			<parents>S_sex</parents>
+			<probabilities>0.4 0.4 0.2 0.2 0.5 0.3</probabilities>
+		</cpt>
+		<cpt id="S_shoe_size">
+			<state id="Nr_37" />
+			<state id="Nr_38" />
+			<state id="Nr_39" />
+			<state id="Nr_40" />
+			<state id="Nr_41" />
+			<state id="Nr_42" />
+			<state id="Nr_43" />
+			<state id="Nr_44" />
+			<state id="Nr_45" />
+			<parents>S_sex S_size</parents>
+			<probabilities>0 0 0 0 0 0.1111111111111111 0.1111111111111111 0.3333333333333333 0.4444444444444444 0 0 0 0 0 0.2 0.3 0.3 0.2 0 0 0 0 0 0.4444444444444444 0.3333333333333333 0.1111111111111111 0.1111111111111111 0.01785714285714286 0.08928571428571429 0.08928571428571429 0.2678571428571429 0.3571428571428572 0.1785714285714286 0 0 0 0.02912621359223301 0.1941747572815534 0.2912621359223301 0.2912621359223301 0.1941747572815534 0 0 0 0 0.4329004329004329 0.3246753246753247 0.1082251082251082 0.1082251082251082 0.02597402597402597 0 0 0 0</probabilities>
+		</cpt>
+		<cpt id="MW_murder_weapon_needs_strength">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.7075 0.2925</probabilities>
+		</cpt>
+		<cpt id="S_sufficient_strength">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_strength MW_murder_weapon_needs_strength</parents>
+			<probabilities>1 0 1 0 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="MS_shoe_print">
+			<state id="Nr_37" />
+			<state id="Nr_38" />
+			<state id="Nr_39" />
+			<state id="Nr_40" />
+			<state id="Nr_41" />
+			<state id="Nr_42" />
+			<state id="Nr_43" />
+			<state id="Nr_44" />
+			<state id="Nr_45" />
+			<state id="Null" />
+			<probabilities>0.00700797 0.0140159 0.0420478 0.119696 0.106872 0.0389332 0.0967355 0.0967355 0.0424078 0.435549</probabilities>
+		</cpt>
+		<cpt id="S_ShoePrintFoundOnScene">
+			<state id="Match" />
+			<state id="NoMatch" />
+			<state id="Null" />
+			<parents>MS_shoe_print S_shoe_size</parents>
+			<probabilities>1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="S_hair_color">
+			<state id="Blond" />
+			<state id="Brown" />
+			<state id="Black" />
+			<state id="Red" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="MS_hair_on_scene">
+			<state id="Blond" />
+			<state id="Brown" />
+			<state id="Black" />
+			<state id="Red" />
+			<state id="Null" />
+			<probabilities>0.125 0.125 0.125 0.125 0.5</probabilities>
+		</cpt>
+		<cpt id="S_HairFoundOnScene">
+			<state id="Match" />
+			<state id="NoMatch" />
+			<state id="Null" />
+			<parents>MS_hair_on_scene S_hair_color</parents>
+			<probabilities>1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="M_hair_color">
+			<state id="Blond" />
+			<state id="Brown" />
+			<state id="Black" />
+			<state id="Red" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="MW_hair_on_victim">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.34 0.6599999999999999</probabilities>
+		</cpt>
+		<cpt id="S_HairFoundOnVictim">
+			<state id="Match" />
+			<state id="NoMatch" />
+			<state id="Null" />
+			<parents>S_hair_color M_hair_color MW_hair_on_victim</parents>
+			<probabilities>1 0 0 1 0 1 0 1 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1 1 0 0 1 0 1 0 1 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1 1 0 0 1 0 1 0 1 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1 1 0 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="S_murderer">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_sufficient_strength S_ShoePrintFoundOnScene S_HairFoundOnScene S_HairFoundOnVictim</parents>
+			<probabilities>1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="V_name">
+			<state id="Philipp" />
+			<state id="Lydia" />
+			<state id="Kenneth" />
+			<state id="Pilar" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="S_relation">
+			<state id="Child" />
+			<state id="Parent" />
+			<state id="Spouce" />
+			<state id="Friends" />
+			<state id="Adulterer" />
+			<state id="Null" />
+			<parents>S_name V_name</parents>
+			<probabilities>0 0 0 0 0 1 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.25 0.25 0 0.25 0 0.25 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0 0 0 0 0 1 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.25 0.25 0 0.25 0 0.25 0.25 0.25 0 0.25 0 0.25 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0 0 0 0 0 1 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.25 0.25 0 0.25 0 0.25 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0 0 0 0 0 1</probabilities>
+		</cpt>
+		<cpt id="S_heir">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_relation</parents>
+			<probabilities>0.98 0.02000000000000002 0.1 0.9 0.95 0.05000000000000004 0.15 0.85 0.2 0.8 0 1</probabilities>
+		</cpt>
+		<cpt id="S_rich">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_indebt">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_rich</parents>
+			<probabilities>0 1 0.8 0.2</probabilities>
+		</cpt>
+		<cpt id="S_dark_secret">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_victim_knows_of_dark_secret">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_dark_secret</parents>
+			<probabilities>0.7 0.3 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="V_victims_dark_secret">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_suspect_knows_of_dark_secret">
+			<state id="True" />
+			<state id="False" />
+			<parents>V_victims_dark_secret</parents>
+			<probabilities>0.7 0.3 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="S_harmed_suspect_in_past">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_victim_threatened_to_expose_swindle">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_victim_threatened_to_expose_blackmail">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_lost_a_fortune">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="S_inheritance">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_heir</parents>
+			<probabilities>0.9 0.09999999999999998 0 1</probabilities>
+		</cpt>
+		<cpt id="S_blackmailer">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_suspect_knows_of_dark_secret S_victim_threatened_to_expose_blackmail</parents>
+			<probabilities>1 0 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="S_swindler">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_victim_threatened_to_expose_swindle</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="S_adultery">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_relation</parents>
+			<probabilities>0 1 0 1 0.8 0.2 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="S_isSwindled">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_lost_a_fortune</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="S_revenge">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_swindler S_harmed_suspect_in_past</parents>
+			<probabilities>1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="S_isBlackmailed">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_victim_knows_of_dark_secret</parents>
+			<probabilities>0.8 0.2 0 1</probabilities>
+		</cpt>
+		<cpt id="S_motive">
+			<state id="True" />
+			<state id="False" />
+			<parents>S_blackmailer S_inheritance S_swindler S_adultery S_indebt S_isSwindled S_revenge S_isBlackmailed</parents>
+			<probabilities>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.3259.0" name="suspect" faultnameformat="nodestate">
+			<node id="S_name">
+				<name>Suspect</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>56 845 186 895</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="S_sex">
+				<name>Sex</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>300 100 430 150</position>
+				<barchart active="true" />
+			</node>
+			<node id="S_strength">
+				<name>Strength</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>500 100 630 150</position>
+				<barchart active="true" />
+			</node>
+			<node id="S_size">
+				<name>Size</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>100 100 230 150</position>
+				<barchart active="true" />
+			</node>
+			<node id="S_shoe_size">
+				<name>Shoe size</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>300 200 430 250</position>
+				<barchart active="true" />
+			</node>
+			<node id="S_sufficient_strength">
+				<name>Sufficient strength</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>500 200 630 250</position>
+				<barchart active="true" />
+			</node>
+			<node id="S_ShoePrintFoundOnScene">
+				<name>Shoe print found on scene</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>500 300 630 350</position>
+				<barchart active="true" />
+			</node>
+			<node id="S_hair_color">
+				<name>Suspects hair color</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>900 200 1030 250</position>
+				<barchart active="true" />
+			</node>
+			<node id="S_HairFoundOnScene">
+				<name>Hair found on scene</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>700 200 830 250</position>
+				<barchart active="true" />
+			</node>
+			<node id="S_HairFoundOnVictim">
+				<name>Hair found on victim</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>900 100 1030 150</position>
+				<barchart active="true" />
+			</node>
+			<node id="S_murderer">
+				<name>Murderer</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>700 100 830 150</position>
+				<barchart active="true" />
+			</node>
+			<node id="S_relation">
+				<name>Relation</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>207 986 337 1036</position>
+				<barchart active="true" width="128" height="126" />
+			</node>
+			<node id="S_heir">
+				<name>Heir</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>207 1151 337 1201</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="S_rich">
+				<name>Rich</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>205 1397 335 1447</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="S_indebt">
+				<name>In dept</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>587 1183 717 1233</position>
+				<barchart active="true" width="104" height="64" />
+			</node>
+			<node id="S_dark_secret">
+				<name>Dark secret</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>587 797 717 847</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="S_victim_knows_of_dark_secret">
+				<name>Victim knows of dark secret</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>586 913 716 963</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="S_suspect_knows_of_dark_secret">
+				<name>Suspect knows of dark secret</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1013 1077 1143 1127</position>
+				<barchart active="true" width="117" height="64" />
+			</node>
+			<node id="S_harmed_suspect_in_past">
+				<name>Harmed suspect in past</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>713 1456 843 1506</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="S_victim_threatened_to_expose_swindle">
+				<name>Victim threatened to expose swindle</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>903 1459 1033 1509</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="S_victim_threatened_to_expose_blackmail">
+				<name>Victim threatened to expose blackmail</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>804 914 934 964</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="S_lost_a_fortune">
+				<name>Lost a fortune</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>539 1457 669 1507</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="S_inheritance">
+				<name>Inheritance</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>207 1274 337 1324</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="S_blackmailer">
+				<name>Blackmailer</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>725 1092 855 1142</position>
+				<barchart active="true" width="105" height="64" />
+			</node>
+			<node id="S_swindler">
+				<name>Swindler</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>856 1229 986 1279</position>
+				<barchart active="true" width="79" height="64" />
+			</node>
+			<node id="S_adultery">
+				<name>Adultery</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>850 1121 980 1171</position>
+				<barchart active="true" width="76" height="64" />
+			</node>
+			<node id="S_isSwindled">
+				<name>isSwindled</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>591 1278 721 1328</position>
+				<barchart active="true" width="94" height="64" />
+			</node>
+			<node id="S_revenge">
+				<name>Revenge</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>726 1285 856 1335</position>
+				<barchart active="true" width="88" height="64" />
+			</node>
+			<node id="S_isBlackmailed">
+				<name>isBlackmailed</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>581 1089 711 1139</position>
+				<barchart active="true" width="98" height="64" />
+			</node>
+			<node id="S_motive">
+				<name>Motive</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>721 1186 851 1236</position>
+				<barchart active="true" width="93" height="64" />
+			</node>
+			<node id="MW_murder_weapon_needs_strength">
+				<name>Murder weapon needs strength</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1200 100 1330 150</position>
+				<barchart active="true" />
+			</node>
+			<node id="MS_shoe_print">
+				<name>Shoe print</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1200 200 1330 250</position>
+				<barchart active="true" />
+			</node>
+			<node id="MS_hair_on_scene">
+				<name>Hair on scene</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1200 300 1330 350</position>
+				<barchart active="true" />
+			</node>
+			<node id="M_hair_color">
+				<name>murderers hair color</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1200 400 1330 450</position>
+				<barchart active="true" />
+			</node>
+			<node id="MW_hair_on_victim">
+				<name>Hair On Victim</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1200 500 1330 550</position>
+				<barchart active="true" />
+			</node>
+			<node id="V_name">
+				<name>Victim</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>374 844 504 894</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="V_victims_dark_secret">
+				<name>victims dark secret</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1173 1038 1303 1088</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

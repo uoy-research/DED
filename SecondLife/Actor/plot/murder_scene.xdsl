@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="MS_shoe_print">
+			<state id="Nr_37" />
+			<state id="Nr_38" />
+			<state id="Nr_39" />
+			<state id="Nr_40" />
+			<state id="Nr_41" />
+			<state id="Nr_42" />
+			<state id="Nr_43" />
+			<state id="Nr_44" />
+			<state id="Nr_45" />
+			<state id="Null" />
+			<probabilities>0.00700797 0.0140159 0.0420478 0.119696 0.106872 0.0389332 0.0967355 0.0967355 0.0424078 0.435549</probabilities>
+		</cpt>
+		<cpt id="MS_glass">
+			<state id="Inside" />
+			<state id="Outside" />
+			<state id="Null" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="M_hair_color">
+			<state id="Blond" />
+			<state id="Brown" />
+			<state id="Black" />
+			<state id="Red" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="MS_hair_on_scene">
+			<state id="Blond" />
+			<state id="Brown" />
+			<state id="Black" />
+			<state id="Red" />
+			<state id="Null" />
+			<parents>M_hair_color</parents>
+			<probabilities>0.5 0 0 0 0.5 0 0.5 0 0 0.5 0 0 0.5 0 0.5 0 0 0 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.3259.0" name="murder_scene" faultnameformat="nodestate">
+			<node id="MS_shoe_print">
+				<name>Shoe print</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>541 63 671 113</position>
+			</node>
+			<node id="MS_glass">
+				<name>Glass</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>541 163 671 213</position>
+			</node>
+			<node id="MS_hair_on_scene">
+				<name>Hair on scene</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>370 160 500 210</position>
+			</node>
+			<node id="M_hair_color">
+				<name>murderers hair color</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>370 61 500 111</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Actor">
+</Property><Property Name="Solution File" Value="E:\SecondLife\Actor\Actor.sln">
+</Property><Property Name="User Options File" Value="E:\SecondLife\Actor\Actor.suo">
+</Property><Property Name="Date" Value="13. janúar 2009">
+</Property><Property Name="Time" Value="13:25">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Actor.sln" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Actor.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Actor.suo" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Actor.suo">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Actor.csproj" Description="Project file successfully backed up as E:\SecondLife\Actor\Backup\Actor.csproj">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Decision\ActionFilter.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Decision\ActionFilter.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Decision\BaseUtility.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Decision\BaseUtility.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Decision\Utility.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Decision\Utility.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Decision\UtilityGreaterEqualVariable.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Decision\UtilityGreaterEqualVariable.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Decision\UtilityLessVariable.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Decision\UtilityLessVariable.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Director\DirectorDrama.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Director\DirectorDrama.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Director\DirectorSchema.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Director\DirectorSchema.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Director\Schema.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Director\Schema.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="NPC\Actions\ActCreateKnowledgebase.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\NPC\Actions\ActCreateKnowledgebase.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="NPC\Actions\ActInitPosition.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\NPC\Actions\ActInitPosition.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="NPC\Actions\Action.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\NPC\Actions\Action.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="NPC\Actions\ActLogin.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\NPC\Actions\ActLogin.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="NPC\Perception.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\NPC\Perception.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="SL\Avatar.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\SL\Avatar.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="SL\Appearance.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\SL\Appearance.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="DPGE\Plot.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\DPGE\Plot.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Utils\Values.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Utils\Values.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="SL\IMHandler.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\SL\IMHandler.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="DED.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\DED.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="SL\Gesture.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\SL\Gesture.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="NPC\Knowledgebase.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\NPC\Knowledgebase.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="NPC\Actor.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\NPC\Actor.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="SL\Search.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\SL\Search.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="SL\Teleport.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\SL\Teleport.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Utils\Bayes.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Utils\Bayes.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Utils\Constants.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Utils\Constants.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Utils\Node.cs" Description="File successfully backed up as E:\SecondLife\Actor\Backup\Utils\Node.cs">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Actor.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Actor" Source="Actor.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Actor.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Actor.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Actor" Source="Actor.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

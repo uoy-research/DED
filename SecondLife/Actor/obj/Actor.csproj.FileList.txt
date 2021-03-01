@@ -1,0 +1,2 @@
+obj\Debug\Actor.exe
+obj\Debug\Actor.pdb

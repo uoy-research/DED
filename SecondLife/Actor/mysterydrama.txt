@@ -1,0 +1,4 @@
+act:0:init%100|all;
+act:1:characteristics%70|all,findbody%100|player;
+act:2:motif%80|all,means%80|all,opportunity%80|all;
+act:3:revealmurderer%100|1;

@@ -1,0 +1,107 @@
+2010-06-28 14:18:27,406 445328 INFO  DED.Director.DirectorDrama - Current act is '1'
+2010-06-28 14:18:30,406 448328 INFO  DED.Director.DirectorDrama - Current act is '1'
+2010-06-28 14:18:33,406 451328 INFO  DED.Director.DirectorDrama - Current act is '1'
+2010-06-28 14:18:36,406 454328 INFO  DED.Director.DirectorDrama - Current act is '1'
+2010-06-28 14:18:39,406 457328 INFO  DED.Director.DirectorDrama - Current act is '1'
+2010-06-28 14:18:41,765 459687 INFO  DED.Utils.Conversations - Time now '06/28/2010 14:18:41', time last speech '06/28/2010 14:18:21', duration in seconds '20.15625'
+2010-06-28 14:18:42,171 460093 INFO  DED.Utils.Conversations - Time now '06/28/2010 14:18:42', time last speech '06/28/2010 14:18:22', duration in seconds '20.140625'
+2010-06-28 14:18:42,406 460328 INFO  DED.Director.DirectorDrama - Current act is '1'
+2010-06-28 14:18:43,109 461031 INFO  DED.Utils.Conversations - Time now '06/28/2010 14:18:43', time last speech '06/28/2010 14:18:22', duration in seconds '20.453125'
+2010-06-28 14:18:43,203 461125 INFO  DED.Utils.Conversations - Time now '06/28/2010 14:18:43', time last speech '06/28/2010 14:18:21', duration in seconds '21.65625'
+2010-06-28 14:18:44,406 462328 INFO  DED.Decision.OptimalStrategy - (Snorri Haggwood) RequestResponce: Received action 'S_blackmailer', state '0', sender 'Lydia', Addressed to 'Sno
+rri'
+2010-06-28 14:18:44,484 462406 INFO  DED.Decision.OptimalStrategy - Variable 'S_blackmailer', state '0', value '53.5' is being evaluated
+2010-06-28 14:18:44,484 462406 INFO  DED.Decision.OptimalStrategy - Variable 'S_blackmailer', state '0', is current max, value '53.5'
+2010-06-28 14:18:44,484 462406 INFO  DED.Decision.OptimalStrategy - Variable 'S_blackmailer', state '1', value '86.5' is being evaluated
+2010-06-28 14:18:44,484 462406 INFO  DED.Decision.OptimalStrategy - Variable 'S_blackmailer', state '1', is current max, value '86.5'
+2010-06-28 14:18:44,484 462406 INFO  DED.Decision.OptimalStrategy - (Snorri Haggwood) : contemplates action 'S_blackmailer', state '1'
+2010-06-28 14:18:44,484 462406 INFO  DED.NPC.Actions.DEDAction - The number of possible sentences is '0'
+2010-06-28 14:18:44,531 462453 INFO  DED.Decision.OptimalStrategy - Variable 'S_suspect_knows_of_dark_secret', state '0', value '67' is being evaluated
+2010-06-28 14:18:44,531 462453 INFO  DED.Decision.OptimalStrategy - Variable 'S_suspect_knows_of_dark_secret', state '0', is current max, value '67'
+2010-06-28 14:18:44,531 462453 INFO  DED.Decision.OptimalStrategy - Variable 'S_suspect_knows_of_dark_secret', state '1', value '73' is being evaluated
+2010-06-28 14:18:44,531 462453 INFO  DED.Decision.OptimalStrategy - Variable 'S_suspect_knows_of_dark_secret', state '1', is current max, value '73'
+2010-06-28 14:18:44,531 462453 INFO  DED.Decision.OptimalStrategy - Variable 'S_victim_threatened_to_expose_blackmail', state '0', value '70' is being evaluated
+2010-06-28 14:18:44,531 462453 INFO  DED.Decision.OptimalStrategy - Variable 'S_victim_threatened_to_expose_blackmail', state '1', value '70' is being evaluated
+2010-06-28 14:18:44,531 462453 INFO  DED.Decision.OptimalStrategy - (Snorri Haggwood) : contemplates action 'S_suspect_knows_of_dark_secret', state '1'
+2010-06-28 14:18:44,531 462453 INFO  DED.NPC.Actions.DEDAction - The number of possible sentences is '0'
+2010-06-28 14:18:44,546 462468 INFO  DED.NPC.Actor - (Penny Kellman) Stimuly: Received actions '1', sender 'Snorri Haggwood'
+2010-06-28 14:18:44,546 462468 INFO  DED.NPC.Actor - (Lydia Philipp) Stimuly: Received actions '1', sender 'Snorri Haggwood'
+2010-06-28 14:18:44,562 462484 INFO  DED.NPC.Actor - (Kenneth Dawid) Stimuly: Received actions '1', sender 'Snorri Haggwood'
+2010-06-28 14:18:44,562 462484 INFO  DED.NPC.Actor - (Snorri Haggwood) Stimuly: Received actions '1', sender 'Snorri Haggwood'
+2010-06-28 14:18:44,562 462484 INFO  DED.Decision.OptimalStrategy - Snorri Haggwood, Responds to request, msg ', ', variable 'S_blackmailer', state '1', subnet 'suspect'
+2010-06-28 14:18:44,781 462703 INFO  DED.NPC.Actor - Snorri, Current action 'say'
+2010-06-28 14:18:44,890 462812 INFO  DED.Decision.OptimalStrategy - (Lydia Philipp) : contemplates action 'S_blackmailer', state '1'
+2010-06-28 14:18:44,890 462812 INFO  DED.NPC.Actions.DEDAction - The number of possible sentences is '0'
+2010-06-28 14:18:44,890 462812 INFO  DED.NPC.Actor - Lydia, Current action 'say'
+2010-06-28 14:18:44,890 462812 WARN  DED.NPC.SLAction - The msg for Lydia Philipp is null!
+2010-06-28 14:18:45,406 463328 INFO  DED.Director.DirectorDrama - Current act is '1'
+2010-06-28 14:18:46,937 464859 INFO  DED.Utils.Conversations - Time now '06/28/2010 14:18:46', time last speech '06/28/2010 14:18:26', duration in seconds '20.15625'
+2010-06-28 14:18:47,781 465703 INFO  DED.NPC.Actor - Snorri, applicable actions 0
+2010-06-28 14:18:47,890 465812 INFO  DED.NPC.Actor - Lydia, applicable actions 0
+2010-06-28 14:18:48,078 466000 INFO  DED.Decision.OptimalStrategy - (Snorri Haggwood) : contemplates action 'S_blackmailer', state '0'
+2010-06-28 14:18:48,078 466000 INFO  DED.NPC.Actions.DEDAction - The number of possible sentences is '0'
+2010-06-28 14:18:48,078 466000 INFO  DED.NPC.Actor - Snorri, Current action 'say'
+2010-06-28 14:18:48,078 466000 WARN  DED.NPC.SLAction - The msg for Snorri Haggwood is null!
+2010-06-28 14:18:48,406 466328 INFO  DED.Director.DirectorDrama - Current act is '1'
+
+
+
+2010-06-28 22:30:23,812 428718 INFO  DED.NPC.Actions.DEDAction - The number of goals is '3'
+2010-06-28 22:30:23,812 428718 INFO  DED.Utils.Reads.ReadOutput - The sentence chosen: The variable is 'S_blackmailer' and its state is '0'. The goal is 'S_motive' and its state is
+ '1'.
+2010-06-28 22:30:23,812 428718 INFO  DED.Utils.Reads.ReadOutput - The sentence introduced: The sentence is '{1} was not blackmailing {0}', the target is 'OTHER'.
+2010-06-28 22:30:23,828 428734 INFO  DED.Utils.Reads.ReadOutput - The sentence introduced: The sentence is 'I was not blackmailing {0}', the target is 'SELF'.
+2010-06-28 22:30:23,828 428734 INFO  DED.Utils.Reads.ReadOutput - The sentence chosen: The sentence is 'I was not blackmailing {0}', the target is 'SELF'.
+2010-06-28 22:30:23,828 428734 INFO  DED.NPC.Actions.DEDAction - The sentences is 'I was not blackmailing {0}', Variable 'S_blackmailer', variable state '1', goal 'motive', state '
+0'
+2010-06-28 22:30:23,828 428734 INFO  DED.Utils.Reads.ReadOutput - The sentence chosen: The variable is 'S_blackmailer' and its state is '0'. The goal is 'MW_murder_weapon' and its
+state is '1'.
+2010-06-28 22:30:23,828 428734 INFO  DED.Utils.Reads.ReadOutput - Cant find variable 'MW_murder_weapon'
+2010-06-28 22:30:23,828 428734 INFO  DED.Utils.Reads.ReadOutput - The sentence chosen: The variable is 'S_blackmailer' and its state is '0'. The goal is 'O_opportunity' and its sta
+te is '1'.
+2010-06-28 22:30:23,828 428734 INFO  DED.Utils.Reads.ReadOutput - Cant find variable 'O_opportunity'
+2010-06-28 22:30:23,828 428734 INFO  DED.NPC.Actions.DEDAction - The number of possible sentences is '1'
+2010-06-28 22:30:23,828 428734 INFO  DED.Utils.Bayes - Calculating subnet S_blackmailer
+2010-06-28 22:30:23,828 428734 INFO  DED.Utils.Bayes - Calculating subnet S_motive
+2010-06-28 22:30:23,828 428734 INFO  DED.Utils.Bayes - Calculating subnet S_blackmailer
+2010-06-28 22:30:23,828 428734 INFO  DED.Utils.Bayes - Calculating subnet S_motive
+2010-06-28 22:30:23,828 428734 INFO  DED.Utils.Bayes - Calculating subnet S_blackmailer
+2010-06-28 22:30:23,828 428734 INFO  DED.Utils.Bayes - Calculating subnet S_motive
+2010-06-28 22:30:23,843 428750 INFO  DED.Utils.Bayes - Calculating subnet S_blackmailer
+2010-06-28 22:30:23,843 428750 INFO  DED.Utils.Bayes - Calculating subnet S_motive
+2010-06-28 22:30:23,843 428750 INFO  DED.Utils.Bayes - Calculating subnet S_blackmailer
+2010-06-28 22:30:23,843 428750 INFO  DED.Utils.Bayes - Calculating subnet S_motive
+2010-06-28 22:30:23,859 428765 INFO  DED.Decision.OptimalStrategy - Variable 'S_suspect_knows_of_dark_secret', state '0', value '56' is being evaluated
+2010-06-28 22:30:23,859 428765 INFO  DED.Decision.OptimalStrategy - Variable 'S_suspect_knows_of_dark_secret', state '0', is incresed by 40, value '96'
+2010-06-28 22:30:23,859 428765 INFO  DED.Decision.OptimalStrategy - Variable 'S_suspect_knows_of_dark_secret', state '0', is current max, value '96'
+2010-06-28 22:30:23,859 428765 INFO  DED.Decision.OptimalStrategy - Variable 'S_suspect_knows_of_dark_secret', state '1', value '64' is being evaluated
+2010-06-28 22:30:23,859 428765 INFO  DED.Decision.OptimalStrategy - Variable 'S_victim_threatened_to_expose_blackmail', state '0', value '60' is being evaluated
+2010-06-28 22:30:23,859 428765 INFO  DED.Decision.OptimalStrategy - Variable 'S_victim_threatened_to_expose_blackmail', state '0', is incresed by 40, value '100'
+2010-06-28 22:30:23,859 428765 INFO  DED.Decision.OptimalStrategy - Variable 'S_victim_threatened_to_expose_blackmail', state '0', is current max, value '100'
+2010-06-28 22:30:23,859 428765 INFO  DED.Decision.OptimalStrategy - Variable 'S_victim_threatened_to_expose_blackmail', state '1', value '60' is being evaluated
+2010-06-28 22:30:23,859 428765 INFO  DED.Decision.OptimalStrategy - (Penny Kellman) : contemplates action 'S_victim_threatened_to_expose_blackmail', state '0'
+2010-06-28 22:30:23,875 428781 INFO  DED.NPC.Actions.DEDAction - The number of goals is '3'
+2010-06-28 22:30:23,875 428781 INFO  DED.Utils.Reads.ReadOutput - The sentence chosen: The variable is 'S_victim_threatened_to_expose_blackmail' and its state is '0'. The goal is '
+S_motive' and its state is '0'.
+2010-06-28 22:30:23,875 428781 INFO  DED.Utils.Reads.ReadOutput - The sentence introduced: The sentence is '{0} wanted to expose {1} as a blackmailer', the target is 'OTHER'.
+2010-06-28 22:30:23,875 428781 INFO  DED.Utils.Reads.ReadOutput - The sentence introduced: The sentence is '{0} wanted to expose me as a blackmailer', the target is 'SELF'.
+2010-06-28 22:30:23,875 428781 INFO  DED.Utils.Reads.ReadOutput - The sentence chosen: The sentence is '{0} wanted to expose me as a blackmailer', the target is 'SELF'.
+2010-06-28 22:30:23,875 428781 INFO  DED.NPC.Actions.DEDAction - The sentences is '{0} wanted to expose me as a blackmailer', Variable 'S_victim_threatened_to_expose_blackmail', va
+riable state '0', goal 'motive', state '0'
+2010-06-28 22:30:23,875 428781 INFO  DED.Utils.Reads.ReadOutput - The sentence chosen: The variable is 'S_victim_threatened_to_expose_blackmail' and its state is '0'. The goal is '
+MW_murder_weapon' and its state is '0'.
+2010-06-28 22:30:23,875 428781 INFO  DED.Utils.Reads.ReadOutput - Cant find variable 'MW_murder_weapon'
+2010-06-28 22:30:23,875 428781 INFO  DED.Utils.Reads.ReadOutput - The sentence chosen: The variable is 'S_victim_threatened_to_expose_blackmail' and its state is '0'. The goal is '
+O_opportunity' and its state is '0'.
+2010-06-28 22:30:23,875 428781 INFO  DED.Utils.Reads.ReadOutput - Cant find variable 'O_opportunity'
+2010-06-28 22:30:23,875 428781 INFO  DED.NPC.Actions.DEDAction - The number of possible sentences is '1'
+2010-06-28 22:30:23,875 428781 INFO  DED.Utils.Bayes - Calculating subnet S_victim_threatened_to_expose_blackmail
+2010-06-28 22:30:23,875 428781 INFO  DED.Utils.Bayes - Calculating subnet S_blackmailer
+2010-06-28 22:30:23,875 428781 INFO  DED.Utils.Bayes - Calculating subnet S_motive
+2010-06-28 22:30:23,906 428812 INFO  DED.NPC.Actor - (Penny Kellman) Stimuly: Received actions '1', sender 'Penny Kellman'
+2010-06-28 22:30:23,906 428812 INFO  DED.NPC.Actor - (Lydia Philipp) Stimuly: Received actions '1', sender 'Penny Kellman'
+2010-06-28 22:30:23,906 428812 INFO  DED.NPC.Actor - (Patrick Charmann) Stimuly: Received actions '1', sender 'Penny Kellman'
+2010-06-28 22:30:23,906 428812 INFO  DED.NPC.Actor - (Snorri Haggwood) Stimuly: Received actions '1', sender 'Penny Kellman'
+2010-06-28 22:30:23,906 428812 INFO  DED.Decision.OptimalStrategy - Penny Kellman, Responds to request, msg 'I was not blackmailing Kenneth, Kenneth wanted to expose me as a blackm
+ailer', variable 'S_blackmailer', state '1', subnet 'suspect'
+2010-06-28 22:30:24,046 428953 INFO  DED.NPC.Actor - Penny, Current action 'say'

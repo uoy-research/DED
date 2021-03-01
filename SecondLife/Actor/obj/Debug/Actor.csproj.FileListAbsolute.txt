@@ -1,0 +1,16 @@
+E:\SecondLife\Actor\obj\Debug\ResolveAssemblyReference.cache
+E:\SecondLife\Actor\obj\Debug\Actor.pdb
+E:\SecondLife\Actor\bin\Debug\Actor.exe
+E:\SecondLife\Actor\bin\Debug\Actor.pdb
+E:\SecondLife\Actor\bin\Debug\OpenMetaverse.dll
+E:\SecondLife\Actor\bin\Debug\OpenMetaverseTypes.dll
+E:\SecondLife\Actor\bin\Debug\Mono.Security.dll
+E:\SecondLife\Actor\bin\Debug\OpenMetaverse.Http.dll
+E:\SecondLife\Actor\bin\Debug\HttpServer.dll
+E:\SecondLife\Actor\bin\Debug\OpenMetaverse.StructuredData.dll
+E:\SecondLife\Actor\bin\Debug\XMLRPC.dll
+E:\SecondLife\Actor\bin\Debug\OpenMetaverse.xml
+E:\SecondLife\Actor\bin\Debug\OpenMetaverse.Http.xml
+E:\SecondLife\Actor\bin\Debug\OpenMetaverseTypes.xml
+E:\SecondLife\Actor\bin\Debug\OpenMetaverse.StructuredData.xml
+E:\SecondLife\Actor\obj\Debug\Actor.exe

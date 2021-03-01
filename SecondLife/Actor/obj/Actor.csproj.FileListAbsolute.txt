@@ -1,0 +1,17 @@
+D:\SecondLife\Actor\obj\Debug\ResolveAssemblyReference.cache
+D:\SecondLife\Actor\bin\Debug\Actor.exe
+D:\SecondLife\Actor\bin\Debug\Actor.pdb
+D:\SecondLife\Actor\bin\Debug\libsecondlife.dll
+D:\SecondLife\Actor\bin\Debug\libsecondlife.pdb
+D:\SecondLife\Actor\obj\Debug\Actor.exe
+D:\SecondLife\Actor\obj\Debug\Actor.pdb
+C:\SecondLife\Actor\bin\Debug\Actor.exe
+C:\SecondLife\Actor\bin\Debug\Actor.pdb
+C:\SecondLife\Actor\obj\Debug\ResolveAssemblyReference.cache
+C:\SecondLife\Actor\obj\Debug\Actor.exe
+C:\SecondLife\Actor\obj\Debug\Actor.pdb
+C:\SecondLife\Actor\obj\Release\ResolveAssemblyReference.cache
+C:\SecondLife\Actor\bin\Release\Actor.exe
+C:\SecondLife\Actor\bin\Release\Actor.pdb
+C:\SecondLife\Actor\obj\Release\Actor.exe
+C:\SecondLife\Actor\obj\Release\Actor.pdb
