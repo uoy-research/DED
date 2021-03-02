@@ -1,0 +1,68 @@
+BayesFusion Academic Software License Agreement
+
+BY CLICKING THE “I ACCEPT” BUTTON OR INSTALLING ANY VERSION OF THE SOFTWARE OR ANY MODIFICATIONS AND/OR UPDATES PROVIDED BY OR ON BEHALF OF LICENSOR TO LICENSEE (“SOFTWARE”), YOU AGREE TO BE BOUND BY THE TERMS OF THIS ACADEMIC SOFTWARE LICENSE AGREEMENT (“AGREEMENT”). IF YOU DO NOT AGREE TO ACCEPT THE TERMS OF THIS AGREEMENT, YOU MUST NOT INSTALL THE SOFTWARE. PLEASE READ THIS AGREEMENT CAREFULLY. “LICENSEE” OR “YOU” MEANS THE INDIVIDUAL INSTALLING OR USING THE SOFTWARE ON YOUR OWN BEHALF OR, IF THE SOFTWARE IS DOWNLOADED OR INSTALLED ON BEHALF OF AN ORGANIZATION SUCH AS AN EMPLOYER, “LICENSEE” OR “YOU” MEANS THE ORGANIZATION FOR WHICH THE SOFTWARE IS DOWNLOADED OR INSTALLED. Licensor and Licensee are each sometimes referred to as “Party” or “Parties.” Both the notice below and full terms of this Agreement shall be embedded in any location or medium in which the Licensor Materials are stored, copied, or reproduced, and shall be loaded into computer memory for use, display, or reproduction in any copy of the Licensor Materials, including any permitted derivative works (if any). The notice to accompany the full terms of this Agreement shall state:
+“GeNIe, QGeNIe and SMILE Software are licensed from the University of Pittsburgh.
+Copyright 2015, University of Pittsburgh, Used under license.”
+
+ 
+1.	Definitions
+Unless otherwise specified, capitalized terms used in this Agreement shall have the meanings set forth in this Section 1 or otherwise specified in this Agreement or any addendums.
+
+1.1.	 “Commercial Use” means any attempt whatsoever to copy, use, modify, or distribute, in whole or in part, Software or related documentation for financial or commercial gain, or to further the aims of any third party, including but not limited to use of Software in a research division of a third party, use of Software to improve a business or financial model, production of derivative works based on the Software that will be sold or offered for sale, incorporation of Software into a product or collection or products that will be sold or offered for sale, or distribution of Software commercially.
+
+1.2.	“Licensor” means BayesFusion, LLC.
+
+1.3.	“Licensor Materials” means the Software, and all user, operating, programming and training materials, technical information, and other documentation and materials provided by or on behalf of Licensor to Licensee in connection with the Software.
+
+1.4.	“Software” means GeNIe (including without limitation QGeNIe) Software and SMILE Software.
+
+1.5.	“University” means the University of Pittsburgh – Of the Commonwealth System of Higher Education.
+
+2.	Limited License & Use of Service
+
+2.1.	Grant. Commencing on the date that Licensee downloads or otherwise installs the Software, Licensor hereby grants to Licensee a limited, non-exclusive, non-transferable, non-sublicensable, worldwide, royalty-free, perpetual, limited site license to use the Software for academic, non-Commercial Use. This license does not entitle Licensee to any installation, technical, or other support by Licensor.
+
+2.2.	Limitations on Use.  Licensee shall not, without the prior written consent of Licensor: (i) sell, rent, lease, sublicense or otherwise transfer any portion of the Software of Licensor Materials, or any copy of any portion of the Software or Licensor Materials, to any Person, except as expressly provided in this Agreement; (ii) modify, translate, reverse engineer, decompile or disassemble the Software; (iii) create derivative works based upon the Software; (iv) alter, destroy, copy, modify, or otherwise remove any proprietary notices or labels on or embedded within the Licensor Materials; (v) show or demonstrate the Licensor Materials to a competitor of Licensor.  
+
+2.3.	Ownership Rights/Acknowledgments.  
+
+2.3.1.	Except for the limited license rights expressly granted to Licensee under Section 2.1, Licensor retains all right, title and interest in and to the Software, including, but not limited to, the right to reproduce, publish, sell, license and distribute the Software to any persons. The Licensor Materials constitute published works and are protected by copyright and other intellectual property laws and by international treaties.
+
+2.3.2.	Licensee shall include an acknowledgment that contains (i) the name of the Software (i.e. “GeNIe Modeler”, “SMILE Engine” or “QGeNIe Modeler”) together with the Licensors name “BayersFusion, LLC” and (ii) a general statement that the Software is “available free of charge for academic teaching and research use at ‘www.bayesfusion.com’” in all publications that are based on the Software.  
+
+2.4.	Other Intellectual Property Rights. Licensee hereby grants to Licensor a non-exclusive, non-transferable, license to use Licensee’s name and logo in connection with any marketing materials related to the Software and/or on Licensor’s website, including but not limited to, the right to list Licensee as a “customer” of Licensor or “user” of the Software. Notwithstanding the forgoing, Licensee may opt out of this Section 2.4 via written notice to Licensor.
+
+3.	Fees. The Software is provided under this Agreement without fee, provided that Licensee’s use is limited to academic teaching and research and not Commercial Use. 
+
+4.	Termination.  The term of this license shall be one year from the date the Licensee accepted the terms hereof, or initially downloaded the Software, and the license shall renew automatically for subsequent one-year periods if not otherwise terminated. You may terminate this license at any time by destroying all copies of the Software you received under this Agreement. Licensor may terminate this License upon fifteen (15) days notice. This Agreement shall terminate automatically if you fail to comply with any of its terms or conditions. On such termination, you must destroy all copies of the Software you received under this Agreement.
+
+5.	Disclaimer of Warranty.  
+
+5.1.	THE SOFTWARE IS PROVIDED TO YOU “AS IS”. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS WITH RESPECT TO ANY LICENSOR MATERIALS OR SERVICES PROVIDED BY LICENSOR. 
+
+5.2.	Licensor makes no warranty that the Licensor Materials when provided to Licensee in digital or electronic format will be compatible with Licensee‘s computer and/or other equipment. Nor does Licensor make any warranty as to any results that may be obtained from the use of the Licensor Materials. 
+
+5.3.	Licensor hereby disclaims all warranties of any kind related to Licensee’s Hardware or software beyond the warranties provided by the manufacturer of Licensee’s Hardware or software.
+
+6.	Indemnification.
+
+6.1.	Licensee shall indemnify, defend and hold Licensor harmless from and against any and all claims, losses, costs, damages and expenses (including reasonable legal expenses), resulting from or arising out of: (i) Licensee’s breach of this Agreement; (ii) Licensee’s unauthorized use of the Software or other Licensor Materials; (iii) Licensee’s activities after Licensor has notified Licensee that such activities may result in the infringement of the intellectual property rights of any third party; (iv) Licensee’s use of the Software other than as set forth in this Agreement, the Licensor Materials or other written instructions supplied by Licensor with respect to the use, operation, or combination of the Software on or with third party programs, data, equipment, or documentation; or (v) any claim that the Software or the use thereof infringes upon, misappropriates or violates any patents, copyrights, trade secret rights or other proprietary rights of a third party if such claim results from or relates to (a) a modification of the Software which modification is not authorized in writing by Licensor; (b) in whole or in part results from or relates to the combination of the Software with software, Hardware or equipment not provided by Licensor if the Software alone would not be the subject of such claim; or (c) Licensee’s use of the Software other than as set forth in this Agreement, the Licensor Materials or other written instructions supplied by Licensor. Licensor may employ counsel, at its own expense, to assist it with respect to any such claim, provided that if Licensee does not elect to control the defense of such claim, the reasonable cost and expenses of Licensor’s counsel shall be borne by Licensee.
+
+7.	LIMITATION OF LIABILITY.  IN NO EVENT AND UNDER NO CIRCUMSTANCES SHALL LICENSOR BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, CONSEQUENTIAL, SPECIAL, INCIDENTAL, PUNITIVE, OR EXEMPLARY DAMAGES OF ANY KIND WHATSOEVER (INCLUDING WITHOUT LIMITATION, ATTORNEY’S FEES) RELATING TO THIS AGREEMENT OR ARISING OUT OF THE USE OF OR INABILITY TO USE ANY PORTION OF THE SOFTWARE. THESE DISCLAIMERS APPLY REGARDLESS OF THE FORM OF ACTION, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, WHETHER THOSE DAMAGES ARE FORESEEABLE AND WHETHER LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF THOSE DAMAGES.
+
+8.	General Provisions
+
+8.1.	Assignment. Licensee shall not be entitled to 
+sell, transfer or otherwise assign, by law or otherwise, this Agreement or any of its rights and obligations hereunder, without the prior written consent of Licensor.
+
+8.2.	Relationship of the Parties. Nothing in this Agreement shall be construed as creating any agency or partnership between the Parties, and neither party shall have any express or implied power or authority to act on or make any representations whatsoever on behalf of the other party.
+
+8.3.	Waiver. The failure of either party to require 
+performance by the other party of any provision hereof shall not affect the full right to require such performance at any time thereafter; nor shall the waiver by either party of a breach of any provision hereof be taken or held to be a waiver of the provision itself, nor any other right or remedy available to either party under this Agreement.
+
+8.4.	Severability. In the event that any provision of 
+this Agreement shall be unenforceable or invalid under any applicable law or be so held by applicable court decision, such unenforceability or invalidity shall not render this Agreement unenforceable or invalid as a whole, and, in such event, such provision shall be changed and interpreted so as to best accomplish the objectives of such unenforceable or invalid provision within the limits of applicable law or applicable court decisions.
+
+8.5.	Governing Law, Venue. This Agreement shall be governed in all respects solely and exclusively by the laws of the Commonwealth of Pennsylvania. If legal action pertaining to this Agreement is brought by one party against the other party, the exclusive, and only, jurisdiction shall be in the state or federal courts located in Allegheny County, Pennsylvania. Both parties submit and agree to such exclusive jurisdiction.
+
+8.6.	Entire Agreement. This Agreement constitutes the final, complete and exclusive agreement between the Parties with respect to the subject matter hereof. This Agreement supersedes, and the terms of this Agreement govern, any prior or collateral agreements with respect to the subject matters contained herein. This Agreement may only be changed by mutual agreement of authorized representatives of the Parties in writing.
