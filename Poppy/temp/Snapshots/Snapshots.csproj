@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>Shared</AssemblyName>
+    <Configuration Condition=" '$(Configuration)' == '' ">ReleaseWindows</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{E0D0D62D-92C0-4A8B-BD8D-59AAC9E6D0B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Improbable.Shared</RootNamespace>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="../csharp.targets" />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseWindows|x64' ">
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Improbable.WorkerSdkCsharp, Culture=neutral, PublicKeyToken=null">
+      <HintPath>../../../build/dependencies/worker_sdk/Improbable.WorkerSdkCsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandLine, Version=2.2.1.0, Culture=neutral, PublicKeyToken=de6f01bd326f8c32">
+      <HintPath>../../../packages/CommandLineParser.2.2.1/lib/net45/CommandLine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="./**/*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../GeneratedCode/GeneratedCode.csproj">
+      <Project>{2a8f3d05-a4bf-4f4a-83b1-6761ca9ce011}</Project>
+      <Name>GeneratedCode</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)/Microsoft.CSharp.targets" />
+</Project>
