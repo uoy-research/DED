@@ -1,0 +1,118 @@
+{
+	"build": {
+		"tasks_filename": "build.npc.ai.json"
+	},
+	"bridge": {
+		"worker_attribute_set": {
+			"attributes": [
+				"npc_ai"
+			]
+		},
+		"entity_interest": {
+			"range_entity_interest": {
+				"radius": 10
+			}
+		},
+		"component_delivery": {
+			"default": "UNRELIABLE_ORDERED",
+			"override": {
+				"improbable.Position": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				},
+				"improbable.EntityAcl": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				},
+				"improbable.Metadata": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				},
+				"improbable.Persistence": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				},
+				"ded.npc.NPCInfo": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				},
+				"ded.ActorInfo": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				},
+				"dpge.PlotMap": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				},
+				"ded.EntitySpawning": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				},
+				"ded.CurrentState": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				}
+			}
+		},
+		"componentSettings": {
+			"default": {
+				"authorityHandoverTimeoutMs": 400
+			}
+		}
+	},
+	"managed": {
+		"linux": {
+			"artifact_name": "NPC_AI@Linux.zip",
+			"command": "./NPC_AI",
+			"arguments": [
+				"receptionist",
+				"${IMPROBABLE_RECEPTIONIST_HOST}",
+				"${IMPROBABLE_RECEPTIONIST_PORT}",
+				"${IMPROBABLE_WORKER_ID}",
+				"+workerType",
+				"${IMPROBABLE_WORKER_NAME}",
+				"-logfile",
+				"${IMPROBABLE_LOG_FILE}"
+			]
+		},
+		"windows": {
+			"artifact_name": "NPC_AI@Windows.zip",
+			"command": "./NPC_AI.exe",
+			"arguments": [
+				"receptionist",
+				"${IMPROBABLE_RECEPTIONIST_HOST}",
+				"${IMPROBABLE_RECEPTIONIST_PORT}",
+				"${IMPROBABLE_WORKER_ID}",
+				"+workerType",
+				"${IMPROBABLE_WORKER_NAME}",
+				"-logfile",
+				"${IMPROBABLE_LOG_FILE}"
+			]
+		}
+	},
+	"external": {
+		"local": {
+			"run_type": "EXECUTABLE_ZIP",
+			"linux": {
+				"artifact_name": "NPC_AI@Linux.zip",
+				"command": "./NPC_AI",
+				"arguments": [
+					"receptionist",
+					"localhost",
+					"7777",
+					"CppClientLocal"
+				]
+			},
+			"windows": {
+				"artifact_name": "NPC_AI@Windows.zip",
+				"command": "./NPC_AI.exe",
+				"arguments": [
+					"receptionist",
+					"localhost",
+					"7777",
+					"CppClientLocal"
+				]
+			}
+		}
+	}
+}

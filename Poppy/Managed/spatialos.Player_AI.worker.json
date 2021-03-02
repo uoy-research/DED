@@ -1,0 +1,118 @@
+{
+	"build": {
+		"tasks_filename": "build.player.ai.json"
+	},
+	"bridge": {
+		"worker_attribute_set": {
+			"attributes": [
+				"player_ai"
+			]
+		},
+		"entity_interest": {
+			"range_entity_interest": {
+				"radius": 10
+			}
+		},
+		"component_delivery": {
+			"default": "UNRELIABLE_ORDERED",
+			"override": {
+				"improbable.Position": {
+					"checkout_initially": true,
+					"message_delivery": "UNRELIABLE_ORDERED"
+				},
+				"improbable.EntityAcl": {
+					"checkout_initially": true,
+					"message_delivery": "UNRELIABLE_ORDERED"
+				},
+				"improbable.Metadata": {
+					"checkout_initially": true,
+					"message_delivery": "UNRELIABLE_ORDERED"
+				},
+				"improbable.Persistence": {
+					"checkout_initially": true,
+					"message_delivery": "UNRELIABLE_ORDERED"
+				},
+				"ded.player.PlayerInfo": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				},
+				"ded.ActorInfo": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				},
+				"dpge.PlotMap": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				},
+				"ded.EntitySpawning": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				},
+				"ded.CurrentState": {
+					"checkout_initially": true,
+					"message_delivery": "RELIABLE_ORDERED"
+				}
+			}
+		},
+		"componentSettings": {
+			"default": {
+				"authorityHandoverTimeoutMs": 400
+			}
+		}
+	},
+	"managed": {
+		"linux": {
+			"artifact_name": "Player_AI@Linux.zip",
+			"command": "./Player_AI",
+			"arguments": [
+				"receptionist",
+				"${IMPROBABLE_RECEPTIONIST_HOST}",
+				"${IMPROBABLE_RECEPTIONIST_PORT}",
+				"${IMPROBABLE_WORKER_ID}",
+				"+workerType",
+				"${IMPROBABLE_WORKER_NAME}",
+				"-logfile",
+				"${IMPROBABLE_LOG_FILE}"
+			]
+		},
+		"windows": {
+			"artifact_name": "Player_AI@Windows.zip",
+			"command": "./Player_AI.exe",
+			"arguments": [
+				"receptionist",
+				"${IMPROBABLE_RECEPTIONIST_HOST}",
+				"${IMPROBABLE_RECEPTIONIST_PORT}",
+				"${IMPROBABLE_WORKER_ID}",
+				"+workerType",
+				"${IMPROBABLE_WORKER_NAME}",
+				"-logfile",
+				"${IMPROBABLE_LOG_FILE}"
+			]
+		}
+	},
+	"external": {
+		"local": {
+			"run_type": "EXECUTABLE_ZIP",
+			"linux": {
+				"artifact_name": "Player_AI@Linux.zip",
+				"command": "./Player_AI",
+				"arguments": [
+					"receptionist",
+					"localhost",
+					"7777",
+					"CppClientLocal"
+				]
+			},
+			"windows": {
+				"artifact_name": "Player_AI@Windows.zip",
+				"command": "./Player_AI.exe",
+				"arguments": [
+					"receptionist",
+					"localhost",
+					"7777",
+					"CppClientLocal"
+				]
+			}
+		}
+	}
+}
