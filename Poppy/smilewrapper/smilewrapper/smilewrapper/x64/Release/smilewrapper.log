@@ -1,0 +1,8 @@
+﻿  smilewrapper.cpp
+     Creating library C:\PhD\smilewrapper\smilewrapper\x64\Release\smilewrapper.lib and object C:\PhD\smilewrapper\smilewrapper\x64\Release\smilewrapper.exp
+  Generating code
+  81 of 486 functions (16.7%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  smilewrapper.vcxproj -> C:\PhD\smilewrapper\smilewrapper\x64\Release\smilewrapper.dll

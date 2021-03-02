@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{378D129F-A5EB-414E-A755-F20FD9DB14AB}</ProjectGuid>
+    <RootNamespace>SmileDLL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Library Include="smile.lib" />
+    <Library Include="smilearn.lib" />
+    <Library Include="smilearn_dbg.lib" />
+    <Library Include="smilearn_dyn.lib" />
+    <Library Include="smile_dbg.lib" />
+    <Library Include="smile_dyn.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="abn.h" />
+    <ClInclude Include="bkgndknowledge.h" />
+    <ClInclude Include="bs.h" />
+    <ClInclude Include="caselibrary.h" />
+    <ClInclude Include="cbl.h" />
+    <ClInclude Include="cidefinition.h" />
+    <ClInclude Include="constants.h" />
+    <ClInclude Include="context_subnet.h" />
+    <ClInclude Include="datagenerator.h" />
+    <ClInclude Include="dataset.h" />
+    <ClInclude Include="dbcml.h" />
+    <ClInclude Include="defcpt.h" />
+    <ClInclude Include="defdemorgan.h" />
+    <ClInclude Include="defequation.h" />
+    <ClInclude Include="deflist.h" />
+    <ClInclude Include="defmau.h" />
+    <ClInclude Include="defnoisyadder.h" />
+    <ClInclude Include="defnoisymax.h" />
+    <ClInclude Include="deftable.h" />
+    <ClInclude Include="deftruthtable.h" />
+    <ClInclude Include="diag_network.h" />
+    <ClInclude Include="discretizer.h" />
+    <ClInclude Include="dmatrix.h" />
+    <ClInclude Include="doublearray.h" />
+    <ClInclude Include="dslarray.h" />
+    <ClInclude Include="dslobject.h" />
+    <ClInclude Include="em.h" />
+    <ClInclude Include="errors.h" />
+    <ClInclude Include="errorstrings.h" />
+    <ClInclude Include="essentialsearch.h" />
+    <ClInclude Include="expat_copying.h" />
+    <ClInclude Include="extradefinition.h" />
+    <ClInclude Include="fci.h" />
+    <ClInclude Include="general.h" />
+    <ClInclude Include="generalclases.h" />
+    <ClInclude Include="generalequation.h" />
+    <ClInclude Include="greedythickthinning.h" />
+    <ClInclude Include="idarray.h" />
+    <ClInclude Include="intarray.h" />
+    <ClInclude Include="mst.h" />
+    <ClInclude Include="nb.h" />
+    <ClInclude Include="network.h" />
+    <ClInclude Include="node.h" />
+    <ClInclude Include="nodecost.h" />
+    <ClInclude Include="nodedef.h" />
+    <ClInclude Include="nodeval.h" />
+    <ClInclude Include="pattern.h" />
+    <ClInclude Include="pc.h" />
+    <ClInclude Include="progress.h" />
+    <ClInclude Include="rectanglearray.h" />
+    <ClInclude Include="sensitivity.h" />
+    <ClInclude Include="simplecase.h" />
+    <ClInclude Include="smile.h" />
+    <ClInclude Include="smilearn.h" />
+    <ClInclude Include="stringarray.h" />
+    <ClInclude Include="submodel.h" />
+    <ClInclude Include="syscoord.h" />
+    <ClInclude Include="tan.h" />
+    <ClInclude Include="valbeliefvector.h" />
+    <ClInclude Include="valequationevaluation.h" />
+    <ClInclude Include="valexpectedutility.h" />
+    <ClInclude Include="validator.h" />
+    <ClInclude Include="vallistofdecisions.h" />
+    <ClInclude Include="valmauexpectedutility.h" />
+    <ClInclude Include="valueofinfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SmileNet.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
